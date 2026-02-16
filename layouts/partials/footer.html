@@ -1,0 +1,30 @@
+<footer class="footer">
+  <div>
+    <a href="https://enochyu.com/" target="_blank" rel="noopener noreferrer">
+      &copy; {{ now.Year }} {{ .Site.Params.author }}. All Rights Reserved.
+    </a>
+  </div>
+
+  <script>
+    MathJax = {
+      options: {
+        menuOptions: {
+          settings: {
+            enrich: false,
+            collapsible: false,
+            speech: false,
+            braille: false,
+            assistiveMml: false,
+          }
+        }
+      },
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</footer>
+

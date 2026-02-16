@@ -1,0 +1,25 @@
+baseURL = 'https://archive.enochyu.com/'
+languageCode = 'en-us'
+title = 'Enoch Yu - Documents'
+
+[params]
+  author = "Enoch Yu"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Linear Algebra"
+    url = "/linear-algebra/"
+    weight = 2
+  [[menu.main]]
+    name = "MVC"
+    url = "/mvc/"
+    weight = 3
+
+[markup.tableOfContents]
+  endLevel = 3
+  ordered = false
+  startLevel = 2
