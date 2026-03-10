@@ -1,0 +1,100 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{calc, angles, quotes, shapes.geometric, decorations.pathreplacing}
+\usepackage{tkz-euclide}
+\usepackage[inline]{asymptote}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Problem Set 32},
+    pdfpagemode=FullScreen,
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\pagenumbering{gobble}
+\usepackage{enumitem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{example}{Example}[section]
+\newtheorem*{example*}{Example}
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+\newcommand{\verteq}{\rotatebox{90}{$\;\;=\;\;$}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
+
+\title{Problem Set 32}
+\author{Enoch Yu}
+\date{July 2025}
+
+\begin{document}
+
+\section*{Problem}
+Let $x = \sqrt{a^2 + a + 1} - \sqrt{a^2 - a + 1}$, where $a$ is real. Find all possible values of $x$.
+\begin{solution}
+Notice that because $a$ is a real number, discriminant could be used to show that $\sqrt{a^2 + a + 1} + \sqrt{a^2 - a + 1}$ is never zero. Thus, $x$ could be rewritten.
+\[
+x = \frac{2a}{\sqrt{a^2 + a + 1} + \sqrt{a^2 - a + 1}}
+\]
+Notice that when $a$ is greater than zero, the denominator is greater than $a$, leading to $x < 2$. When $a$ is zero, $x$ is simply zero. Furthermore, if $a$ is less than zero, then $x$ is merely a negative number. In other words, $x < 2$ for all values of $a$.
+\begin{align*}
+    x^2 + 2x\sqrt{a^2 - a + 1} + a^2 - a + 1 &= a^2 + a + 1 \\
+    4x^2 \left( a^2 - a + 1 \right) &= 4a^2 - 4ax^2 + x^4 \\
+    4x^2a^2 - 4a^2 &= x^4 - 4x^2 \\
+    a^2 &= \frac{x^4 - 4x^2}{4x^2 - 4} = \frac{x^2(x^2 - 4)}{4(x^2 - 1)} \geq 0
+\end{align*}
+Notice that $\frac{x^2(x^2 - 4)}{4(x^2 - 1)}$ is positive \textit{iff} $x^2(x^2 - 4)(x^2 - 1)$ is positive. Meaning, $x^2$ is either in the interval $[0, 1]$ or $[4, \infty)$. However, the second interval is not applicable. Also, $\lim_{a\rightarrow\infty}\sqrt{a^2 + a + 1} - \sqrt{a^2 - a + 1} = 1$ and $\lim_{a\rightarrow-\infty}\sqrt{a^2 + a + 1} - \sqrt{a^2 - a + 1} = -1$. Therefore, $\boxed{-1 < x < 1}$.
+\end{solution}
+
+\section*{Problem}
+Solve the equation $x^3 - 3x = \sqrt{x + 2}$ for all real values of $x$.
+\begin{solution}
+Notice that when $x = 2$, the equation satisfies. Therefore, intuitively, the cases for $x$ could be set.
+\[
+\begin{cases}
+    x \leq 2 \implies \sqrt{x + 2} \geq x \\
+    x > 2 \implies \sqrt{x + 2} < x
+\end{cases}
+\]
+Observe the second equation.
+\begin{align*}
+    x^3 - 3x - \sqrt{x + 2} &= 0 \\
+    x^3 - 3x - x &< 0 \\
+    x(x^2 - 4) &< 0 \\
+    \therefore x < -2 \text{ or } 0 &< x < 2
+\end{align*}
+Due to a contradiction, the fact that the roots of the equation are never greater than 2 could be deduced. Moreover, since $x$ is a real number, $-2 \leq x \leq 2$.
+\\\\
+\textcolor{red}{\textbf{GENERAL RULE OF THUMB: IF YOU SEE $-a \leq x \leq a$, IMMEDIATELY THINK OF TRIGONOMETRY!!!!}}
+\\\\
+Let $x = 2\cos\theta$. Therefore, the following equations could be deduced.
+\begin{align*}
+    8\cos^3\theta - 6\theta &= \sqrt{2\cos\theta + 2} \\
+    \cos3\theta &= \sqrt{\frac{\cos\theta + 1}{2}} \\
+    \cos3\theta &= \cos\frac{\theta}{2} \\
+    \therefore x &= \boxed{2, 2\cos\frac{4\pi}{5}, 2\cos\frac{4\pi}{7}}
+\end{align*}
+\end{solution}
+
+\end{document}

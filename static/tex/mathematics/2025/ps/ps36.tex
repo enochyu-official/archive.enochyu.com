@@ -1,0 +1,104 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{calc, angles, quotes, shapes.geometric, decorations.pathreplacing}
+\usepackage{tkz-euclide}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Problem Set 36},
+    pdfpagemode=FullScreen,
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\pagenumbering{gobble}
+\usepackage{parskip}
+\setlength{\parskip}{\baselineskip}
+\usepackage{enumitem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{corollary}{Corollary}[theorem]
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
+
+\title{Problem Set 36}
+\author{Enoch Yu}
+\date{July 2025}
+
+\begin{document}
+
+\section*{Problem}
+Robert writes all positive divisors of the number $216$ on separate slips of paper, then places the slips into a hat. He randomly selects three slips from the hat, with replacement. What is the probability that the product of the numbers on the three slips Robert selects is a divisor of 216?
+\begin{solution}
+
+\textbf{Key Word} Stars and Bars
+
+Notice that $216 = 2^3 \cdot 3^3$. In other words, if $2^{a_1}3^{b_1}$, $2^{a_2}3^{b_2}$ and $2^{a_3}3^{b_3}$ are the three divisors that Robert selects, $a_1 + a_2 + a_3 \leq 3$ and $b_1 + b_2 + b_3 \leq 3$ must be true.
+
+The number of triples $(a_1, a_2, a_3)$ that satisfy the inequality could be solved by adding a constant $k$ where $a_1 + a_2 + a_3 + k = 3$. Because $0 \leq a_i \leq 3$, using Stars and Bars, there would be $3$ stars and $3$ bars. Thus, there are total of ${}_6C_3 = 20$ triples.
+\begin{align*}
+    \text{Probability}
+    &= \frac{20 \cdot 20}{16 \cdot 16 \cdot 16} \\
+    &= \boxed{\frac{25}{256}}
+\end{align*}
+\end{solution}
+
+\section*{Problem}
+Find the roots of the polynomial $f(x) = x^8 + x^7 + x^6 + \cdots + x + 1$.
+\begin{solution}
+
+\textbf{Key Word} Roots of Unity
+
+First, notice that $f(x) = \frac{x^9 - 1}{x - 1}$ if $x \neq 1$. In other words, the roots of $f(x)$ will correspond to the roots of $x^9 = 1$ except at $x = 1$.
+\begin{align*}
+    e^{i\theta} &= \cos\theta + i\sin\theta \\
+    e^{in\theta}
+    &= (\cos\theta + i\sin\theta)^n \\
+    &= \cos n\theta + i\sin n\theta
+\end{align*}
+With the knowledge above, the following equations are true.
+\begin{align*}
+    e^{0\pi} &= \left( \cos 0 + i \sin 0 \right)^9 = 1 \\
+    e^{2\pi} &= \left( \cos \frac{2\pi}{9} + i \sin \frac{2\pi}{9} \right)^9 = 1 \\
+    e^{4\pi} &= \left( \cos \frac{4\pi}{9} + i \sin \frac{4\pi}{9} \right)^9 = 1 \\
+    &\qquad \qquad \qquad \vdots \\
+    e^{16\pi} &= \left( \cos \frac{16\pi}{9} + i \sin \frac{16\pi}{9} \right)^9 = 1
+\end{align*}
+In other words, $\boxed{e^{\frac{2\pi}{9}}, e^{\frac{4\pi}{9}}, e^{\frac{6\pi}{9}}, e^{\frac{8\pi}{9}}, e^{\frac{10\pi}{9}}, e^{\frac{12\pi}{9}}, e^{\frac{14\pi}{9}}, e^{\frac{16\pi}{9}}}$ are the roots of the polynomial.
+\end{solution}
+
+\section*{Problem}
+Find all solutions to $z^6 + z^4 + z^3 + z^2 + 1 = 0$.
+\begin{solution}
+
+\textbf{Key Word} Roots of Unity
+\begin{align*}
+    z^6 + z^4 + z^3 + z^2 + 1
+    &= \frac{z^5 - 1}{z - 1} + z^6 - z \\
+    &= \left( z^5 - 1 \right) \left( \frac{1}{z - 1} + z \right) \\
+    &= \left( z^5 - 1 \right) \left( \frac{z^2 - z + 1}{z - 1} \right) \\
+    &= \left( z^5 - 1 \right) \left( \frac{\frac{z^3 + 1}{z + 1}}{z - 1} \right)
+\end{align*}
+Therefore, $\boxed{e^\frac{2\pi}{5}, e^\frac{4\pi}{5}, e^\frac{6\pi}{5}, e^\frac{8\pi}{5}, e^\frac{\pi}{3}, e^\frac{5\pi}{3}}$.
+\end{solution}
+
+\end{document}

@@ -1,0 +1,66 @@
+{{ define "main" }}
+<!-- Profile Section -->
+<div class="profile-section">
+  <h2>Enoch's Documents</h2>
+  <p>
+  While exploring concepts further in mathematics, I was
+  able to acquire countless benefits from public documents.
+  Therefore, the reciprocate the blessings received, I
+  have decided write and share the topics that I learned
+  while studying for competitions and olympiad. Contributing
+  through sharing the documents provides joy through the
+  sensation that I have ceased to be only a consumer, but
+  became both producer and consumer of math. This archive
+  aims to share the documents as HTML, PDF, and TeX files.
+  Please do not hesitate to share any thoughts or feedback
+  via <a href="https://enochyu.com/contact/">contact</a>!!
+  </p>
+
+  <div class="social-icons">
+    {{ with .Site.Params.social.website }}
+    <a href="{{ . }}" target="_blank" rel="noopener" aria-label="Personal Website">
+      <i class="fas fa-user"></i>
+    </a>
+    {{ end }}
+
+    {{ with .Site.Params.social.youtube }}
+    <a href="{{ . }}" target="_blank" rel="noopener" aria-label="Youtube">
+      <i class="fab fa-youtube"></i>
+    </a>
+    {{ end }}
+
+    {{ with .Site.Params.social.blog }}
+    <a href="{{ . }}" target="_blank" rel="noopener" aria-label="Blog">
+      <i class="fa-solid fa-blog"></i>
+    </a>
+    {{ end }}
+
+    {{ with .Site.Params.social.linkedin }}
+    <a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    {{ end }}
+
+    {{ with .Site.Params.social.github }}
+    <a href="{{ . }}" target="_blank" rel="noopener" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    {{ end }}
+  </div>
+</div>
+
+<!-- Featured Documents -->
+<div class="featured-documents">
+  <h2>Featured Documents</h2>
+  {{ range where .Site.RegularPages "Params.featured" true }}
+    {{ partial "document-card.html" . }}
+  {{ end }}
+</div>
+<br>
+<div class="featured-documents">
+  <h2>General Categories</h2>
+  {{ range where .Site.Pages "Params.gencat" true }}
+      {{ partial "category-card.html" . }}
+  {{ end }}
+</div>
+{{ end }}

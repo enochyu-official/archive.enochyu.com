@@ -1,0 +1,92 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+<section class="page">
+  <aside class="toc-sidebar">
+    <div class="toc-left">
+      <div class="toc-title">
+        <a href="/mathematics/">&larr; Documents</a>
+      </div>
+      <h1 class="toc-document-title">Access</h1>
+      <div class="toc-document-access">
+        {{ range .Params.links }}
+          <a href="{{ .url | relURL }}"
+             target="_blank" rel="noopener noreferrer">({{ .label }})</a>
+        {{ end }}
+      </div>
+
+      <br>
+
+      <h1 class="toc-document-title">License</h1>
+      <p class="license-notice">
+        This work is distributed under a 
+        <a href="https://creativecommons.org/licenses/by/4.0/"
+           target="_blank" rel="noopener noreferrer">
+          Creative Commons Attribution 4.0 International License</a>.
+      </p>
+
+      <br>
+      <br>
+
+      <h1 class="toc-document-title">Notice</h1>
+      <p class="license-notice">
+        This page uses
+        <a href="https://pandoc.org/"
+           target="_blank" rel="noopener noreferrer">
+          Pandoc</a>
+        to convert TeX to HTML and 
+        <a href="https://www.mathjax.org/"
+           target="_blank" rel="noopener noreferrer">
+          MathJax</a> to render the contents.
+      </p>
+
+      {{ if in .Params.categories "Primitive" }}
+      <br>
+      <br>
+      <h1 class="toc-document-title">Primitive Document</h1>
+      <p class="license-notice">
+        This document is one of the early documents that I
+        have wrote while learning to write mathematics and 
+        $\LaTeX$. Therefore, for anyone new to $\LaTeX$, please
+        do not treat the sources as your ideal reference.
+        Some may not follow consistent style or best practices.
+        Although I strive to improve some of the documents in
+        terms of writing style and $\LaTeX$, I do not have
+        enough capacity to ameliorate all the documents.
+        Please do not hesitate to suggest any changes via
+        <a href="https://enochyu.com/contact/"
+          style="color:blue;">here</a>!!
+      </p>
+      {{ end }}
+    </div>
+  </aside>
+
+  <div class="page-content">
+  {{ if in .Params.categories "NoHTML" }}
+  <div class="error-page">
+    <h1>Oops!</h1>
+    <p>
+    The HTML version of this page is currently
+    not available. You can still access the
+    document in PDF!!
+    </p>
+  </div>
+  {{ end }}
+  {{ .Content }}
+  </div>
+
+  {{ if .TableOfContents }}
+  <aside class="toc-sidebar">
+    <div class="toc-right">
+      <div class="toc-title">Table of Contents</div>
+      <nav>
+        {{ .TableOfContents }}
+      </nav>
+    </div>
+  </aside>
+  {{ end }}
+</section>
+{{ end }}
+
+

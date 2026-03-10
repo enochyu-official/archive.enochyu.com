@@ -1,0 +1,84 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{gensymb}
+
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Ramanujan Summation}
+\fancyhead[R]{Enoch Yu}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+
+\title{Ramanujan Summation}
+\author{Enoch Yu}
+\date{1 May 2025}
+
+\begin{document}
+
+\begin{theorem*}
+The sum of all natural numbers are $-\frac{1}{12}$, or
+\[
+\sum_{n=1}^{\infty}n=-\frac{1}{12}.
+\]
+\end{theorem*}
+\begin{proof}
+Let $S_1,S_2\text{ and }S_3$ be following sequences.
+\begin{align*}
+    S_1 &= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\
+    S_2 &= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\
+    S_3 &= 1 + 2 + 3 + 4 + 5 + 6 + \cdots
+\end{align*}
+Despite the fact that $S_1$ is a divergent sequence,
+the following property may apply.
+\begin{align*}
+    S_1 &= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\
+    S_1 &= \,\,\,\,\,\text{ }\text{ }\text{ }
+        1 - 1 + 1 - 1 + 1 - \cdots \\
+    2S_1 &= 1 \\
+    \therefore
+    S_1 &= \frac{1}{2}
+\end{align*}
+Similarly, $S_2$ may be manipulated.
+\begin{align*}
+    S_2 &= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\
+    S_2 &= \,\,\,\text{ }\text{ }\text{ }\text{ }
+        1 - 2 + 3 - 4 + 5 - \cdots \\
+    2S_2 &= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\
+    2S_1 &= S_1 \\
+    2S_1 &= \frac{1}{2} \\
+    \therefore
+    S_2 &= \frac{1}{4}
+\end{align*}
+Lastly, the relationship between $S_2$
+and $S_3$ may be investigated.
+\begin{align*}
+    S_3 &= 1 + 2 + 3 + 4 + 5 + 6 + \cdots \\
+    S_2 &= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\
+    S_3 - S_2 &= 4 + 8 + 1 2 + 16 + \cdots \\
+    &= 4(1 + 2 + 3 + 4 + \cdots) \\
+    &= 4S_3 \\
+    3S_3 &= -S_2 \\
+    3S_3 &= -\frac{1}{4} \\
+    \therefore
+    S_3& = -\frac{1}{12}
+\end{align*}
+\end{proof}
+\end{document}
+

@@ -1,0 +1,129 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtools}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, quotes, shapes.geometric, decorations.pathreplacing, patterns}
+\usepackage{tkz-euclide}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Problem Set 28},
+    pdfpagemode=FullScreen,
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\pagenumbering{gobble}
+\usepackage{enumitem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{example}{Example}[section]
+\newtheorem*{example*}{Example}
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+\newcommand{\verteq}{\rotatebox{90}{$\;\;=\;\;$}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
+
+\title{Problem Set 28}
+\author{Enoch Yu}
+\date{July 2025}
+
+\begin{document}
+
+\section*{Problem}
+Find all pairs of integers $(x, y)$ that satisfy the equation $2(x^2 + y^2) + x + y = 5xy$.
+\begin{solution}
+\\\\
+\textcolor{red}{\textbf{GENERAL RULE OF THUMB:}}
+\begin{align*}
+    \textcolor{red}{\mathbf{x^2, y^2, x, y}} &\Rightarrow \textcolor{red}{(\uwave{\quad}x + \uwave{\quad})^2 + (\uwave{\quad}y + \uwave{\quad})^2 = 0} \\
+    \textcolor{red}{\mathbf{x^2, y^2, xy, x}} &\Rightarrow \textcolor{red}{(\uwave{\quad}x + \uwave{\quad}y + \uwave{\quad})^2 + (\uwave{\quad}x + \uwave{\quad})^2} \\
+    \textcolor{red}{\mathbf{x^2, y^2, xy, y}} &\Rightarrow \textcolor{red}{(\uwave{\quad}x + \uwave{\quad}y + \uwave{\quad})^2 + (\uwave{\quad}y + \uwave{\quad})^2} \\
+    \textcolor{red}{\mathbf{x^2, y^2, xy, x, y}} &\Rightarrow \textcolor{red}{(\uwave{\quad}x + \uwave{\quad}y + \uwave{\quad})^2 + (\uwave{\quad}x + \uwave{\quad}y + \uwave{\quad})^2}
+\end{align*}
+We have $x^2$, $y^2$, $x$, $y$, and $xy$. Therefore, it is likely that the expression will be factored in the form of $(ax + by + c)(ax' + by' + c')$.
+\begin{align*}
+    (2x + ?y + ?)(x + ?2y + ?) &= ? \\
+    (2x + ?y - 1)(x + ?2y + 1) &= -1 \\
+    (2x - y - 1)(x - 2y + 1) &= -1
+\end{align*}
+Therefore, $2x - y - 1 = 1$ and $x - 2y + 1 = -1$ or $2x - y - 1 = -1$ and $x - 2y + 1 = 1$. With a sheet of paper and time, the pairs of integers $(x, y)$ appears to be $\boxed{(0, 0) \text{ and } (2, 2)}$.
+\end{solution}
+
+\section*{Problem}
+Find all triples $(a, b, c)$ of real numbers such that
+\[
+\sqrt{a + 8b} + 4\sqrt{b + 8c} + \sqrt{c + 8a} = 9 \left( \frac{a + b + c}{2} + 1 \right).
+\]
+\begin{solution}
+\\\\
+\textbf{Triggers}
+\begin{itemize}
+  \item The coefficients $1, 4, 1, 9$ are square numbers
+  \item $(a + 8b) + (b + 8c) + (c + 8a) = 9a + 9b + 9c$
+\end{itemize}
+Let $x = \sqrt{a + 8b}$, $b = \sqrt{b + 8c}$, and $z = \sqrt{c + 8a}$ to forcibly utilize our triggers
+\begin{align*}
+    x + 4y + z &= \frac{x^2 + y^2 + z^2}{2} + 9 \\
+    2x + 8y + 2z &= x^2 + y^2 + z^2 + 18 \\
+    (x - 1)^2 + (y - 4)^2 + (z - 1)^2 &= 0
+\end{align*}
+Notice that $x = 1$, $y = 4$, and $z = 1$ because $9 \left( \frac{a + b + c}{2} + 1 \right)$ is a real number.
+\begin{align*}
+    a + 8b &= 1 && c - 7b = 1 \\
+    b + 8c &= 16 &&56c + 7b = 112 \\
+    c + 8a &= 1 &&c = \frac{113}{57}, b = \frac{8}{57}, a = -\frac{7}{57} \\
+    a + b + c &= 2
+\end{align*}
+Therefore, $\boxed{\left(-\frac{7}{57}, \frac{8}{57}, \frac{113}{57} \right)}$ is the possible ordered triple.
+\end{solution}
+
+\newpage
+\section*{Problem}
+Evaluate $(\sin 1^\circ)(\sin 3^\circ)(\sin 5^\circ)\cdots(\sin 177^\circ)(\sin 179^\circ)$.
+\begin{solution}
+First and foremost, using the product identity will lead to terms with even degrees. However, if you actually try, it is impossible to cancel out terms with even degrees once we get there. Therefore, to add terms with even degrees in the denominator, let's modify our equation.
+\[
+\frac{(\sin 1^\circ \sin 3^\circ \sin 5^\circ \cdots \sin 177^\circ \sin 179^\circ)(\sin 2^\circ \sin 4^\circ \sin 6^\circ \cdots \sin 178^\circ)}{\sin 2^\circ \sin 4^\circ \sin 6^\circ \cdots \sin 178^\circ}
+\]
+In order to avoid summation of terms in $\cos$, the double angle formula could be utilized.
+\begin{align*}
+    \sin 1^\circ \sin 3^\circ \sin 5^\circ \cdots \sin 177^\circ \sin 179^\circ &= (\sin 1^\circ \sin 89^\circ) (\sin 3^\circ \sin 87^\circ) \cdots (\sin 43^\circ \sin 47^\circ) \sin 45^\circ \\
+    &\qquad \qquad \qquad \quad (\sin 91^\circ \sin 179^\circ) (\sin 93^\circ \sin 177^\circ) \cdots (\sin 133^\circ \sin 137^\circ) \sin 135^\circ \\[0.5em]
+    &= (\sin 1^\circ \cos 1^\circ) (\sin 3^\circ \cos 3^\circ) \cdots (\sin 43^\circ \cos 43^\circ) \frac{1}{\sqrt{2}} \\
+    &\qquad \qquad \qquad \quad (\sin 89^\circ \cos 89^\circ) (\sin 87^\circ \sin 87^\circ) \cdots (\sin 47^\circ \sin 47^\circ) \frac{1}{\sqrt{2}} \\[0.5em]
+    &= \frac{1}{2}\sin 2^\circ \cdot \frac{1}{2}\sin 6^\circ \cdots \frac{1}{2}\sin 86^\circ \cdot \frac{1}{2} \cdot \frac{1}{2} \sin 94^\circ \cdots \frac{1}{2} \sin 178^\circ
+    \\\\
+    \sin 2^\circ \sin 4^\circ \sin 6^\circ \cdots \sin 178^\circ &= (\sin 2^\circ \sin 88^\circ) (\sin 4^\circ \sin 86^\circ) \cdots (\sin 44^\circ \sin 46^\circ) \\
+    &\qquad \qquad \qquad \qquad (\sin 92^\circ \sin 178^\circ) (\sin 94^\circ \sin 176^\circ) \cdots (\sin 134^\circ \sin 136^\circ) \\[0.5em]
+    &= (\sin 2^\circ \cos 2^\circ) (\sin 4^\circ \cos 4^\circ) \cdots (\sin 44^\circ \cos 44^\circ) \\
+    &\qquad \qquad \qquad \qquad (\sin 88^\circ \cos 88^\circ) (\sin 86^\circ \sin 86^\circ) \cdots (\sin 46^\circ \sin 46^\circ) \\[0.5em]
+    &= \frac{1}{2}\sin 4^\circ \cdot \frac{1}{2}\sin 8^\circ \cdots \frac{1}{2} \sin 176^\circ
+\end{align*}
+Therefore, the terms with even terms can cancel out.
+\begin{align*}
+    &\quad \ \frac{(\sin 1^\circ \sin 3^\circ \sin 5^\circ \cdots \sin 177^\circ \sin 179^\circ)(\sin 2^\circ \sin 4^\circ \sin 6^\circ \cdots \sin 178^\circ)}{\sin 2^\circ \sin 4^\circ \sin 6^\circ \cdots \sin 178^\circ} \\[0.5em]
+    &= \frac{(\frac{1}{2}\sin 2^\circ \cdot \frac{1}{2}\sin 6^\circ \cdots \frac{1}{2} \sin 90^\circ \cdots \frac{1}{2} \sin 178^\circ) (\frac{1}{2}\sin 4^\circ \cdot \frac{1}{2}\sin 8^\circ \cdots \frac{1}{2} \sin 176^\circ)}{\sin 2^\circ \sin 4^\circ \sin 6^\circ \cdots \sin 178^\circ} \\
+    &= \boxed{\frac{1}{2^{89}}}
+\end{align*}
+\end{solution}
+
+\end{document}

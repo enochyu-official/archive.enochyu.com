@@ -1,0 +1,110 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtools}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, quotes, shapes.geometric, decorations.pathreplacing, patterns}
+\usepackage{tkz-euclide}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Problem Set 37},
+    pdfpagemode=FullScreen,
+}
+\usepackage[normalem]{ulem}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{example}{Example}[section]
+\newtheorem*{example*}{Example}
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+\newcommand{\verteq}{\rotatebox{90}{$\;\;=\;\;$}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
+\newtcbtheorem[number within=section]{theorembox}{Theorem}%
+{colback=green!4,colframe=green!40!black,fonttitle=\bfseries}{th}
+
+\title{Problem Set 37}
+\author{Enoch Yu}
+\date{July 2025}
+
+\begin{document}
+
+\section*{Rudimentary Knowledge}
+\begin{itemize}
+    \item For $k = 0, 1, \dots, n-1$, the roots of the four equations could be computed.
+        \begin{align*}
+           x^n &= 1 &&x = e^{\frac{2\pi k}{n}i} \\
+           x^n &= -1 &&x = e^{\frac{(2k + 1)\pi}{n}i} \\
+           x^n &= i &&x = e^{\frac{\pi + 4\pi k}{2n} i} \\
+           x^n &= -i &&x = e^{\frac{3\pi + 4\pi k}{2n}i}
+        \end{align*}
+    \item Every non-zero complex number could be written in the form of $r e^{i\theta}$.
+    \item If $z = \overline{z}$, then $z$ is real.
+    \item $\overline{(z_1 + z_2)^n} = \left( \overline{z_1} + \overline{z_2} \right)^n$
+\end{itemize}
+
+\section*{Problem}
+Describe all integers $n$ such that the polynomial $x^{2n} + 1 + (x + 1)^{2n}$ is divisible by $x^2 + x + 1$.
+\begin{solution}
+Let $\alpha$ and $\beta$ be the roots of the polynomial $x^2 + x + 1$. If $x^{2n} + 1 + (x + 1)^{2n}$ is divisible by $x^2 + x + 1$, the following equations must be true.
+\begin{align*}
+    \alpha^{2n} + 1 + (\alpha + 1)^{2n} &= 0 \\
+    \beta^{2n} + 1 + (\beta + 1)^{2n} &= 0 \\
+\end{align*}
+The equation could be modified with the fact that $\alpha^2 + \alpha + 1 = \beta^2 + \beta + 1 = 0$. However, WLOG, only the case for $\alpha$ could be checked, since the process will be exactly the same for $\beta$.
+\begin{align*}
+    (\alpha + 1)^{2n} &= \left( \alpha^2 + 2\alpha + 1 \right)^n = \alpha^n \\
+    \alpha^{2n} + \alpha^n + 1 &= 0 \\
+    \frac{\alpha^{3n} - 1}{\alpha^n - 1} &= 0
+\end{align*}
+Notice that $\alpha^3 = 1$ In other words, if $n$ is a multiple of $3$, a contradiction occurs. However, if $n$ is not a multiple of three, $\alpha^{3n} - 1$ will always be zero, and satisfy the condition. Thus, all integers $n$ are $\boxed{\text{not a multiple of $3$}}$. 
+\end{solution}
+
+\section*{Problem}
+Let $x$ and $y$ be two $k^\text{th}$ roots of unity. Prove that $(x + y)^k$ is real.
+\begin{proof}
+Notice that $x\overline{x} = y\overline{y} = 1$ since $x$ and $y$ are $k^\text{th}$ roots of unity.
+$$
+(\overline{x} + \overline{y})^k = \left( \frac{1}{x} + \frac{1}{y} \right)^k = \left( \frac{x + y}{xy}\right)^k = (x + y)^k
+$$
+\end{proof}
+
+\section*{Problem}
+Show that $\tan n\theta = \frac{\binom{n}{1} \tan \theta - \binom{n}{3} \tan^3 \theta + \cdots}{1 - \binom{n}{2} \tan^2 \theta + \cdots}$.
+\begin{proof}
+\[
+(\cos\theta + i \sin\theta)^n = \cos n\theta + i\sin n\theta = \binom{n}{0} \cos^n\theta - \binom{n}{2} \cos^{n - 2}\theta \sin^2\theta + \cdots + i\left( \binom{n}{1}\cos^{n - 1}\theta \sin\theta - \cdots \right)
+\]
+Therefore,
+\begin{align*}
+    \tan n\theta
+    &= \frac{\sin n\theta}{\cos n\theta} \\
+    &= \frac{\binom{n}{1}\cos^{n - 1}\theta \sin\theta - \cdots}{\binom{n}{0} \cos^n\theta - \binom{n}{2} \cos^{n - 2}\theta \sin^2\theta + \cdots} \\
+    &= \frac{\binom{n}{1} \tan \theta - \cdots}{1 - \binom{n}{2} \tan^2 \theta + \cdots}
+\end{align*}
+\end{proof}
+
+\end{document}

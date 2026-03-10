@@ -1,0 +1,132 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{calc, angles, quotes, shapes.geometric, decorations.pathreplacing}
+\usepackage{tkz-euclide}
+\usepackage[inline]{asymptote}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Problem Set 27},
+    pdfpagemode=FullScreen,
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\pagenumbering{gobble}
+\usepackage{enumitem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{example}{Example}[section]
+\newtheorem*{example*}{Example}
+\newtheorem{hypothesis}{Hypothesis}[section]
+\newtheorem*{hypothesis*}{Hypothesis}
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+\newcommand{\verteq}{\rotatebox{90}{$\;\;=\;\;$}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
+
+\title{Problem Set 27}
+\author{Enoch Yu}
+\date{June 2025}
+
+\begin{document}
+
+\section*{1996 AIME Problem 10}
+Find the smallest positive integer solution to $\tan19x^\circ = \frac{\cos 96^\circ + \sin 96^\circ}{\cos 96^\circ - \sin 96^\circ}$.
+\subsection*{Solution I.}
+\begin{solution}
+\begin{align*}
+    \frac{\cos 96^\circ + \sin 96^\circ}{\cos 96^\circ - \sin 96^\circ}
+    &= \frac{\cos 96^\circ + \sin 96^\circ}{\cos 96^\circ - \sin 96^\circ} \cdot \frac{\frac{1}{\cos 96^\circ}}{\frac{1}{\cos 96^\circ}} \\[0.5em]
+    &= \frac{1 + \tan 96^\circ}{1 - \tan 96^\circ} \\[0.5em]
+    &= \frac{\tan 45^\circ + \tan 96^\circ}{1 - \tan 45^\circ \tan 96^\circ} \\[0.5em]
+    &= \tan (45+ 96)^\circ \\[0.5em]
+    &= \tan 141^\circ
+\end{align*}
+Therefore, $\tan19x^\circ = \tan 141^\circ$. In other words, $19x = 141 + 180k$ for some integer $k$.
+\begin{align*}
+    141 + 180k &\equiv 0 \pmod{19} \\
+    8 + 9k &\equiv 0 \pmod{19} \\
+    9k &\equiv 11 \pmod{19} \\
+    9k &\equiv 11, 30, 49, 68, 87, 106, 125, 144 \pmod{19}
+\end{align*}
+Substituting $k$, the smallest value of $19x$ is $141 + 180 \cdot 16$, which is $\boxed{159}$.
+\end{solution}
+
+\subsection*{Solution II.}
+\begin{solution}
+Notice that $\sin 45^\circ = \cos 45^\circ$. Therefore, all terms in the numerator and the denominator could be multiplied by either $\sin 45^\circ$ or $\cos 45^\circ$.
+\begin{align*}
+    \frac{\cos 96^\circ + \sin 96^\circ}{\cos 96^\circ - \sin 96^\circ}
+    &= \frac{\cos 96^\circ \sin 45^\circ + \sin 96^\circ \cos 45^\circ}{\cos 96^\circ \cos 45^\circ - \sin 96^\circ \sin 45^\circ} \\[0.5em]
+    &= \frac{\sin(96 + 45)^\circ}{\cos(96 + 45)^\circ} \\[0.5em]
+    &= \tan 141^\circ
+\end{align*}
+Modular arithmetic from above could be used to obtain answer $\boxed{159}$.
+\end{solution}
+Uploaded a \href{https://artofproblemsolving.com/wiki/index.php/1996_AIME_Problems/Problem_10#Solution_5}{new solution} in AOPS!! \\
+
+\newpage
+\section*{2008 AIME II Problem 8}
+Let $a = \frac{\pi}{2008}$. Find the smallest positive integer $n$ such that
+\[
+2[\cos a \cdot \sin a + \cos 4a \cdot \sin 2a + \cos 9a \cdot \sin 3a + \dots  \cos(n^2a) \cdot \sin(na)]
+\]
+is an integer.
+\begin{solution}
+\\\\
+\textbf{Key Word} Telescoping
+\\\\
+Recall that $\cos\alpha \sin\beta = \frac{\sin(\alpha + \beta) - \sin(\alpha - \beta)}{2}$.
+\begin{align*}
+    &\ \quad 2[\cos a \cdot \sin a + \cos 4a \cdot \sin 2a + \cos 9a \cdot \sin 3a + \dots  \cos(n^2a) \cdot \sin(na)] \\
+    &= 2 \cdot \left[ \frac{\sin(a + a) - \sin(a - a)}{2} + \frac{\sin(4a + 2a) - \sin(4a - 2a)}{2} + \dots + \frac{\sin(n^2a + na) - \sin(n^2a - na)}{2} \right] \\
+    &= (\sin(a + a) - \sin(a - a)) + (\sin(4a + 2a) - \sin(4a - 2a)) + \dots + (\sin(n^2a + na) - \sin(n^2a - na)) \\
+    &= (\sin 2a - \sin 0a) + (\sin 6a - \sin 2a) + \dots + (\sin (n^2a + na) - \sin (n^2a - na)) \\
+    &= (\sin 2a + \sin 6a + \sin 12a + \dots + \sin (n^2a + na)) - (\sin 0a + \sin 2a + \sin 6a + \dots + \sin(n^2a - na)) \\
+    &= - \sin 0 + \sin (n^2a + na) \\
+    &= \sin (n+1)na \\
+    &= \sin \frac{n(n+1)\pi}{2008}
+\end{align*}
+Using the properties of sine functions, notice that $\frac{n(n+1)\pi}{2008}$ must be in the form of $\frac{k\pi}{2}$ for some integer $k$.
+\[
+\therefore \frac{n(n + 1)}{1004} = k
+\]
+Notice that $1004 = 2^2 \cdot 251$. $n$ cannot be $250$. Therefore, the smallest positive integer $n$ is $\boxed{251}$.
+\end{solution}
+
+\section*{1989 AHSME Problem 28}
+Find the sum of the roots of $\tan^2 x - 9\tan x + 1 = 0$ that are between $x = 0$ and $x = 2\pi$ radians.
+\begin{solution}
+Multiply $\cos^2 x$ on both sides.
+\begin{align*}
+    \sin^2 x - 9 \sin x \cos x + \cos^2 x &= 0 \\
+    1 - 9 \sin x \cos x &= 0 \\
+    \sin x \cos x &= \frac{1}{4} \\
+    \sin 2x &= \frac{2}{9}
+\end{align*}
+The possible values for $2x$ are $\alpha, \pi - \alpha, 2\pi + \alpha, 3\pi - \alpha$. Therefore, the sum of all roots are $\boxed{3\pi}$
+\end{solution}
+
+\end{document}

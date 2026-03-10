@@ -1,0 +1,91 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{calc, angles, quotes, shapes.geometric, decorations.pathreplacing}
+\usepackage{tkz-euclide}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Problem Set 35},
+    pdfpagemode=FullScreen,
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\pagenumbering{gobble}
+\usepackage{parskip}
+\usepackage{enumitem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{corollary}{Corollary}[theorem]
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
+
+\title{Problem Set 35}
+\author{Enoch Yu}
+\date{July 2025}
+
+\begin{document}
+
+\section*{2018 AMC 12A Problem 24}
+Alice, Bob, and Carol play a game in which each of them chooses a real number between $0$ and $1$. The winner of the game is the one whose number is between the numbers chosen by the other two players. Alice announces that she will choose her number uniformly at random from all the numbers between $0$ and $1$, and Bob announces that he will choose his number uniformly at random from all the numbers between $\frac{1}{2}$ and $\frac{2}{3}$. Armed with this information, what number should Carol choose to maximize her chance of winning?
+
+$\textbf{(A) }\frac{1}{2}\qquad \textbf{(B) }\frac{13}{24} \qquad \textbf{(C) }\frac{7}{12} \qquad \textbf{(D) }\frac{5}{8} \qquad \textbf{(E) }\frac{2}{3}\qquad$
+
+\begin{solution}
+
+\textbf{Key Word} Expected Value
+
+The expected value for the number that Alice choose is $\frac{1}{2}$. For an intuitive proof, consider the following depiction where $\varepsilon$ represents the infinitesimal.
+\[
+\begin{array}{ccccccc}
+    0 & 0 + \varepsilon & 0 + \varepsilon + \varepsilon & \cdots & 1 - \varepsilon - \varepsilon & 1 - \varepsilon & 1 \\
+    1 & 1 - \varepsilon & 1 - \varepsilon - \varepsilon & \cdots & 0 + \varepsilon + \varepsilon & 0 + \varepsilon & 0
+\end{array}
+\]
+Using the same idea, the expected value for Bob could be computed.
+\[
+\begin{array}{ccccccc}
+    \frac{1}{2} & \frac{1}{2} + \varepsilon & \frac{1}{2} + \varepsilon + \varepsilon & \cdots & \frac{2}{3} - \varepsilon - \varepsilon & \frac{2}{3} - \varepsilon & \frac{2}{3} \\
+    \frac{2}{3} & \frac{2}{3} - \varepsilon & \frac{2}{3} - \varepsilon - \varepsilon & \cdots & \frac{1}{2} + \varepsilon + \varepsilon & \frac{1}{2} + \varepsilon & \frac{1}{2}
+\end{array}
+\]
+The expected value appears to be $\frac{7}{12}$. To maximize the chance for Carol to win, Carol must choose a median of $\frac{1}{2}$ and $\frac{7}{12}$, which is $\boxed{\textbf{(B) }\frac{13}{24}}$.
+\end{solution}
+
+\section*{2019 AMC 12A Problem 20}
+Real numbers between $0$ and $1$, inclusive, are chosen in the following manner. A fair coin is flipped. If it lands heads, then it is flipped again and the chosen number is $0$ if the second flip is heads and $1$ if the second flip is tails. On the other hand, if the first coin flip is tails, then the number is chosen uniformly at random from the closed interval $[0,1]$. Two random numbers $x$ and $y$ are chosen independently in this manner. What is the probability that $|x-y| > \tfrac{1}{2}$?
+
+$\textbf{(A) } \frac{1}{3} \qquad \textbf{(B) } \frac{7}{16} \qquad \textbf{(C) } \frac{1}{2} \qquad \textbf{(D) } \frac{9}{16} \qquad \textbf{(E) } \frac{2}{3}$
+
+\begin{solution}
+
+\textbf{Key Word} Mathematical Abstraction
+
+The probability of choosing $0$ and $1$ with the first coin landing on heads are both $\frac{1}{4}$. The probability of choosing a number less than $\frac{1}{2}$, $l$, and a number greater than $\frac{1}{2}$, $g$, with the first coin landing on tails are both $\frac{1}{4}$.
+
+For pairs $(x, y)$, the probability of choosing $(0, 1)$, $(1, 0)$, $(0, g)$, $(g, 0)$, $(1, l)$ and $(l, 1)$ are all $\frac{1}{16}$. However, $(l, g)$ and $(g, l)$ are $\frac{1}{32}$ respectively.
+
+Therefore, $\frac{1}{16} \cdot 6 + \frac{1}{32} \cdot 2 = \boxed{\textbf{(B) } \frac{7}{16}}$.
+\end{solution}
+Uploaded a \href{https://artofproblemsolving.com/wiki/index.php/2019_AMC_10A_Problems/Problem_22#Solution_5}{new solution} in AOPS!! \\
+
+\end{document}

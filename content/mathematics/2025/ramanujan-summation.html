@@ -1,0 +1,68 @@
++++
+title = "Ramanujan Summation"
+layout = "single"
+date = 2025-05-01
+categories = ["High School - Grade09", "Primitive"]
+featured = false
+
+[[links]]
+label = "PDF"
+url = "pdf/mathematics/2025/ramanujan-summation.pdf"
+[[links]]
+label = "HTML"
+url = "mathematics/2025/ramanujan-summation/"
+[[links]]
+label = "TeX"
+url = "tex/mathematics/2025/ramanujan-summation.tex"
++++
+
+<div class="theorem*">
+<p><strong>Theorem 1</strong>. <em>The sum of all natural numbers are
+<span class="math inline">$-\frac{1}{12}$</span>, or <span
+class="math display">$$\sum_{n=1}^{\infty}n=-\frac{1}{12}.$$</span></em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Let <span
+class="math inline"><em>S</em><sub>1</sub>, <em>S</em><sub>2</sub> and
+<em>S</em><sub>3</sub></span> be following sequences. <span
+class="math display">$$\begin{align*}
+    S_1 &amp;= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\
+    S_2 &amp;= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\
+    S_3 &amp;= 1 + 2 + 3 + 4 + 5 + 6 + \cdots
+\end{align*}$$</span> Despite the fact that <span
+class="math inline"><em>S</em><sub>1</sub></span> is a divergent
+sequence, the following property may apply. <span
+class="math display">$$\begin{align*}
+    S_1 &amp;= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\
+    S_1 &amp;= \,\,\,\,\,\text{ }\text{ }\text{ }
+        1 - 1 + 1 - 1 + 1 - \cdots \\
+    2S_1 &amp;= 1 \\
+    \therefore
+    S_1 &amp;= \frac{1}{2}
+\end{align*}$$</span> Similarly, <span
+class="math inline"><em>S</em><sub>2</sub></span> may be manipulated.
+<span class="math display">$$\begin{align*}
+    S_2 &amp;= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\
+    S_2 &amp;= \,\,\,\text{ }\text{ }\text{ }\text{ }
+        1 - 2 + 3 - 4 + 5 - \cdots \\
+    2S_2 &amp;= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\
+    2S_1 &amp;= S_1 \\
+    2S_1 &amp;= \frac{1}{2} \\
+    \therefore
+    S_2 &amp;= \frac{1}{4}
+\end{align*}$$</span> Lastly, the relationship between <span
+class="math inline"><em>S</em><sub>2</sub></span> and <span
+class="math inline"><em>S</em><sub>3</sub></span> may be investigated.
+<span class="math display">$$\begin{align*}
+    S_3 &amp;= 1 + 2 + 3 + 4 + 5 + 6 + \cdots \\
+    S_2 &amp;= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\
+    S_3 - S_2 &amp;= 4 + 8 + 1 2 + 16 + \cdots \\
+    &amp;= 4(1 + 2 + 3 + 4 + \cdots) \\
+    &amp;= 4S_3 \\
+    3S_3 &amp;= -S_2 \\
+    3S_3 &amp;= -\frac{1}{4} \\
+    \therefore
+    S_3&amp; = -\frac{1}{12}
+\end{align*}$$</span> ◻</p>
+</div>
+

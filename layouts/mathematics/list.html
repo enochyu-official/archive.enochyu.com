@@ -1,0 +1,89 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1>Mathematics</h1>
+</header>
+<section class="list">
+  <button id="filter-toggle" class="mobile-only card-btn">
+    <i class="fa-solid fa-filter"></i>
+    Filter Your Results!!
+  </button>
+  <div class="filters" id="filters-sidebar">
+    <div class="filters-block" id="filters-block-first">
+      <div class="filter-header">
+        <span class="filter-title">Category</span>
+      </div>
+      <div class="filter-options">
+        {{ $categories := slice }}
+        {{ range .RegularPages }}
+          {{ range .Params.categories }}
+            {{ if ne . "NoHTML" }}
+              {{ $categories = $categories | append . }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ range $categories | uniq | sort }}
+          {{ $name := . }}
+          {{ $count := 0 }}
+          {{ range $.RegularPages }}
+            {{ if in .Params.categories $name }}{{ $count = add $count 1 }}{{ end }}
+          {{ end }}
+          <label class="filter-item">
+            <input type="checkbox" class="filter-checkmark" name="category" value="{{ $name | urlize }}">
+            <span class="filter-label">{{ $name }}</span>
+            <span class="filter-count">{{ $count }}</span>
+          </label>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="filters-block">
+      <div class="filter-header">
+        <span class="filter-title">Year</span>
+      </div>
+      <div class="filter-options">
+        {{ range .Pages.GroupByDate "2006" }}
+          {{ if ne .Key "0001" }}
+          <label class="filter-item">
+            <input type="checkbox" class="filter-checkmark" name="year" value="{{ .Key }}">
+            <span class="filter-label">{{ .Key }}</span>
+            <span class="filter-count">{{ len .Pages }}</span>
+          </label>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>  
+  </div>
+
+  <div class="list-document">
+    {{ $filtered := .Pages }}
+    {{ $paginator := .Paginate $filtered 10 }}
+    
+    <h2 class="list-count">
+      {{ len $filtered }} Results 
+      <small><small><small>
+      (Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }})
+      </small></small></small>
+    </h2>
+
+    {{ range $paginator.Pages }}
+      {{ partial "document-card.html" . }}
+    {{ end }}
+
+    <div class="pagination-controls">
+      {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}" class="btn-pag">&#8592; Previous</a>
+      {{ end }}
+
+      <span class="page-indicator">
+        {{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}
+      </span>
+
+      {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}" class="btn-pag">Next &#8594;</a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+

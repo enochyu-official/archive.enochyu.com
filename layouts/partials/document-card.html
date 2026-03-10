@@ -1,0 +1,20 @@
+<div class="list-card" 
+     data-categories="{{ range .Params.categories }}{{ . | urlize }} {{ end }}" 
+     data-year="{{ .Date.Format "2006" }}">
+
+  <div class="card-meta">
+    <a href="{{ .Permalink }}" class="card-title">{{ .Title }}</a>
+    <span class="card-date">
+      {{ .Date.Format "January 2, 2006" }}
+    </span>
+  </div>
+
+  <div class="card-access">
+    {{ range .Params.links }}
+      <a href="{{ .url | relURL }}" class="card-btn"
+         target="_blank" rel="noopener noreferrer">{{ .label }}</a>
+    {{ end }}
+  </div>
+</div>
+
+

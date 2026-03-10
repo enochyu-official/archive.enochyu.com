@@ -1,0 +1,147 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, quotes, shapes.geometric}
+\usepackage{tkz-euclide}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\pagenumbering{gobble}
+\usepackage{enumitem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+\newcommand{\verteq}{\rotatebox{90}{$\;\;=\;\;$}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
+
+\title{Problem Set 8}
+\author{Enoch Yu}
+\date{May 2025}
+
+\begin{document}
+
+\section*{2025 Purple Comet! Math Meet Problem 11}
+Positive integers $m,n,$ and $p$ satisfy
+\[
+m+n+p=104\text{ }\text{ }\text{ }\text{ and}
+\]
+\[
+\frac{1}{m}+\frac{1}{n}+\frac{1}{p}=\frac{1}{4}.
+\]
+Find the greatest possible value of $\max{(m,n,p)}$.
+\begin{solution}
+\\\\
+\textbf{Key Word} Trial and Error
+\\\\
+Multiplying $4mnp$ on both sides for second equation may lead to a similar result to $(m-4)(n-4)(p-4)=mnp-4(mn+np+pm)+16(m+n+p)-64$. The fact that $4(mn+np+pm)=mnp$ could be driven. Therefore, the following equation is true.
+\[
+(m-4)(n-4)(p-4)=16\cdot105-64=1600
+\]
+WLOG, let $p \ge n \ge m$. \\
+There is a reasonable doubt that $p=84$. If $p$ is 84, $m+n=20$ and $\frac{1}{m}+\frac{1}{n}=\frac{20}{84}$. In another words, $m+n=20$ and $mn=84$ with $m=6$ and $n=14$. Moreover, there seems to be no other possible cases that generates a bigger $p$ value than 84. Therefore, the greatest possible value of $\max{(m,n,p)}=\boxed{84}$.
+\end{solution}
+
+\section*{2025 Purple Comet! Math Meet Problem 24}
+Three distinct real numbers $x_1,x_2,\text{ and }x_3$ in the interval $[0,\pi]$ satisfy the equation $\sec(2x)-\sec{x}=2$. \\
+There are relatively prime positive integers $m$ and $n$ such that
+\[
+\frac{\pi}{x_1+x_2+x_3}=\frac{m}{n}.
+\]
+Find $10m+n$.
+\begin{solution}
+\\\\
+\textbf{Key Word} Trigonometric Identities
+\\\\
+$\sec2x-\sec{x}=2$ could be converted to $\frac{1}{\cos2x}-\frac{1}{\cos{x}}=2$. $2\cos^2x-1$ could be substituted for $\cos2x$. \textcolor{red}{Because a cubic equation could be written, a general rule of thumb of SUBSTITUTION could be utilized.} Therefore, let $a=\cos{x}$.
+\begin{align*}
+\frac{1}{2\cos^2x-1}-\frac{1}{\cos{x}}&=2 \\
+\frac{1}{2a^2-1}-\frac{1}{a}&=2 \\
+a-(2a^2-1)&=2a(2a^2-1) \\
+-2a^2+a+1&=4a^3-2a \\
+4a^3+2a^2-3a-1&=0 \\
+(a+1)(4a^2-2a-1)&=0
+\end{align*}
+Because $\cos{x}=-1,\frac{1\pm\sqrt{5}}{4}$, $x_1+x_2+x_3=\pi+\frac{\pi}{5}+\frac{3\pi}{5}=\frac{9\pi}{5}$ Therefore, $10m+n=\boxed{59}$.
+\end{solution}
+
+\newpage
+\section*{2025 Purple Comet! Math Meet Problem 19}
+The equation
+\[
+(3x+1)(4x+1)(6x+1)(12x+1)=5
+\]
+has a solution of the form $\frac{-p+i\sqrt{q}}{r}$, where $p$ is a prime number, $1$ and $r$ are positive integers, and $i=\sqrt{-1}$. Find $p+q+r$.
+\begin{solution}
+\\\\
+\textbf{Key Word} Substitution
+\\\\
+\[
+(3x+1)(4x+1)(6x+1)(12x+1)=(24x^2+10x+1)(36x^2+15x+1)=5
+\]
+\textcolor{red}{SUBSTITUTION HERE IS AN UNWRITTEN RULE} \\
+Let $a=24x^2+10x+1$ and $36x^2+15x+1=\frac{3}{2}a-\frac{1}{2}$. Therefore, $a\cdot\left(\frac{3}{2}a-\frac{1}{2}\right)=5$. In another words, $a=-\frac{5}{3},2$.
+\\\\
+The first case to check is when $a=-\frac{5}{3}$
+\begin{align*}
+24x^2+10x+1&=-\frac{5}{3} \\
+72x^2+30x+8&=0 \\
+x&=\frac{-15\pm\sqrt{225-72\cdot8}}{72} \\
+&=\frac{-15\pm\sqrt{225-576}}{72} \\
+&=\frac{-15\pm\sqrt{-351}}{72} \\
+&=\frac{-15\pm3\sqrt{-39}}{72} \\
+&=\frac{-5\pm\sqrt{39}i}{24}
+\end{align*}
+\noindent
+The second case to check is when $a=2$.
+\begin{align*}
+24x^2+10x+1&=2 \\
+24x^2+10x-1&=0
+\end{align*}
+No further calculation is necessary because the discriminant is greater than zero. Therefore, $p+q+r=5+39+24=\boxed{68}$.
+\end{solution}
+
+\newpage
+\section*{2023 AMC 12A Problem 25}
+There is a unique sequence of integers $a_1,a_2,\cdots,a_{2023}$ such that
+\[
+\tan2023x=\frac{a_1\tan x+a_3\tan^3 x+a_5\tan^5x+\cdots+a_{2023}\tan^{2023}x}{1+a_2\tan^2x+a_4\tan^4x\cdots+a_{2022}\tan^{2022}x}
+\]
+whenever $\tan2023x$ is defined. What is $a_{2023}?$
+\\\\
+$\textbf{(A) } -2023 \qquad\textbf{(B) } -2022 \qquad\textbf{(C) } -1 \qquad\textbf{(D) } 1 \qquad\textbf{(E) } 2023$
+\begin{solution}
+\\\\
+\textbf{Key Word} Trigonometric Identities
+\\\\
+It is known that $\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}$. Because not much evident action could be taken from the problem, manipulation of known knowledge might be beneficial. Arbitrarily substituting $x$ values for $\alpha$ and $\beta$ may provide a pattern.
+\begin{align*}
+    \tan3x=\frac{\tan2x+\tan{x}}{1-\tan2x\tan{x}}&=\frac{\frac{2\tan{x}}{1-\tan^2x}+\tan{x}}{1-\frac{2\tan{x}}{1-\tan^2x}\cdot\tan{x}} \\
+    &=\frac{2\tan{x}+\tan{x}-\tan^3x}{1-\tan^2x-2\tan^2x} \\
+    &=\frac{3\tan{x}-\tan^3x}{1-3\tan^2x}
+\end{align*}
+In similar fashion, $\tan4x$ could be recalculated.
+\begin{align*}
+    \tan4x=\frac{\tan3x+\tan{x}}{1-\tan3x\tan{x}}&=\frac{\frac{3\tan{x}-\tan^3x}{1-3\tan^2x}+\tan{x}}{1-\frac{3\tan{x}-\tan^3x}{1-3\tan^2x}\cdot\tan{x}} \\
+    &=\frac{3\tan{x}-\tan^3x+\tan{x}-3\tan^3x}{1-3\tan^2x-3\tan^2x+\tan^4x} \\
+    &=\frac{4\tan{x}-4\tan^3x}{1-6\tan^2x+\tan^4x}
+\end{align*}
+\end{solution}
+Looking at the pattern, it is evident that $a_{2023}=\boxed{-1}$
+\end{document}
+
+

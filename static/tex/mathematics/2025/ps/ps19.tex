@@ -1,0 +1,102 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, quotes, shapes.geometric, decorations.pathreplacing}
+\usepackage{tkz-euclide}
+\usepackage[inline]{asymptote}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Problem Set 19},
+    pdfpagemode=FullScreen,
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\pagenumbering{gobble}
+\usepackage{enumitem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+\newcommand{\verteq}{\rotatebox{90}{$\;\;=\;\;$}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\newcommand{\triangled}[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=3, draw, inner sep=0.2pt] (char) {#1};}}
+
+\title{Problem Set 19}
+\author{Enoch Yu}
+\date{June 2025}
+
+\begin{document}
+
+\section*{2021 Fall AMC 12A Problem 16}
+An organization has $30$ employees, $20$ of whom have a brand A computer while the other $10$ have a brand B computer. For security, the computers can only be connected to each other and only by cables. The cables can only connect a brand A computer to a brand B computer. Employees can communicate with each other if their computers are directly connected by a cable or by relaying messages through a series of connected computers. Initially, no computer is connected to any other. A technician arbitrarily selects one computer of each brand and installs a cable between them, provided there is not already a cable between that pair. The technician stops once every employee can communicate with each other. What is the maximum possible number of cables used?
+\\\\
+$\textbf{(A)}\ 190  \qquad\textbf{(B)}\  191 \qquad\textbf{(C)}\  192 \qquad\textbf{(D)}\  195 \qquad\textbf{(E)}\ 196$
+\begin{solution}
+\\\\
+\textbf{Key Word} Worst Case Scenario
+\\\\
+The worst case scenario would be achieved when all except one computer are connected. Therefore, by isolating a brand A computer, $19 \cdot 10 + 1 = \boxed{\textbf{(B)}\  191}$.
+\end{solution}
+
+\section*{2021 Fall AMC 12A Problem 18}
+Each of $20$ balls is tossed independently and at random into one of $5$ bins. Let $p$ be the probability that some bin ends up with $3$ balls, another with $5$ balls, and the other three with $4$ balls each. Let $q$ be the probability that every bin ends up with $4$ balls. What is $\frac{p}{q}$?
+\\\\
+$\textbf{(A)}\ 1 \qquad\textbf{(B)}\  4 \qquad\textbf{(C)}\  8 \qquad\textbf{(D)}\  12 \qquad\textbf{(E)}\ 16$
+\begin{solution}
+\\\\
+\textbf{Key Word} Counting Strategy
+\\\\
+With alignments of balls and bins, the following equations could be obtained.
+\begin{align*}
+    p &= \frac{({}_{20}C_3 + {}_{17}C_5 + {}_{12}C_4 + {}_8C_4 + {}_4C_4) \cdot \frac{5!}{3!}}{5^{20}} \\
+    q &= \frac{({}_{20}C_4 + {}_{16}C_4 + {}_{12}C_4 + {}_8C_4 + {}_4C_4) \cdot \frac{5!}{5!}}{5^{20}}
+    \\\\
+    \therefore \frac{p}{q}
+    &= \frac{\frac{({}_{20}C_3 + {}_{17}C_5 + {}_{12}C_4 + {}_8C_4 + {}_4C_4) \cdot \frac{5!}{3!}}{5^{20}}}{\frac{({}_{20}C_4 + {}_{16}C_4 + {}_{12}C_4 + {}_8C_4 + {}_4C_4) \cdot \frac{5!}{5!}}{5^{20}}} = \frac{({}_{20}C_3 + {}_{17}C_5 + {}_{12}C_4 + {}_8C_4 + {}_4C_4) \cdot \frac{5!}{3!}}{({}_{20}C_4 + {}_{16}C_4 + {}_{12}C_4 + {}_8C_4 + {}_4C_4)} \\
+    &= \frac{\frac{20!}{3!5!4!4!4!} \cdot \frac{5!}{3!}}{\frac{20!}{4!4!4!4!4!}} = \frac{4!4!4!4!4!5!}{3!5!4!4!4!3!} = \frac{4!4!}{3!3!} \\
+    &= \boxed{\textbf{(E)}\ 16}
+\end{align*}
+\end{solution}
+
+\newpage
+\section*{2021 Fall AMC 12B Problem 13}
+Let $c = \frac{2\pi}{11}.$ What is the value of
+\[
+\frac{\sin 3c \cdot \sin 6c \cdot \sin 9c \cdot \sin 12c \cdot \sin 15c}{\sin c \cdot \sin 2c \cdot \sin 3c \cdot \sin 4c \cdot \sin 5c}?
+\]
+\\\\
+$\textbf{(A)}\ {-}1 \qquad\textbf{(B)}\ {-}\frac{\sqrt{11}}{5} \qquad\textbf{(C)}\ \frac{\sqrt{11}}{5} \qquad\textbf{(D)}\ \frac{10}{11} \qquad\textbf{(E)}\ 1$
+\begin{solution}
+\\\\
+\textbf{Key Word} Properties of Trigonometric Functions
+\\\\
+First and foremost, $\sin\theta = \sin(\pi - \theta) = \sin(\theta + 2\pi)$ is proven to be true. Moreover, knowing the convention of AMC, $c$ could be substituted first.
+\begin{align*}
+\frac{\sin3c \cdot \sin6c \cdot \sin9c \cdot \sin12c \cdot \sin15c}{\sin{c} \cdot \sin2c \cdot \sin3c \cdot \sin4c \cdot \sin5c}
+&= \frac{\sin\frac{6\pi}{11} \cdot \sin\frac{12\pi}{11} \cdot \sin\frac{18\pi}{11} \cdot \sin\frac{24\pi}{11} \cdot \sin\frac{30\pi}{11}}{\sin\frac{2\pi}{11} \cdot \sin\frac{4\pi}{11} \cdot \sin\frac{6\pi}{11} \cdot \sin\frac{8\pi}{11} \cdot \sin\frac{10\pi}{11}} \\[0.8em]
+&= \frac{\sin\frac{6\pi}{11}}{\sin\frac{6\pi}{11}} \cdot \frac{\sin\frac{12\pi}{11}}{\sin\frac{10\pi}{11}} \cdot \frac{\sin\frac{18\pi}{11}}{\sin\frac{4\pi}{11}} \cdot \frac{\sin\frac{24\pi}{11}}{\sin\frac{2\pi}{11}} \cdot \frac{\sin\frac{30\pi}{11}}{\sin\frac{8\pi}{11}} \\[0.8em]
+&= \frac{1}{1} \cdot \frac{-1}{1} \cdot \frac{-1}{1} \cdot \frac{1}{1} \cdot \frac{1}{1} \\[0.8em]
+&= \boxed{\textbf{(E)}\ 1}
+\end{align*}
+\end{solution}
+
+\end{document}

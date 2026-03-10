@@ -1,0 +1,377 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{gensymb}
+
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{tikz}
+\usetikzlibrary{calc, positioning}
+\usepackage{float}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Problem Set 1},
+    pdfpagemode=FullScreen,
+}
+\urlstyle{same}
+\usepackage{xcolor}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+\pagenumbering{gobble}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+
+\title{Problem Set 1}
+\author{Enoch Yu}
+\date{April 2025}
+
+\begin{document}
+
+% Problem 16
+\section*{2023 AMC 12A Problem 16}
+Consider the set of complex numbers $z$ satisfying $|1+z+z^{2}|=4$. The maximum value of the imaginary part of $z$ can be written in the form $\frac{\sqrt{m}}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$?
+\\\\
+$\textbf{(A)}~20\qquad\textbf{(B)}~21\qquad\textbf{(C)}~22\qquad\textbf{(D)}~23\qquad\textbf{(E)}~24$
+
+% Solution
+\begin{solution}
+\\\\
+\textbf{Key Word} Separation of Cases, Cubic Equations
+\\\\
+What is the first thing that comes to your mind when you see $z^2+z+1$? $\Rightarrow$ $(z-1)(z^2+z+1)=z^3-1$
+\\\\
+Complex numbers $z$ that satisfies $|1+z+z^{2}|=4$ either comply to $1+z+z^{2}=4$ or $1+z+z^{2}=-4$. In another words, complex numbers $z$ that satisfy $(z-1)(z^2+z+1)=4(z-1)$ or $(z-1)(z^2+z+1)=-4(z-1)$ corresponds to complex numbers $z$ that satisfies $|1+z+z^{2}|=4$.
+\subsection*{Case I: $(z-1)(z^2+z+1)=4(z-1)$}
+$(z-1)(z^2+z+1)=4(z-1)$ could be rewritten as $z^3-1=4(z-1)$.
+\[
+z^3-4z+3=0
+\]
+By substituting 1 for $z$ and using synthetic division, it is evident that $z^3-4z+3=(z-1)(z^2+z-3)=0$.
+\[
+z=1 \text{ or } z=\frac{-1\pm\sqrt{13}}{2}
+\]
+
+\subsection*{Case II: $(z-1)(z^2+z+1)=-4(z-1)$}
+$(z-1)(z^2+z+1)=-4(z-1)$ could be rewritten as $z^3-1=-4(z-1)$.
+\[
+z^3+4z-5=0
+\]
+By substituting 1 for $z$ and using synthetic division, it is evident that $z^3+4z-5=(z-1)(z^2+z+5)=0$.
+\[
+z=1 \text{ or } z=\frac{-1\pm\sqrt{-19}}{2}
+\]
+
+\subsection*{Determining the Maximum Value of the Imaginary Part of $z$}
+It is important to note the 1 cannot be a value for $z$ because while multiplying $(z-1)$ to both sides, 1 became a solution for $z$. Therefore, four values for possible $z$ are $\frac{-1\pm\sqrt{13}}{2} \text{ and } \frac{-1\pm\sqrt{-19}}{2}$.
+\\\\
+Because $m$ and $n$ are positive integers, the only possible value for $m+n$ is $19+2$, or 21.
+\end{solution}
+\textbf{Answer} (B) 21
+\\\\
+New Solution Added to \href{https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_16}{AOPS}!!
+
+\newpage
+% Problem 17
+\section*{2023 AMC 12A Problem 17}
+Flora the frog starts at $0$ on the number line and makes a sequence of jumps to the right. In any one jump, independent of previous jumps, Flora leaps a positive integer distance $m$ with probability $\frac{1}{2^m}$. What is the probability that Flora will eventually land at $10$?
+\\\\
+$\textbf{(A) } \frac{5}{512} \qquad \textbf{(B) } \frac{45}{1024} \qquad \textbf{(C) } \frac{127}{1024} \qquad \textbf{(D) } \frac{511}{1024} \qquad \textbf{(E) } \frac{1}{2}$
+
+% Solution
+\begin{solution}
+\\\\
+\textbf{Key Word} Stars and Bars
+\\\\
+If length 10 is divide into to segments with  length of $a$ and $b$, the probability is $\frac{1}{2^a2^b}=\frac{1}{2^{a+b}}=\frac{1}{2^{10}}$. Similar method may be utilized for probabilities in which the length 10 is divided into $3, 4, \dots,9 \text{ and } 10$ segments. In another words, each case has a probability of $\frac{1}{2^{10}}$ to occur. Thus, only the number of cases in which length 10 is divided is needed.
+\\\\
+${}_9C_0$ is the number of possible cases in which length 10 is divided into 1 segments using Stars and Bars. \\
+${}_9C_1$ is the number of possible cases in which length 10 is divided into 2 segments using Stars and Bars. \\
+$\dots$ \\
+${}_9C_9$ is the number of possible cases in which length 10 is divided into 10 segments using Stars and Bars.
+\\\\
+\[
+\frac{1}{2^{10}}\cdot({}_9C_0+{}_9C_1+\dots+{}_9C_8+{}_9C_9)=\frac{1}{2^{10}}\cdot2^9=\frac{1}{2}
+\]
+\end{solution}
+\textbf{Answer} (E) $\frac{1}{2}$
+
+\section*{2023 AMC 12A Problem 23}
+How many ordered pairs of positive real numbers $(a,b)$ satisfy the equation
+\[(1+2a)(2+2b)(2a+b) = 32ab?\]
+$\textbf{(A) }0\qquad\textbf{(B) }1\qquad\textbf{(C) }2\qquad\textbf{(D) }3\qquad\textbf{(E) }\text{an infinite number}$
+
+% Solution
+\begin{solution}
+\\\\
+\textbf{Key Word} AM-GM Inequality
+\\\\
+Because $a$ and $b$ are positive numbers, AM-GM inequality could be used.
+\begin{align*}
+    1+2a&\ge2\sqrt{2a} \\
+    2+2b&\ge2\sqrt{4b} \\
+    2a+b&\ge2\sqrt{2ab}
+\end{align*}
+The inequality may be combined.
+\[
+(1+2a)(2+2b)(2a+b)\ge32ab
+\]
+$(1+2a)(2+2b)(2a+b)$ is minimum when each factors are minimum. Using the equality condition for AM-GM inequality, $1=2a$, $2=2b$ and $2a=b$ must be true. In another words, $1=2a=b$ provides only one possible case.
+\end{solution}
+\textbf{Answer} (B) 1
+
+\newpage
+% Problem 18
+\section*{2023 AMC 12A Problem 18}
+Circle $C_1$ and $C_2$ each have radius $1$, and the distance between their centers is $\frac{1}{2}$. Circle $C_3$ is the largest circle internally tangent to both $C_1$ and $C_2$. Circle $C_4$ is internally tangent to both $C_1$ and $C_2$ and externally tangent to $C_3$. What is the radius of $C_4$?
+
+\begin{center}
+\begin{asy}
+size(10cm);
+draw(circle((0,0),0.75));
+draw(circle((-0.25,0),1));
+draw(circle((0.25,0),1));
+draw(circle((0,6/7),3/28));
+
+pair
+A = (0,0),
+B = (-0.25,0),
+C = (0.25,0),
+D = (0,6/7),
+E = (-0.95710678118, 0.70710678118),
+F = (0.95710678118, -0.70710678118);
+
+dot(B^^C);
+draw(B--E, dashed);
+draw(C--F, dashed);
+draw(B--C);
+
+label("$C_4$", D);
+label("$C_1$", (-1.375, 0));
+label("$C_2$", (1.375,0));
+label("$\frac{1}{2}$", (0, -.125));
+label("$C_3$", (-0.4, -0.4));
+label("$1$", (-.85, 0.70));
+label("$1$", (.85, -.7));
+
+markscalefactor=0.005;
+\end{asy}
+\end{center}
+
+\noindent
+$\textbf{(A) } \frac{1}{14} \qquad \textbf{(B) } \frac{1}{12} \qquad \textbf{(C) } \frac{1}{10} \qquad \textbf{(D) } \frac{3}{28} \qquad \textbf{(E) } \frac{1}{9}$
+
+% Solution
+\begin{solution}
+\\\\
+\textbf{Key Word} Pythagorean Theorem
+\\\\
+Because circles $C_1$ and $C_2$ are identical, the depicted lengths and the radius of circle $C_3$ could be computed 
+\begin{center}
+\begin{asy}
+size(10cm);
+draw(circle((0,0),0.75));
+draw(circle((-0.25,0),1));
+draw(circle((0.25,0),1));
+draw(circle((0,6/7),3/28));
+
+pair
+A = (0,0),
+B = (-0.25,0),
+C = (0.25,0),
+D = (0,6/7),
+E = (-0.95710678118, 0.70710678118),
+F = (0.95710678118, -0.70710678118),
+G = (0.75, 0),
+H = (1.25, 0);
+
+dot(B^^C^^D);
+draw(B--E, dashed);
+draw(C--F, dashed);
+draw(B--C);
+draw(C--G, red);
+draw(G--H, blue);
+draw(A--D, green);
+draw(B--D, green);
+draw((0.08,0)--(0.08, 0.08)--(0,0.08));
+
+label("$C_4$", D);
+label("$C_1$", (-1.375, 0));
+label("$C_2$", (1.375,0));
+label("$\frac{1}{4}$", (-0.125, -.125));
+label("$C_3$", (-0.4, -0.4));
+label("$1$", (-.85, 0.70));
+label("$1$", (.85, -.7));
+label("$\frac{1}{2}$", (0.5, -.125));
+label("$\frac{1}{2}$", (1, -.125));
+
+markscalefactor=0.005;
+\end{asy}
+\end{center}
+Let $r$ be the radius of circle $C_4$.
+By Pythagorean theorem, the following equation is true.
+\[
+(1-r)^2=\left(\frac{1}{4}\right)^2+\left(r+\frac{3}{4}\right)^2
+\]
+Therefore, the length of the radius of circle $C_4$ is $\frac{3}{28}$.
+\end{solution}
+\textbf{Answer} (D) $\frac{3}{28}$
+
+\newpage
+% Problem 20
+\section*{2023 AMC 12A Problem 20}
+Rows 1, 2, 3, 4, and 5 of a triangular array of integers are shown below:
+
+\begin{center}
+\begin{asy}
+size(4.5cm);
+
+label("$1$", (0,0));
+label("$1$", (-0.5,-2/3));
+label("$1$", (0.5,-2/3));
+label("$1$", (-1,-4/3));
+label("$3$", (0,-4/3));
+label("$1$", (1,-4/3));
+label("$1$", (-1.5,-2));
+label("$5$", (-0.5,-2));
+label("$5$", (0.5,-2));
+label("$1$", (1.5,-2));
+label("$1$", (-2,-8/3));
+label("$7$", (-1,-8/3));
+label("$11$", (0,-8/3));
+label("$7$", (1,-8/3));
+label("$1$", (2,-8/3));
+\end{asy}
+\end{center}
+
+\noindent
+Each row after the first row is formed by placing a 1 at each end of the row, and each interior entry is 1 greater than the sum of the two numbers diagonally above it in the previous row. What is the units digit of the sum of the 2023 numbers in the 2023rd row?
+\\\\
+$\textbf{(A) }1\qquad\textbf{(B) }3\qquad\textbf{(C) }5\qquad\textbf{(D) }7\qquad\textbf{(E) }9$
+
+% Solution
+\begin{solution}
+\\\\
+\textbf{Key Word} Newton's Little Formula, Sum of Numbers in One Row in Pascal's Triangle
+\\\\
+The triangle provided by the question may be rewritten with Pascal's Triangle being the starting point.
+
+\begin{center}
+\begin{asy}
+usepackage("color");
+texpreamble("\usepackage{color}");
+
+size(6cm); // Reduced from 8cm
+
+// Reduced spacing
+real dx = 1.2;
+real dy = 0.6;
+
+// Level 0
+label(Label("$1$", align=Center), (0, 0));
+
+// Level 1
+label(Label("$1$", align=Center), (-dx/2, -dy));
+label(Label("$1$", align=Center), ( dx/2, -dy));
+
+// Level 2
+label(Label("$1$", align=Center), (-dx, -2*dy));
+label(Label("$2+\textcolor{red}{1}$", align=Center), (0, -2*dy));
+label(Label("$1$", align=Center), (dx, -2*dy));
+
+// Level 3
+label(Label("$1$", align=Center), (-1.5*dx, -3*dy));
+label(Label("$3+\textcolor{red}{2}$", align=Center), (-0.5*dx, -3*dy));
+label(Label("$3+\textcolor{red}{2}$", align=Center), (0.5*dx, -3*dy));
+label(Label("$1$", align=Center), (1.5*dx, -3*dy));
+
+// Level 4
+label(Label("$1$", align=Center), (-2*dx, -4*dy));
+label(Label("$4+\textcolor{red}{3}$", align=Center), (-dx, -4*dy));
+label(Label("$4+\textcolor{red}{5}$", align=Center), (0, -4*dy));
+label(Label("$4+\textcolor{red}{3}$", align=Center), (dx, -4*dy));
+label(Label("$1$", align=Center), (2*dx, -4*dy));
+
+label(Label("$\vdots$", align=Center), (0, -5*dy));
+
+\end{asy}
+\end{center}
+
+\noindent
+The numbers in Pascal's Triangle could be written with combinations. Moreover, the following equation is true.
+\[
+\sum_{k=0}^{n}{}_nC_k=2^n
+\]
+Therefore, the sum of every number in $n^{th}$ row of a Pascal's Triangle is $2^{n-1}$.
+\\\\
+Another triangle with the red colored number could be written to evaluate the sum of the red numbers in each row.
+
+\begin{center}
+\begin{asy}
+usepackage("color");
+texpreamble("\usepackage{color}");
+
+size(2.5cm);
+
+real dx = 0.1;  // Reduced horizontal spacing
+real dy = 0.08;  // Reduced vertical spacing
+
+// Row 0
+label("$\textcolor{red}{1}$", (0, 0));
+
+// Row 1
+label("$\textcolor{red}{2}$", (-dx/2, -dy));
+label("$\textcolor{red}{2}$", ( dx/2, -dy));
+
+// Row 2
+label("$\textcolor{red}{3}$", (-dx,   -2*dy));
+label("$\textcolor{red}{5}$", ( 0,   -2*dy));
+label("$\textcolor{red}{3}$", ( dx,   -2*dy));
+
+// Continuation (vertical dots)
+label("$\vdots$", (0, -3*dy));
+\end{asy}
+\end{center}
+The sum of numbers in each line could be investigated.
+\[
+\begin{array}{c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c@{\quad}c}
+1 &   & 4 &   & 11 &    & 26 &    & 53 & \dots \\
+  & 3 &   & 7 &    & 15 &    & 27 & \dots   &  \\
+  &   & 4 &   & 8  &    & 12 & \dots   &    &  \\ 
+  &   &   & 4 &    & 4  & \dots   &    &    &  \\
+\end{array}
+\]
+Using Newton's Little Formula, it is evident that the following equation is true.
+\[
+a_n=1\cdot{}_{n-1}C_0+3\cdot{}_{n-1}C_1+4\cdot{}_{n-1}C_2+4\cdot{}_{n-1}C_3
+\]
+With all the tools, the last digit, or the remainder when divided by 10, of the sum of the numbers in the 2023rd row may be computed. Let $x$ be the last digit. Moreover,  $a_{2020}$ is equivalent to the sum of red numbers in 2023rd row of the original triangle.
+\begin{align*}
+2^{2020}+1\cdot{}_{2020}C_0+3\cdot{}_{2020}C_1+4\cdot{}_{2020}C_2+4\cdot{}_{2020}C_3 &\equiv x\pmod{10} \\
+&\equiv 2^{2022}+1+3\cdot2020+2\cdot2020\cdot2019 \\
+&\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }+2\cdot2020\cdot673\cdot2018 \pmod{10} \\
+&=2^{2022}+1 \pmod{10} \\
+&=4+1 \pmod{10} \\
+&=5 \pmod{10}
+\end{align*}
+
+\end{solution}
+\textbf{Answer} (C) 5
+\\\\
+New Solution Added to \href{https://artofproblemsolving.com/wiki/index.php/2023_AMC_12A_Problems/Problem_20}{AOPS}!!
+
+\end{document}
