@@ -2,8 +2,11 @@ baseURL = 'https://archive.enochyu.com/'
 languageCode = 'en-us'
 title = 'Enoch Yu - Documents'
 
+enableRobotsTXT = true
+
 [params]
   author = "Enoch Yu"
+  favicon = "/favicon/favicon.ico"
 
 [params.social]
   website = "https://enochyu.com/"
