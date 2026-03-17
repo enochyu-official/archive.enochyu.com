@@ -72,9 +72,18 @@
     document in PDF!!
     </p>
   </div>
+  <br>
+  <br>
+  <div class="NoHTML-Preview">
+  {{ range first 1 (where .Params.links "label" "PDF") }}
+    <iframe src="{{ .url | absURL }}"></iframe>
+  {{ end }}
+  </div>
+
   {{ end }}
   {{ .Content }}
   </div>
+  
 
   {{ if .TableOfContents }}
   <aside class="toc-sidebar">

@@ -145,6 +145,10 @@
 }
 
 @media (max-width: 1023px) {
+  .toc-left {
+    display: none;
+  }
+
   .toc-sidebar-right {
     width: 100%;
     position: static;
@@ -268,6 +272,33 @@
   font-weight: 400;
 }
 
+.NoHTML-Preview {
+  display: flex;
+  justify-content: center;
+}
+
+.NoHTML-Preview iframe {
+  width: 70%;
+  min-height: 800px;
+}
+
+@media (max-width: 1023px) {
+  .error-page {
+    margin-top: 1rem;
+    width: 90vw;
+  }
+
+  .NoHTML-Preview {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+  }
+
+  .NoHTML-Preview iframe {
+    width: 100%;
+    min-height: 500px;
+  }
+}
 
 
 pre code.hljs {
@@ -284,3 +315,4 @@ pre code {
   -ms-user-select: none;
   user-select: none;
 }
+
