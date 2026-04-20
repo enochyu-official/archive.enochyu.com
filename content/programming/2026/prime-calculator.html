@@ -1,0 +1,93 @@
++++
+title = "Prime Factor Calculator"
+layout = "single"
+date = 2026-03-11
+categories = [ "Primitive" ]
+featured = false
+
+[[links]]
+label = "HTML"
+url = "programming/2026/prime-calculator/"
+[[links]]
+label = "TXT"
+url = "txt/programming/2026/prime-calculator.txt"
++++
+
+<section class="section-toc">
+<aside class="toc-sidebar-right">
+  <div class="toc-right">
+    <div class="toc-title">Table of Contents</div>
+    <nav>
+      <ul>
+        <li><a href="#demonstration">Demonstration</a></li>
+        <li><a href="#source-code">Source Code</a></li>
+      </ul>
+    </nav>
+  </div>
+</aside>  
+
+
+<div class="page-content">
+<h2 id="demonstration">Demonstration</h2>
+<pre><code class="bash">Enter n: 1234567890
+
+2
+3^2
+5
+3607
+3803
+</code></pre>
+<h2 id="source-code">Source Code</h2>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+
+long long n;
+
+void primeCalculator() {
+    int expo = 0;
+
+    // Even Prime
+    while (n % 2 == 0) {
+        n /= 2;
+        expo++;
+    }
+    if (expo &gt; 1) {
+        std::cout &lt;&lt; "2^" &lt;&lt; expo &lt;&lt; std::endl;
+    } else if (expo == 1) {
+        std::cout &lt;&lt; "2\n";
+    }
+
+    // Odd Prime &lt; Square Root of "n"
+    for (long long i = 3; i*i &lt;= n; i += 2) {
+        expo = 0;
+
+        while (n % i == 0) {
+            n /= i;
+            expo++;
+        }
+        if (expo &gt; 1) {
+            std::cout &lt;&lt; i &lt;&lt; "^" &lt;&lt; expo &lt;&lt; std::endl;
+        } else if (expo == 1) {
+            std::cout &lt;&lt; i &lt;&lt; std::endl;
+        }
+    }
+
+    // Last Prime
+    if (n &gt; 1) {
+        std::cout &lt;&lt; n &lt;&lt; std::endl;
+    }
+}
+
+int main() {
+    std::cout &lt;&lt; "Enter n: ";
+    std::cin &gt;&gt; n;
+    std::cout &lt;&lt; std::endl;
+
+    primeCalculator();
+
+    return 0;
+}
+</code></pre>
+</div>
+
+
+</section>

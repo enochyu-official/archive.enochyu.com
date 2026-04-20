@@ -1,0 +1,94 @@
++++
+title = "HackerRank Problem 6"
+layout = "single"
+date = 2026-03-11
+categories = [ "Primitive", "HackerRank" ]
+featured = false
+
+[[links]]
+label = "HTML"
+url = "programming/2026/hacker-rank/problem06"
+[[links]]
+label = "TXT"
+url = "txt/programming/2026/hacker-rank/problem06.txt"
++++
+
+<section class="section-toc">
+<aside class="toc-sidebar-right">
+  <div class="toc-right">
+    <div class="toc-title">Table of Contents</div>
+    <nav>
+      <ul>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#source-code">Source Code</a></li>
+        <li><a href="#demonstration">Demonstration</a></li>
+      </ul>
+    </nav>
+  </div>
+</aside>  
+
+
+<div class="page-content">
+<h2 id="problem">Problem: Functions</h2>
+<p>Link to the Challenge:</p>
+<a href="https://www.hackerrank.com/challenges/c-tutorial-functions/problem">
+Problem Statement</a>
+
+
+<h2 id="source-code">Source Code</h2>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+int a;
+int b;
+int c;
+int d;
+int maxValue = 0;
+
+void findMax() {
+    cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d;
+
+    if (a &gt; maxValue) {
+        maxValue = a;
+    } else {
+        maxValue = maxValue;
+    }
+
+    if (b &gt; maxValue) {
+        maxValue = b;
+    } else {
+        maxValue = maxValue;
+    }
+
+    if (c &gt; maxValue) {
+        maxValue = c;
+    } else {
+        maxValue = maxValue;
+    }
+
+    if (d &gt; maxValue) {
+        maxValue = d;
+    } else {
+        maxValue = maxValue;
+    }
+}
+
+int main() {
+    findMax();
+    cout &lt;&lt; maxValue &lt;&lt; endl;
+
+    return 0;
+}
+</code></pre>
+
+<h2 id="demonstration">Demonstration</h2>
+<pre><code class="bash">3
+4
+6
+5
+6
+</code></pre>
+</div>
+
+</section>
+

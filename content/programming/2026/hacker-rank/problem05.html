@@ -1,0 +1,92 @@
++++
+title = "HackerRank Problem 5"
+layout = "single"
+date = 2026-03-11
+categories = [ "Primitive", "HackerRank" ]
+featured = false
+
+[[links]]
+label = "HTML"
+url = "programming/2026/hacker-rank/problem05"
+[[links]]
+label = "TXT"
+url = "txt/programming/2026/hacker-rank/problem05.txt"
++++
+
+<section class="section-toc">
+<aside class="toc-sidebar-right">
+  <div class="toc-right">
+    <div class="toc-title">Table of Contents</div>
+    <nav>
+      <ul>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#source-code">Source Code</a></li>
+        <li><a href="#demonstration">Demonstration</a></li>
+      </ul>
+    </nav>
+  </div>
+</aside>  
+
+
+<div class="page-content">
+<h2 id="problem">Problem: For Loop</h2>
+<p>Link to the Challenge:</p>
+<a href="https://www.hackerrank.com/challenges/c-tutorial-for-loop/problem">
+Problem Statement</a>
+
+
+<h2 id="source-code">Source Code</h2>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+int a;
+int b;
+int n;
+
+int main() {
+    cin &gt;&gt; a &gt;&gt; b;
+
+    for (int i = a; i &lt;= b; i++) {
+        if (i == 1) {
+            cout &lt;&lt; "one" &lt;&lt; endl;
+        } else if (i == 2) {
+            cout &lt;&lt; "two" &lt;&lt; endl;
+        } else if (i == 3) {
+            cout &lt;&lt; "three" &lt;&lt; endl;
+        } else if (i == 4) {
+            cout &lt;&lt; "four" &lt;&lt; endl;
+        } else if (i == 5) {
+            cout &lt;&lt; "five" &lt;&lt; endl;
+        } else if (i == 6) {
+            cout &lt;&lt; "six" &lt;&lt; endl;
+        } else if (i == 7) {
+            cout &lt;&lt; "seven" &lt;&lt; endl;
+        } else if (i == 8) {
+            cout &lt;&lt; "eight" &lt;&lt; endl;
+        } else if (i == 9) {
+            cout &lt;&lt; "nine" &lt;&lt; endl;
+        } else if (i % 2 == 0) {
+            cout &lt;&lt; "even" &lt;&lt; endl;
+        } else {
+            cout &lt;&lt; "odd" &lt;&lt; endl;
+        }
+    }
+
+    return 0;
+}
+</code></pre>
+
+<h2 id="demonstration">Demonstration</h2>
+<pre><code class="bash">8
+11
+eight
+nine
+even
+odd
+</code></pre>
+</div>
+
+</section>
+
+
+

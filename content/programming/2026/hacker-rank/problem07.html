@@ -1,0 +1,78 @@
++++
+title = "HackerRank Problem 7"
+layout = "single"
+date = 2026-03-11
+categories = [ "Primitive", "HackerRank" ]
+featured = false
+
+[[links]]
+label = "HTML"
+url = "programming/2026/hacker-rank/problem07"
+[[links]]
+label = "TXT"
+url = "txt/programming/2026/hacker-rank/problem07.txt"
++++
+
+<section class="section-toc">
+<aside class="toc-sidebar-right">
+  <div class="toc-right">
+    <div class="toc-title">Table of Contents</div>
+    <nav>
+      <ul>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#source-code">Source Code</a></li>
+        <li><a href="#demonstration">Demonstration</a></li>
+      </ul>
+    </nav>
+  </div>
+</aside>  
+
+
+<div class="page-content">
+<h2 id="problem">Problem: Pointer</h2>
+<p>Link to the Challenge:</p>
+<a href="https://www.hackerrank.com/challenges/c-tutorial-pointer/problem">
+Problem Statement</a>
+
+
+<h2 id="source-code">Source Code</h2>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+int a;
+int b;
+int sum;
+int difference;
+
+void addSubtract() {
+    cin &gt;&gt; a &gt;&gt; b;
+
+    sum = a + b;
+    
+    if (a &gt;= b) {
+        difference = a - b;
+    } else {
+        difference = b - a;
+    }
+}
+
+int main() {
+    addSubtract();
+    cout &lt;&lt; sum &lt;&lt; endl;
+    cout &lt;&lt; difference &lt;&lt; endl;
+
+    return 0;
+}
+</code></pre>
+
+<h2 id="demonstration">Demonstration</h2>
+<pre><code class="bash">4
+5
+9
+1
+</code></pre>
+</div>
+
+</section>
+
+
