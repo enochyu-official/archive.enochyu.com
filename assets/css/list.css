@@ -33,6 +33,9 @@
 .filters {
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: -5em;
+  align-self: flex-start;
 }
 
 .filters-block {

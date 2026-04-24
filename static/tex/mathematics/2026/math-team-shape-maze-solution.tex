@@ -1,0 +1,402 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+
+\usepackage[margin=1in]{geometry}
+\setlength{\headsep}{10pt}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhead[L]{24 April 2026 Math Team Meeting}
+\fancyhead[R]{Shape Maze Solution}
+\fancyfoot[C]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\pagestyle{fancy}
+\usepackage{parskip}
+\usepackage{etoolbox}
+\usepackage{parskip}
+
+\usepackage{titlesec}
+\titleformat{\section}
+    {\normalfont\Large\bfseries}
+    {\textcolor{BrickRed}{\S}}
+    {0.5em}
+    {}
+
+\usepackage[unicode, draft=false]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+\usepackage{url}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{float}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+
+\newenvironment{solution}
+    {\begin{trivlist}\item[]{\bf Solution:}}
+    {\qed \end{trivlist}}
+\newenvironment{answer}
+    {\begin{trivlist}\item[]{\bf Answer:}}
+    {\end{trivlist}}
+
+
+\title{\textbf{Math Team Meeting Activity: Shape Maze Solution}}
+%\author{Enoch Yu}
+\author{Combination and Permutation}
+\date{24 April 2026}
+
+\begin{document}
+\section{
+Solutions for Farmer's Problems
+\footnotesize (Activity Available \href{link}{Here})
+}
+
+\subsection*{\textcolor{BrickRed}{Problem 1}}
+{\color {Gray}
+What is the number of possible words that can form
+with the letters H, A, V, E, N?
+
+$
+\textbf{(A) } 60  \qquad
+\textcolor{BrickRed}{\textbf{(B) } 120} \qquad
+\textbf{(C) } 25  \qquad
+\textbf{(D) } 5
+$
+}
+
+\begin{solution}
+Because the letters are all distinct and no
+replacement is allowed, the number of possible
+words from the five letters can be represented
+as $5! = 120$.
+\end{solution}
+
+
+\subsection*{\textcolor{BrickRed}{Problem 2}}
+{\color {Gray}
+Possible words with B, A, N, A, N, A??
+
+$
+\textbf{(A) } 36  \qquad
+\textbf{(B) } 120 \qquad
+\textbf{(C) } 720 \qquad
+\textcolor{BrickRed}{\textbf{(D) } 60}
+$
+}
+
+\begin{solution}
+Unlike the previous problem, not all letters are
+distinct. Therefore, the arrangements of the same
+letters must be divided from $6!$. Therefore,
+the total of $\frac{6!}{3!2!} = 60$ words can form
+with the letters.
+\end{solution}
+
+
+\subsection*{
+\textcolor{BrickRed}{Problem 3
+\footnotesize (2015 AMC 8 Problem 10)}}
+{\color {Gray}
+The notorious farmer needs some help with counting!
+How many integers between $1000$ and $9999$ have four
+distinct digits?
+
+$
+\textcolor{BrickRed}{\textbf{(A) } 4536} \qquad
+\textbf{(B) } 3024 \qquad
+\textbf{(C) } 5040 \qquad
+\textbf{(D) } 6480
+$
+}
+
+\begin{solution}
+Notice that there exists $9$ possible digits for
+the thousands place, from $1$ to $9$. Because the
+digits are distinct, there exists $10 - 1 = 9$
+possible numbers for the hundreds place. Similarly,
+$8$ and $7$ digits are possible are possible for
+the tens and ones place respectively. Therefore,
+there exists $9 \cdot 9 \cdot 8 \cdot 7 = 4536$
+four digit integers with four distinct digits.
+\end{solution}
+
+
+\subsection*{
+\textcolor{BrickRed}{Problem 4
+\footnotesize (2017 AMC 8 Problem 20)}}
+{\color {Gray}
+This time, the farmer wants to know the probability
+that a randomly chosen integer between $1000$ and $9999$
+is an odd integer whose digits are all distinct!
+
+$
+\textbf{(A) } \frac{107}{400} \qquad
+\textbf{(B) } \frac{14}{75}   \qquad
+\textcolor{BrickRed}{\textbf{(C) } \frac{56}{225}} \qquad
+\textbf{(D) } \frac{7}{25}
+$
+}
+
+\begin{solution}
+Note that only five digits $(1, 3, 5, 7, 9)$ are
+possible for the ones place. Similarly, there exists
+$9 - 1 = 8$ possible digits for the thousands place.
+Continuing, $10 - 2 = 8$ and $7$ numbers are possible
+for the hundreds and ones digits respectively.
+
+Therefore, the probability of choosing an odd integer
+between $1000$ and $9999$ with four distinct digits
+is $\frac{8 \cdot 8 \cdot 7 \cdot 5}{9 \cdot 10
+\cdot 10 \cdot 10} = \frac{56}{225}$.
+\end{solution}
+
+
+\subsection*{
+\textcolor{BrickRed}{Problem 5
+\footnotesize (1985 AJHSME Problem 15)}}
+{\color {Gray}
+The farm animals love the number $2$. Therefore, the
+farmer decided to count the number of integers between
+$100$ and $400$ that contains the number $2$. Can you
+help him with the counting?
+
+$
+\textbf{(A) } 100 \qquad
+\textcolor{BrickRed}{\textbf{(B) } 138} \qquad
+\textbf{(C) } 140 \qquad
+\textbf{(D) } 148
+$
+}
+
+\begin{solution}
+The cases can be divided by the hundreds digit.
+From $100$ to $199$, there exists $10 + 9 = 19$
+numbers with the number $2$. From $200$ to $299$,
+there exists $100$ numbers. Continuing from $300$
+to $399$, there exists $19$ numbers. Therefore,
+the total number of integers that contains the
+number $2$ from $100$ to $300$ is $19 + 100 + 19
+= 138$.
+\end{solution}
+
+
+\subsection*{\textcolor{BrickRed}{Problem 6}}
+{\color {Gray}
+Swanky the donkey had a beef with the farmer due to low
+compensation for work. Swanky, being a swanky donkey,
+offered a mathematical game to the farmer to demand
+an increase in ``celery''. The rule is simple. The
+farmer is given a fair coin where he flips the coin
+in every turn. If the coin lands on tails, the farmer
+moves one step to the left. Where as if the coin
+lands on heads, the farmer moves one step to the right.
+
+The farm has a fence at position $x = 0$ and a
+garden of nuggets at position $x = 10$. If the farmer
+ever hits the fence, he loses, and Swanky receives
+the raise. On the other hand, Swanky loses if the
+farmer reaches the nugget garden.
+
+What is the probability that the farmer loses if
+he starts from position $x = 4$?
+
+$
+\textbf{(A) } \frac{1}{2}  \qquad
+\textbf{(B) } \frac{1}{3} \qquad
+\textcolor{BrickRed}{\textbf{(C) } \frac{2}{5}} \qquad
+\textbf{(D) } \frac{9}{25}
+$
+}
+
+\begin{solution}
+Let $f(x)$ represent the probability that the farmer
+hits the fence from the position $x$. By definition,
+$f(0) = 1$ and $f(10) = 1$ satisfy. Moreover, because
+the coin is a fair coin, the following equation can
+be obtained.
+\[
+f(x) = \frac{1}{2} f(x - 1) + \frac{1}{2} f(x + 1)
+\]
+Rearranging the equation, the following recursive
+equation for $f(x)$ satisfy.
+\[
+f(x + 1) = 2 f(x) - f(x - 1)
+\]
+Different values can be substituted to notice the
+pattern of the formula.
+\begin{align*}
+    f(2) &= 2 f(1) - f(0) = 2 f(1) \\
+    f(3) &= 2 f(2) - f(1) = 3 f(1) \\
+    f(4) &= 2 f(3) - f(2) = 4 f(1)
+\end{align*}
+Consider the following lemma.
+\begin{lemma}
+$f(x) = x f(1)$ for all $x > 1$.
+\end{lemma}
+\begin{proof}
+Substitute $f(x) = x f(1)$ to the original recursive
+equation.
+\begin{align*}
+    (x + 1) f(1) &= 2x f(1) - (x - 1) f(1) \\
+    \therefore (x + 1) f(1) &= (x + 1) f(1)
+\end{align*}
+Because substituting the equation result in the
+same conclusion, $f(x) = x f(1)$ is a solution
+to the recursive formula.
+\end{proof}
+Because $f(10) = 1$ is true by definition, $f(10)
+= 10 f(1) = 1$. Therefore, $f(1) = \frac{1}{10}$.
+Continuing, $f(4) = 4 \cdot \frac{1}{10} =
+\frac{2}{5}$. In other words, the probability
+that the farmer loses is $\frac{2}{5}$.
+\end{solution}
+
+
+\subsection*{\textcolor{BrickRed}{Problem 7}}
+{\color {Gray}
+Hmmm... Swanky is still not satisfied with the
+probability. This time, Swanky decided to give the
+farmer an unfair coin with $p = 0.6$ as the probability
+of landing on tails. Swanky being swanky, he decided
+to move the garden of nuggets to $x = 1000$.
+
+If the farmer start from the position $x = 600$,
+what is the probability that Swanky receives the raise?
+
+$
+\textbf{(A) } 0.6 \qquad
+\textcolor{BrickRed}{\textbf{(B) } 1 - \epsilon} \qquad
+\textbf{(C) } 0.36 \qquad
+\textbf{(D) } 1
+$
+}
+
+\begin{solution}
+Let $f(x)$ represent the probability that Swanky
+wins from position $x$. By definition, $f(0) = 0$
+and the following equation satisfy.
+\[
+f(x) = p f(x+1) +
+    \left( 1 - p \right) f(x-1)
+\]
+Rearranging and shifting the relation, the following
+equation can be obtained.
+\[
+f(x) = \frac{ f(x-1) - f(x-2) }{p} + f(x-2)
+\]
+The equation can further be simplified by subtracting
+$f(x - 1)$ from both sides.
+\[
+f(x) - f(x - 1)
+= \frac{ f(x-1) - f(x-2) }{p} + f(x - 2) - f(x - 1)
+\]
+Continuing, let $g(x) = f(x) - f(x - 1)$ for $x > 1$.
+Therefore,
+\[
+g(x)
+= g(x - 1) \left( \frac{1}{p} - 1 \right)
+= \frac{ g(x - 1) }{p} - g(x - 1)
+= g(x - 1) \alpha
+\]
+is true where $\alpha = \frac{1}{p} - 1 = \frac{2}{3}$.
+Substituting different values for $g(x)$, the
+following equations are obtained.
+\begin{align*}
+    g(2) &= f(1) \alpha \\
+    g(3) &= f(2) \alpha = f(1) \alpha^2 \\
+    g(4) &= f(3) \alpha = f(1) \alpha^3
+\end{align*}
+Therefore, one could notice that
+$g(x) = f(1) \alpha^{x-1}$. Moreover, by definition
+of $g(x)$, the following equation satisfy.
+\[
+f(x)
+= f(x - 1) + g(x)
+= f(x - 1) + f(1) \alpha^{x-1}
+\]
+Similarly, substituting different values for $f(x)$
+provides the following patterns.
+\begin{align*}
+    f(2) &= f(1) + f(1) \alpha \\
+    f(3) &= f(2) + f(1) \alpha^2
+          = f(1) + f(1) \alpha + f(1) \alpha^2 \\
+    f(4) &= f(3) + f(1) \alpha^3
+          = f(1) + f(1) \alpha + f(1) \alpha^2
+                + f(1) \alpha^2
+\end{align*}
+Therefore, it is evident that the following equation
+is true for $f(x)$.
+\[
+f(x)
+= f(1) \left(
+    1 + \alpha + \alpha^2 + \cdots + \alpha^{x-1}
+\right)
+= f(1) \cdot \frac{1 - \alpha^x}{1 - \alpha}
+\]
+To further simplify the equation, the value of
+$f(1)$ could be represented in terms of $\alpha$
+and $x$.
+
+Note that because $f(1000) = 1$, $f(1000) =
+f(1) \cdot \frac{1 - \alpha^{1000}}{1 - \alpha}
+= 1$ and $f(1) = \frac{1 - \alpha}{1 - \alpha^{1000}}$.
+Thus, the following equation is true.
+\[
+f(x)
+= \frac{1 - \alpha}{1 - \alpha^{1000}}
+    \cdot \frac{1 - \alpha^x}{1 - \alpha}
+= \frac{ 1 - \alpha^x }{ 1 - \alpha^{1000} }
+= \frac{ \alpha^x - 1 }{ \alpha^{1000} - 1 }
+\]
+Therefore,
+$f(600) = \frac{ \alpha^{600} - 1}{ \alpha^{1000} - 1 }$
+is true where $\alpha = \frac{2}{3}$. Substituting the
+value, $f(600) \approx 1$. In other words, Swanky will
+almost always win the game.
+\end{solution}
+
+
+\subsection*{
+\textcolor{BrickRed}{Problem 8
+\footnotesize (1974 AHSME Problem 24)}}
+{\color {Gray}
+After losing the game with Swanky, the notorious
+farmer decided to study probability. Can you help
+him find the probability of rolling a fair die six
+times and getting at least a five at least five times?
+
+$
+\textbf{(A) } \frac{2}{729}  \qquad
+\textbf{(B) } \frac{3}{729}  \qquad
+\textbf{(C) } \frac{12}{729} \qquad
+\textcolor{BrickRed}{\textbf{(D) } \frac{13}{729}}
+$
+}
+
+\begin{solution}
+Notice that the probability of rolling at least a
+five is $\frac{2}{6} = \frac{1}{3}$. Therefore, the
+probability of rolling at least a five six times
+is $\left( \frac{1}{3} \right)^6 = \frac{1}{729}$.
+Similarly, the probability of rolling at least a five
+five times is $\frac{2}{3} \cdot
+\left( \frac{1}{3} \right)^6 \cdot 6 = \frac{12}{729}$.
+Therefore, the probability of rolling at least a five
+at least five times is $\frac{1}{729} + \frac{12}{729}
+= \frac{13}{729}$.
+\end{solution}
+\end{document}
+
