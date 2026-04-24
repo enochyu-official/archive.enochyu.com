@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>High School - Grade10 on Enoch Yu - Documents</title>
-    <link>http://localhost:1313/categories/high-school---grade10/</link>
+    <link>https://archive.enochyu.com/categories/high-school---grade10/</link>
     <description>Recent content in High School - Grade10 on Enoch Yu - Documents</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/high-school---grade10/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://archive.enochyu.com/categories/high-school---grade10/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Desargues&#39; Theorem</title>
-      <link>http://localhost:1313/mathematics/2025/desargues-theorem/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/desargues-theorem/</link>
       <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/desargues-theorem/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/desargues-theorem/</guid>
       <description></description>
     </item>
     <item>
       <title>2017 PUMaC Geometry A Problem 6</title>
-      <link>http://localhost:1313/mathematics/2025/2017-pumac-geometry-a-problem6/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/2017-pumac-geometry-a-problem6/</link>
       <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/2017-pumac-geometry-a-problem6/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/2017-pumac-geometry-a-problem6/</guid>
       <description></description>
     </item>
   </channel>

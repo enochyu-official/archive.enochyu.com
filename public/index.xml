@@ -2,416 +2,416 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enoch Yu - Documents</title>
-    <link>http://localhost:1313/</link>
+    <link>https://archive.enochyu.com/</link>
     <description>Recent content on Enoch Yu - Documents</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://archive.enochyu.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Math Team Meeting: Shape Maze</title>
-      <link>http://localhost:1313/teaching/2026/math-team-shape-maze/</link>
+      <link>https://archive.enochyu.com/teaching/2026/math-team-shape-maze/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/2026/math-team-shape-maze/</guid>
+      <guid>https://archive.enochyu.com/teaching/2026/math-team-shape-maze/</guid>
       <description></description>
     </item>
     <item>
       <title>Math Team Meeting: Shape Maze Solution</title>
-      <link>http://localhost:1313/mathematics/2026/math-team-shape-maze-solution/</link>
+      <link>https://archive.enochyu.com/mathematics/2026/math-team-shape-maze-solution/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2026/math-team-shape-maze-solution/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2026/math-team-shape-maze-solution/</guid>
       <description></description>
     </item>
     <item>
       <title>Coordinate Calculator</title>
-      <link>http://localhost:1313/programming/2026/coordinate-calculator/</link>
+      <link>https://archive.enochyu.com/programming/2026/coordinate-calculator/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/programming/2026/coordinate-calculator/</guid>
+      <guid>https://archive.enochyu.com/programming/2026/coordinate-calculator/</guid>
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;aside class=&#34;toc-sidebar-right&#34;&gt;&#xA;  &lt;div class=&#34;toc-right&#34;&gt;&#xA;    &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;&#xA;    &lt;nav&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/nav&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;  &#xA;&#xA;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;Enter n: 8&#xA;&#xA;    \coordinate (p1) at (0.0000000000, 1.0000000000);&#xA;    \coordinate (p2) at (0.7071067812, 0.7071067812);&#xA;    \coordinate (p3) at (1.0000000000, 0.0000000000);&#xA;    \coordinate (p4) at (0.7071067812, -0.7071067812);&#xA;    \coordinate (p5) at (0.0000000000, -1.0000000000);&#xA;    \coordinate (p6) at (-0.7071067812, -0.7071067812);&#xA;    \coordinate (p7) at (-1.0000000000, -0.0000000000);&#xA;    \coordinate (p8) at (-0.7071067812, 0.7071067812);&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;#include &amp;lt;vector&amp;gt;&#xA;#include &amp;lt;cmath&amp;gt;&#xA;#include &amp;lt;iomanip&amp;gt;&#xA;&#xA;struct Point {&#xA;    long double x, y;&#xA;};&#xA;&#xA;std::vector&amp;lt;Point&amp;gt; getCoordinate(int n) {&#xA;    std::vector&amp;lt;Point&amp;gt; points;&#xA;    const long double PI = std::acos(-1.0L);&#xA;    &#xA;    for (int i = 0; i &amp;lt; n; ++i) {&#xA;        long double angle = (PI / 2.0L) - (2.0L * PI * i / n);&#xA;        points.push_back({std::cos(angle), std::sin(angle)});&#xA;    }&#xA;&#xA;    return points;&#xA;}&#xA;&#xA;int main() {&#xA;    int n;&#xA;&#xA;    std::cout &amp;lt;&amp;lt; &#34;Enter n: &#34;;&#xA;    std::cin &amp;gt;&amp;lt; n;&#xA;&#xA;    auto points = getCoordinate(n);&#xA;&#xA;    std::cout &amp;lt;&amp;lt; std::endl;&#xA;    std::cout &amp;lt;&amp;lt; std::fixed &amp;lt;&amp;lt; std::setprecision(10);&#xA;    for (int i = 0; i &amp;lt; n; ++i) {&#xA;        std::cout &amp;lt;&amp;lt; &#34;    \\coordinate (p&#34; &amp;lt;&amp;lt; i + 1 &amp;lt;&amp;lt; &#34;) at (&#34; &#xA;                  &amp;lt;&amp;lt; points[i].x &amp;lt;&amp;lt; &#34;, &#34; &amp;lt;&amp;lt; points[i].y &amp;lt;&amp;lt; &#34;);&#34; &amp;lt;&amp;lt; std::endl;&#xA;    }&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
       <title>HackerRank Problem 1</title>
-      <link>http://localhost:1313/programming/2026/hacker-rank/problem01/</link>
+      <link>https://archive.enochyu.com/programming/2026/hacker-rank/problem01/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/programming/2026/hacker-rank/problem01/</guid>
+      <guid>https://archive.enochyu.com/programming/2026/hacker-rank/problem01/</guid>
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;aside class=&#34;toc-sidebar-right&#34;&gt;&#xA;  &lt;div class=&#34;toc-right&#34;&gt;&#xA;    &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;&#xA;    &lt;nav&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#problem&#34;&gt;Problem&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/nav&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;  &#xA;&#xA;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;problem&#34;&gt;Problem: Say &#34;Hello, World!&#34; With C++&lt;/h2&gt;&#xA;&lt;p&gt;Link to the Challenge:&lt;/p&gt;&#xA;&lt;a href=&#34;https://www.hackerrank.com/challenges/cpp-hello-world/problem&#34;&gt;&#xA;Problem Statement&lt;/a&gt;&#xA;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;using namespace std;&#xA;&#xA;int main() {&#xA;    cout &amp;lt;&amp;lt; &#34;Hello, World!\n&#34;;&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;Hello, World!&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
       <title>HackerRank Problem 2</title>
-      <link>http://localhost:1313/programming/2026/hacker-rank/problem02/</link>
+      <link>https://archive.enochyu.com/programming/2026/hacker-rank/problem02/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/programming/2026/hacker-rank/problem02/</guid>
+      <guid>https://archive.enochyu.com/programming/2026/hacker-rank/problem02/</guid>
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;aside class=&#34;toc-sidebar-right&#34;&gt;&#xA;  &lt;div class=&#34;toc-right&#34;&gt;&#xA;    &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;&#xA;    &lt;nav&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#problem&#34;&gt;Problem&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/nav&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;  &#xA;&#xA;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;problem&#34;&gt;Problem: Input and Output&lt;/h2&gt;&#xA;&lt;p&gt;Link to the Challenge:&lt;/p&gt;&#xA;&lt;a href=&#34;https://www.hackerrank.com/challenges/cpp-input-and-output/problem&#34;&gt;&#xA;Problem Statement&lt;/a&gt;&#xA;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;using namespace std;&#xA;&#xA;int a, b, c;&#xA;int sum;&#xA;&#xA;void additionOperator() {&#xA;    cin &amp;gt;&amp;gt; a &amp;gt;&amp;gt; b &amp;gt;&amp;gt; c;&#xA;&#xA;    sum = a + b + c;&#xA;}&#xA;&#xA;int main() {&#xA;   additionOperator();&#xA;   cout &amp;lt;&amp;lt; sum &amp;lt;&amp;lt; endl;&#xA;&#xA;   return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;1 2 7&#xA;10&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
       <title>HackerRank Problem 3</title>
-      <link>http://localhost:1313/programming/2026/hacker-rank/problem03/</link>
+      <link>https://archive.enochyu.com/programming/2026/hacker-rank/problem03/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/programming/2026/hacker-rank/problem03/</guid>
+      <guid>https://archive.enochyu.com/programming/2026/hacker-rank/problem03/</guid>
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;aside class=&#34;toc-sidebar-right&#34;&gt;&#xA;  &lt;div class=&#34;toc-right&#34;&gt;&#xA;    &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;&#xA;    &lt;nav&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#problem&#34;&gt;Problem&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/nav&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;  &#xA;&#xA;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;problem&#34;&gt;Problem: Basic Data Types&lt;/h2&gt;&#xA;&lt;p&gt;Link to the Challenge:&lt;/p&gt;&#xA;&lt;a href=&#34;https://www.hackerrank.com/challenges/c-tutorial-basic-data-types/problem&#34;&gt;&#xA;Problem Statement&lt;/a&gt;&#xA;&#xA;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;#include &amp;lt;iomanip&amp;gt;&#xA;using namespace std;&#xA;&#xA;int a;&#xA;long int b;&#xA;char c;&#xA;float d;&#xA;double e;&#xA;&#xA;void getInput() {&#xA;    cin &amp;gt;&amp;gt; a &amp;gt;&amp;gt; b &amp;gt;&amp;gt; c &amp;gt;&amp;gt; d &amp;gt;&amp;gt; e;&#xA;}&#xA;&#xA;int main() {&#xA;    getInput();&#xA;    cout &amp;lt;&amp;lt; a &amp;lt;&amp;lt; endl&#xA;         &amp;lt;&amp;lt; setprecision(10000) &amp;lt;&amp;lt; b &amp;lt;&amp;lt; endl&#xA;         &amp;lt;&amp;lt; c &amp;lt;&amp;lt; endl&#xA;         &amp;lt;&amp;lt; d &amp;lt;&amp;lt; endl&#xA;         &amp;lt;&amp;lt; setprecision(10000) &amp;lt;&amp;lt; e &amp;lt;&amp;lt; endl;&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;3 12345678912345 a 334.23 14049.30493&#xA;3&#xA;12345678912345&#xA;a&#xA;334.230010986328125&#xA;14049.304930000000240397639572620391845703125&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
       <title>HackerRank Problem 4</title>
-      <link>http://localhost:1313/programming/2026/hacker-rank/problem04/</link>
+      <link>https://archive.enochyu.com/programming/2026/hacker-rank/problem04/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/programming/2026/hacker-rank/problem04/</guid>
+      <guid>https://archive.enochyu.com/programming/2026/hacker-rank/problem04/</guid>
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;aside class=&#34;toc-sidebar-right&#34;&gt;&#xA;  &lt;div class=&#34;toc-right&#34;&gt;&#xA;    &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;&#xA;    &lt;nav&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#problem&#34;&gt;Problem&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/nav&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;  &#xA;&#xA;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;problem&#34;&gt;Problem: Conditional Statements&lt;/h2&gt;&#xA;&lt;p&gt;Link to the Challenge:&lt;/p&gt;&#xA;&lt;a href=&#34;https://www.hackerrank.com/challenges/c-tutorial-conditional-if-else/problem&#34;&gt;&#xA;Problem Statement&lt;/a&gt;&#xA;&#xA;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;using namespace std;&#xA;&#xA;int input;&#xA;&#xA;int main() {&#xA;    cin &amp;gt;&amp;gt; input;&#xA;&#xA;    if (input == 1) {&#xA;        cout &amp;lt;&amp;lt; &#34;one&#34;;&#xA;    } else if (input == 2) {&#xA;        cout &amp;lt;&amp;lt; &#34;two&#34;;&#xA;    } else if (input == 3) {&#xA;        cout &amp;lt;&amp;lt; &#34;three&#34;;&#xA;    } else if (input == 4) {&#xA;        cout &amp;lt;&amp;lt; &#34;four&#34;;&#xA;    } else if (input == 5) {&#xA;        cout &amp;lt;&amp;lt; &#34;five&#34;;&#xA;    } else if (input == 6) {&#xA;        cout &amp;lt;&amp;lt; &#34;six&#34;;&#xA;    } else if (input == 7) {&#xA;        cout &amp;lt;&amp;lt; &#34;seven&#34;;&#xA;    } else if (input == 8) {&#xA;        cout &amp;lt;&amp;lt; &#34;eight&#34;;&#xA;    } else if (input == 9) {&#xA;        cout &amp;lt;&amp;lt; &#34;nine&#34;;&#xA;    } else {&#xA;        cout &amp;lt;&amp;lt; &#34;Greater than 9&#34;;&#xA;    }&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;8&#xA;eight&#xA;&#xA;44&#xA;Greater than 9&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
       <title>HackerRank Problem 5</title>
-      <link>http://localhost:1313/programming/2026/hacker-rank/problem05/</link>
+      <link>https://archive.enochyu.com/programming/2026/hacker-rank/problem05/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/programming/2026/hacker-rank/problem05/</guid>
+      <guid>https://archive.enochyu.com/programming/2026/hacker-rank/problem05/</guid>
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;aside class=&#34;toc-sidebar-right&#34;&gt;&#xA;  &lt;div class=&#34;toc-right&#34;&gt;&#xA;    &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;&#xA;    &lt;nav&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#problem&#34;&gt;Problem&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/nav&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;  &#xA;&#xA;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;problem&#34;&gt;Problem: For Loop&lt;/h2&gt;&#xA;&lt;p&gt;Link to the Challenge:&lt;/p&gt;&#xA;&lt;a href=&#34;https://www.hackerrank.com/challenges/c-tutorial-for-loop/problem&#34;&gt;&#xA;Problem Statement&lt;/a&gt;&#xA;&#xA;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;using namespace std;&#xA;&#xA;int a;&#xA;int b;&#xA;int n;&#xA;&#xA;int main() {&#xA;    cin &amp;gt;&amp;gt; a &amp;gt;&amp;gt; b;&#xA;&#xA;    for (int i = a; i &amp;lt;= b; i++) {&#xA;        if (i == 1) {&#xA;            cout &amp;lt;&amp;lt; &#34;one&#34; &amp;lt;&amp;lt; endl;&#xA;        } else if (i == 2) {&#xA;            cout &amp;lt;&amp;lt; &#34;two&#34; &amp;lt;&amp;lt; endl;&#xA;        } else if (i == 3) {&#xA;            cout &amp;lt;&amp;lt; &#34;three&#34; &amp;lt;&amp;lt; endl;&#xA;        } else if (i == 4) {&#xA;            cout &amp;lt;&amp;lt; &#34;four&#34; &amp;lt;&amp;lt; endl;&#xA;        } else if (i == 5) {&#xA;            cout &amp;lt;&amp;lt; &#34;five&#34; &amp;lt;&amp;lt; endl;&#xA;        } else if (i == 6) {&#xA;            cout &amp;lt;&amp;lt; &#34;six&#34; &amp;lt;&amp;lt; endl;&#xA;        } else if (i == 7) {&#xA;            cout &amp;lt;&amp;lt; &#34;seven&#34; &amp;lt;&amp;lt; endl;&#xA;        } else if (i == 8) {&#xA;            cout &amp;lt;&amp;lt; &#34;eight&#34; &amp;lt;&amp;lt; endl;&#xA;        } else if (i == 9) {&#xA;            cout &amp;lt;&amp;lt; &#34;nine&#34; &amp;lt;&amp;lt; endl;&#xA;        } else if (i % 2 == 0) {&#xA;            cout &amp;lt;&amp;lt; &#34;even&#34; &amp;lt;&amp;lt; endl;&#xA;        } else {&#xA;            cout &amp;lt;&amp;lt; &#34;odd&#34; &amp;lt;&amp;lt; endl;&#xA;        }&#xA;    }&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;8&#xA;11&#xA;eight&#xA;nine&#xA;even&#xA;odd&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
       <title>HackerRank Problem 6</title>
-      <link>http://localhost:1313/programming/2026/hacker-rank/problem06/</link>
+      <link>https://archive.enochyu.com/programming/2026/hacker-rank/problem06/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/programming/2026/hacker-rank/problem06/</guid>
+      <guid>https://archive.enochyu.com/programming/2026/hacker-rank/problem06/</guid>
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;aside class=&#34;toc-sidebar-right&#34;&gt;&#xA;  &lt;div class=&#34;toc-right&#34;&gt;&#xA;    &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;&#xA;    &lt;nav&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#problem&#34;&gt;Problem&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/nav&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;  &#xA;&#xA;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;problem&#34;&gt;Problem: Functions&lt;/h2&gt;&#xA;&lt;p&gt;Link to the Challenge:&lt;/p&gt;&#xA;&lt;a href=&#34;https://www.hackerrank.com/challenges/c-tutorial-functions/problem&#34;&gt;&#xA;Problem Statement&lt;/a&gt;&#xA;&#xA;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;using namespace std;&#xA;&#xA;int a;&#xA;int b;&#xA;int c;&#xA;int d;&#xA;int maxValue = 0;&#xA;&#xA;void findMax() {&#xA;    cin &amp;gt;&amp;gt; a &amp;gt;&amp;gt; b &amp;gt;&amp;gt; c &amp;gt;&amp;gt; d;&#xA;&#xA;    if (a &amp;gt; maxValue) {&#xA;        maxValue = a;&#xA;    } else {&#xA;        maxValue = maxValue;&#xA;    }&#xA;&#xA;    if (b &amp;gt; maxValue) {&#xA;        maxValue = b;&#xA;    } else {&#xA;        maxValue = maxValue;&#xA;    }&#xA;&#xA;    if (c &amp;gt; maxValue) {&#xA;        maxValue = c;&#xA;    } else {&#xA;        maxValue = maxValue;&#xA;    }&#xA;&#xA;    if (d &amp;gt; maxValue) {&#xA;        maxValue = d;&#xA;    } else {&#xA;        maxValue = maxValue;&#xA;    }&#xA;}&#xA;&#xA;int main() {&#xA;    findMax();&#xA;    cout &amp;lt;&amp;lt; maxValue &amp;lt;&amp;lt; endl;&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;3&#xA;4&#xA;6&#xA;5&#xA;6&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
       <title>HackerRank Problem 7</title>
-      <link>http://localhost:1313/programming/2026/hacker-rank/problem07/</link>
+      <link>https://archive.enochyu.com/programming/2026/hacker-rank/problem07/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/programming/2026/hacker-rank/problem07/</guid>
+      <guid>https://archive.enochyu.com/programming/2026/hacker-rank/problem07/</guid>
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;aside class=&#34;toc-sidebar-right&#34;&gt;&#xA;  &lt;div class=&#34;toc-right&#34;&gt;&#xA;    &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;&#xA;    &lt;nav&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#problem&#34;&gt;Problem&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/nav&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;  &#xA;&#xA;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;problem&#34;&gt;Problem: Pointer&lt;/h2&gt;&#xA;&lt;p&gt;Link to the Challenge:&lt;/p&gt;&#xA;&lt;a href=&#34;https://www.hackerrank.com/challenges/c-tutorial-pointer/problem&#34;&gt;&#xA;Problem Statement&lt;/a&gt;&#xA;&#xA;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;using namespace std;&#xA;&#xA;int a;&#xA;int b;&#xA;int sum;&#xA;int difference;&#xA;&#xA;void addSubtract() {&#xA;    cin &amp;gt;&amp;gt; a &amp;gt;&amp;gt; b;&#xA;&#xA;    sum = a + b;&#xA;    &#xA;    if (a &amp;gt;= b) {&#xA;        difference = a - b;&#xA;    } else {&#xA;        difference = b - a;&#xA;    }&#xA;}&#xA;&#xA;int main() {&#xA;    addSubtract();&#xA;    cout &amp;lt;&amp;lt; sum &amp;lt;&amp;lt; endl;&#xA;    cout &amp;lt;&amp;lt; difference &amp;lt;&amp;lt; endl;&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;4&#xA;5&#xA;9&#xA;1&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
       <title>HackerRank Problem 8</title>
-      <link>http://localhost:1313/programming/2026/hacker-rank/problem08/</link>
+      <link>https://archive.enochyu.com/programming/2026/hacker-rank/problem08/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/programming/2026/hacker-rank/problem08/</guid>
+      <guid>https://archive.enochyu.com/programming/2026/hacker-rank/problem08/</guid>
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;aside class=&#34;toc-sidebar-right&#34;&gt;&#xA;  &lt;div class=&#34;toc-right&#34;&gt;&#xA;    &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;&#xA;    &lt;nav&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#problem&#34;&gt;Problem&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/nav&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;  &#xA;&#xA;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;problem&#34;&gt;Problem: Arrays Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Link to the Challenge:&lt;/p&gt;&#xA;&lt;a href=&#34;https://www.hackerrank.com/challenges/arrays-introduction/problem&#34;&gt;&#xA;Problem Statement&lt;/a&gt;&#xA;&#xA;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;using namespace std;&#xA;&#xA;int length;&#xA;&#xA;int main() {&#xA;    cin &amp;gt;&amp;gt; length;&#xA;&#xA;    int inputArray[length];&#xA;    int outputArray[length];&#xA;&#xA;    for (int i = 0; i &amp;lt; length; i++) {&#xA;        cin &amp;gt;&amp;gt; inputArray[i];&#xA;    }&#xA;&#xA;    for (int j = 0; j &amp;lt; length; j++) {&#xA;        outputArray[j] = inputArray[length - j - 1];&#xA;    }&#xA;&#xA;&#xA;    for (int k = 0; k &amp;lt; length; k++) {&#xA;        cout &amp;lt;&amp;lt; outputArray[k] &amp;lt;&amp;lt; &#34; &#34;;&#xA;    }&#xA;    cout &amp;lt;&amp;lt; endl;&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;4&#xA;1 4 3 2&#xA;2 3 4 1&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
       <title>HackerRank Problem 9</title>
-      <link>http://localhost:1313/programming/2026/hacker-rank/problem09/</link>
+      <link>https://archive.enochyu.com/programming/2026/hacker-rank/problem09/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/programming/2026/hacker-rank/problem09/</guid>
+      <guid>https://archive.enochyu.com/programming/2026/hacker-rank/problem09/</guid>
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;aside class=&#34;toc-sidebar-right&#34;&gt;&#xA;  &lt;div class=&#34;toc-right&#34;&gt;&#xA;    &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;&#xA;    &lt;nav&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#problem&#34;&gt;Problem&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/nav&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;  &#xA;&#xA;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;problem&#34;&gt;Problem: Variable Sized Arrays&lt;/h2&gt;&#xA;&lt;p&gt;Link to the Challenge:&lt;/p&gt;&#xA;&lt;a href=&#34;https://www.hackerrank.com/challenges/variable-sized-arrays/problem&#34;&gt;&#xA;Problem Statement&lt;/a&gt;&#xA;&#xA;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;#include &amp;lt;vector&amp;gt;&#xA;using namespace std;&#xA;&#xA;int n;&#xA;int q;&#xA;int k;&#xA;&#xA;vector&amp;lt;int&amp;gt; inputArray;&#xA;int userInput; &#xA;int countInput = 0;&#xA;vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; collectArray;&#xA;vector&amp;lt;int&amp;gt; collectAnswer;&#xA;&#xA;int arrNum;&#xA;int elemNum;&#xA;int elemValue;&#xA;&#xA;&#xA;void inputValues() {&#xA;    cin &amp;gt;&amp;gt; n &amp;gt;&amp;gt; q;&#xA;&#xA;    for (int i = 0; i &amp;lt; n; i++) {&#xA;        cin &amp;gt;&amp;gt; k;&#xA;&#xA;        while (countInput &amp;lt; k &amp;amp;&amp;amp; cin &amp;gt;&amp;gt; userInput) {&#xA;            inputArray.push_back(userInput);&#xA;            countInput++;&#xA;        }&#xA;&#xA;        collectArray.push_back(inputArray);&#xA;        inputArray.clear();&#xA;        countInput = 0;&#xA;    }&#xA;&#xA;    for (int j = 0; j &amp;lt; q; j++) {&#xA;        cin &amp;gt;&amp;gt; arrNum &amp;gt;&amp;gt; elemNum;&#xA;&#xA;        elemValue = collectArray[arrNum][elemNum];&#xA;        &#xA;        collectAnswer.push_back(elemValue);&#xA;    }&#xA;}&#xA;&#xA;int main() {&#xA;    inputValues();&#xA;&#xA;    for (int ans = 0; ans &amp;lt; q; ans++) {&#xA;        cout &amp;lt;&amp;lt; collectAnswer[ans] &amp;lt;&amp;lt; endl;&#xA;    }&#xA;&#xA;    return 0;&#xA;}&#xA;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;2 2&#xA;3 1 5 4&#xA;5 1 2 8 9 3&#xA;0 1&#xA;1 3&#xA;5&#xA;9&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
       <title>Prime Factor Calculator</title>
-      <link>http://localhost:1313/programming/2026/prime-calculator/</link>
+      <link>https://archive.enochyu.com/programming/2026/prime-calculator/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/programming/2026/prime-calculator/</guid>
+      <guid>https://archive.enochyu.com/programming/2026/prime-calculator/</guid>
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;aside class=&#34;toc-sidebar-right&#34;&gt;&#xA;  &lt;div class=&#34;toc-right&#34;&gt;&#xA;    &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;&#xA;    &lt;nav&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#demonstration&#34;&gt;Demonstration&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#source-code&#34;&gt;Source Code&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/nav&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/aside&gt;  &#xA;&#xA;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;Enter n: 1234567890&#xA;&#xA;2&#xA;3^2&#xA;5&#xA;3607&#xA;3803&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;&#xA;long long n;&#xA;&#xA;void primeCalculator() {&#xA;    int expo = 0;&#xA;&#xA;    // Even Prime&#xA;    while (n % 2 == 0) {&#xA;        n /= 2;&#xA;        expo++;&#xA;    }&#xA;    if (expo &amp;gt; 1) {&#xA;        std::cout &amp;lt;&amp;lt; &#34;2^&#34; &amp;lt;&amp;lt; expo &amp;lt;&amp;lt; std::endl;&#xA;    } else if (expo == 1) {&#xA;        std::cout &amp;lt;&amp;lt; &#34;2\n&#34;;&#xA;    }&#xA;&#xA;    // Odd Prime &amp;lt; Square Root of &#34;n&#34;&#xA;    for (long long i = 3; i*i &amp;lt;= n; i += 2) {&#xA;        expo = 0;&#xA;&#xA;        while (n % i == 0) {&#xA;            n /= i;&#xA;            expo++;&#xA;        }&#xA;        if (expo &amp;gt; 1) {&#xA;            std::cout &amp;lt;&amp;lt; i &amp;lt;&amp;lt; &#34;^&#34; &amp;lt;&amp;lt; expo &amp;lt;&amp;lt; std::endl;&#xA;        } else if (expo == 1) {&#xA;            std::cout &amp;lt;&amp;lt; i &amp;lt;&amp;lt; std::endl;&#xA;        }&#xA;    }&#xA;&#xA;    // Last Prime&#xA;    if (n &amp;gt; 1) {&#xA;        std::cout &amp;lt;&amp;lt; n &amp;lt;&amp;lt; std::endl;&#xA;    }&#xA;}&#xA;&#xA;int main() {&#xA;    std::cout &amp;lt;&amp;lt; &#34;Enter n: &#34;;&#xA;    std::cin &amp;gt;&amp;gt; n;&#xA;    std::cout &amp;lt;&amp;lt; std::endl;&#xA;&#xA;    primeCalculator();&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
       <title>Desargues&#39; Theorem</title>
-      <link>http://localhost:1313/mathematics/2025/desargues-theorem/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/desargues-theorem/</link>
       <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/desargues-theorem/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/desargues-theorem/</guid>
       <description></description>
     </item>
     <item>
       <title>2017 PUMaC Geometry A Problem 6</title>
-      <link>http://localhost:1313/mathematics/2025/2017-pumac-geometry-a-problem6/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/2017-pumac-geometry-a-problem6/</link>
       <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/2017-pumac-geometry-a-problem6/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/2017-pumac-geometry-a-problem6/</guid>
       <description></description>
     </item>
     <item>
       <title>2025 Free AMC 8 Class Problem Set 4</title>
-      <link>http://localhost:1313/teaching/2025/2025-free-amc8/ps4/</link>
+      <link>https://archive.enochyu.com/teaching/2025/2025-free-amc8/ps4/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/2025/2025-free-amc8/ps4/</guid>
+      <guid>https://archive.enochyu.com/teaching/2025/2025-free-amc8/ps4/</guid>
       <description></description>
     </item>
     <item>
       <title>2025 Free AMC 8 Class Problem Set 3</title>
-      <link>http://localhost:1313/teaching/2025/2025-free-amc8/ps3/</link>
+      <link>https://archive.enochyu.com/teaching/2025/2025-free-amc8/ps3/</link>
       <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/2025/2025-free-amc8/ps3/</guid>
+      <guid>https://archive.enochyu.com/teaching/2025/2025-free-amc8/ps3/</guid>
       <description></description>
     </item>
     <item>
       <title>2025 Free AMC 8 Class Problem Set 2</title>
-      <link>http://localhost:1313/teaching/2025/2025-free-amc8/ps2/</link>
+      <link>https://archive.enochyu.com/teaching/2025/2025-free-amc8/ps2/</link>
       <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/2025/2025-free-amc8/ps2/</guid>
+      <guid>https://archive.enochyu.com/teaching/2025/2025-free-amc8/ps2/</guid>
       <description></description>
     </item>
     <item>
       <title>2025 Free AMC 8 Class Problem Set 1</title>
-      <link>http://localhost:1313/teaching/2025/2025-free-amc8/ps1/</link>
+      <link>https://archive.enochyu.com/teaching/2025/2025-free-amc8/ps1/</link>
       <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/2025/2025-free-amc8/ps1/</guid>
+      <guid>https://archive.enochyu.com/teaching/2025/2025-free-amc8/ps1/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 38</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps38/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps38/</link>
       <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps38/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps38/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 37</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps37/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps37/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps37/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps37/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 36</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps36/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps36/</link>
       <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps36/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps36/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 35</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps35/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps35/</link>
       <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps35/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps35/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 34</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps34/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps34/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps34/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps34/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 33</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps33/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps33/</link>
       <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps33/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps33/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 32</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps32/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps32/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps32/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps32/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 31</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps31/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps31/</link>
       <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps31/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps31/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 30</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps30/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps30/</link>
       <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps30/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps30/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 29</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps29/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps29/</link>
       <pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps29/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps29/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 28</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps28/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps28/</link>
       <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps28/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps28/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 27</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps27/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps27/</link>
       <pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps27/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps27/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 26</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps26/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps26/</link>
       <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps26/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps26/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 25</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps25/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps25/</link>
       <pubDate>Tue, 24 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps25/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps25/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 24</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps24/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps24/</link>
       <pubDate>Sun, 22 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps24/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps24/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 23</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps23/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps23/</link>
       <pubDate>Thu, 19 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps23/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps23/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 22</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps22/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps22/</link>
       <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps22/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps22/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 21</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps21/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps21/</link>
       <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps21/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps21/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 20</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps20/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps20/</link>
       <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps20/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps20/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 19</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps19/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps19/</link>
       <pubDate>Tue, 10 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps19/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps19/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 18</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps18/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps18/</link>
       <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps18/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps18/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 17</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps17/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps17/</link>
       <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps17/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps17/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 16</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps16/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps16/</link>
       <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps16/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps16/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 15</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps15/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps15/</link>
       <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps15/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps15/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 14</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps14/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps14/</link>
       <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps14/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps14/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 13</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps13/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps13/</link>
       <pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps13/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps13/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 12</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps12/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps12/</link>
       <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps12/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps12/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 11</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps11/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps11/</link>
       <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps11/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps11/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 10</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps10/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps10/</link>
       <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps10/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps10/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 9</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps09/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps09/</link>
       <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps09/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps09/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 8</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps08/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps08/</link>
       <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps08/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps08/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 7</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps07/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps07/</link>
       <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps07/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps07/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 6</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps06/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps06/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps06/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps06/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 5</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps05/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps05/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps05/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps05/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 4</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps04/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps04/</link>
       <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps04/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps04/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 3</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps03/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps03/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps03/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps03/</guid>
       <description></description>
     </item>
     <item>
       <title>Ramanujan Summation</title>
-      <link>http://localhost:1313/mathematics/2025/ramanujan-summation/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ramanujan-summation/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ramanujan-summation/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ramanujan-summation/</guid>
       <description>&lt;div class=&#34;theorem*&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Theorem 1&lt;/strong&gt;. &lt;em&gt;The sum of all natural numbers are&#xA;&lt;span class=&#34;math inline&#34;&gt;$-\frac{1}{12}$&lt;/span&gt;, or &lt;span&#xA;class=&#34;math display&#34;&gt;$$\sum_{n=1}^{\infty}n=-\frac{1}{12}.$$&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;proof&#34;&gt;&#xA;&lt;p&gt;&lt;em&gt;Proof.&lt;/em&gt; Let &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;, &lt;em&gt;S&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt; and&#xA;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/span&gt; be following sequences. &lt;span&#xA;class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;    S_1 &amp;amp;= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\&#xA;    S_2 &amp;amp;= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\&#xA;    S_3 &amp;amp;= 1 + 2 + 3 + 4 + 5 + 6 + \cdots&#xA;\end{align*}$$&lt;/span&gt; Despite the fact that &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/span&gt; is a divergent&#xA;sequence, the following property may apply. &lt;span&#xA;class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;    S_1 &amp;amp;= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\&#xA;    S_1 &amp;amp;= \,\,\,\,\,\text{ }\text{ }\text{ }&#xA;        1 - 1 + 1 - 1 + 1 - \cdots \\&#xA;    2S_1 &amp;amp;= 1 \\&#xA;    \therefore&#xA;    S_1 &amp;amp;= \frac{1}{2}&#xA;\end{align*}$$&lt;/span&gt; Similarly, &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; may be manipulated.&#xA;&lt;span class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;    S_2 &amp;amp;= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\&#xA;    S_2 &amp;amp;= \,\,\,\text{ }\text{ }\text{ }\text{ }&#xA;        1 - 2 + 3 - 4 + 5 - \cdots \\&#xA;    2S_2 &amp;amp;= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\&#xA;    2S_1 &amp;amp;= S_1 \\&#xA;    2S_1 &amp;amp;= \frac{1}{2} \\&#xA;    \therefore&#xA;    S_2 &amp;amp;= \frac{1}{4}&#xA;\end{align*}$$&lt;/span&gt; Lastly, the relationship between &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; and &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/span&gt; may be investigated.&#xA;&lt;span class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;    S_3 &amp;amp;= 1 + 2 + 3 + 4 + 5 + 6 + \cdots \\&#xA;    S_2 &amp;amp;= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\&#xA;    S_3 - S_2 &amp;amp;= 4 + 8 + 1 2 + 16 + \cdots \\&#xA;    &amp;amp;= 4(1 + 2 + 3 + 4 + \cdots) \\&#xA;    &amp;amp;= 4S_3 \\&#xA;    3S_3 &amp;amp;= -S_2 \\&#xA;    3S_3 &amp;amp;= -\frac{1}{4} \\&#xA;    \therefore&#xA;    S_3&amp;amp; = -\frac{1}{12}&#xA;\end{align*}$$&lt;/span&gt; ◻&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trigonometric Identities</title>
-      <link>http://localhost:1313/mathematics/2025/trigonometric-identities/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/trigonometric-identities/</link>
       <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/trigonometric-identities/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/trigonometric-identities/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Set 2</title>
-      <link>http://localhost:1313/mathematics/2025/ps/ps02/</link>
+      <link>https://archive.enochyu.com/mathematics/2025/ps/ps02/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mathematics/2025/ps/ps02/</guid>
+      <guid>https://archive.enochyu.com/mathematics/2025/ps/ps02/</guid>
       <description></description>
     </item>
   </channel>

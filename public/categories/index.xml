@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Enoch Yu - Documents</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://archive.enochyu.com/categories/</link>
     <description>Recent content in Categories on Enoch Yu - Documents</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://archive.enochyu.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NoHTML</title>
-      <link>http://localhost:1313/categories/nohtml/</link>
+      <link>https://archive.enochyu.com/categories/nohtml/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/nohtml/</guid>
+      <guid>https://archive.enochyu.com/categories/nohtml/</guid>
       <description></description>
     </item>
     <item>
       <title>HackerRank</title>
-      <link>http://localhost:1313/categories/hackerrank/</link>
+      <link>https://archive.enochyu.com/categories/hackerrank/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/hackerrank/</guid>
+      <guid>https://archive.enochyu.com/categories/hackerrank/</guid>
       <description></description>
     </item>
     <item>
       <title>Primitive</title>
-      <link>http://localhost:1313/categories/primitive/</link>
+      <link>https://archive.enochyu.com/categories/primitive/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/primitive/</guid>
+      <guid>https://archive.enochyu.com/categories/primitive/</guid>
       <description></description>
     </item>
     <item>
       <title>High School - Grade10</title>
-      <link>http://localhost:1313/categories/high-school---grade10/</link>
+      <link>https://archive.enochyu.com/categories/high-school---grade10/</link>
       <pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/high-school---grade10/</guid>
+      <guid>https://archive.enochyu.com/categories/high-school---grade10/</guid>
       <description></description>
     </item>
     <item>
       <title>2025 Free AMC 8</title>
-      <link>http://localhost:1313/categories/2025-free-amc-8/</link>
+      <link>https://archive.enochyu.com/categories/2025-free-amc-8/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/2025-free-amc-8/</guid>
+      <guid>https://archive.enochyu.com/categories/2025-free-amc-8/</guid>
       <description></description>
     </item>
     <item>
       <title>High School - Grade09</title>
-      <link>http://localhost:1313/categories/high-school---grade09/</link>
+      <link>https://archive.enochyu.com/categories/high-school---grade09/</link>
       <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/high-school---grade09/</guid>
+      <guid>https://archive.enochyu.com/categories/high-school---grade09/</guid>
       <description></description>
     </item>
     <item>
       <title>Problem Sets</title>
-      <link>http://localhost:1313/categories/problem-sets/</link>
+      <link>https://archive.enochyu.com/categories/problem-sets/</link>
       <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/problem-sets/</guid>
+      <guid>https://archive.enochyu.com/categories/problem-sets/</guid>
       <description></description>
     </item>
   </channel>
