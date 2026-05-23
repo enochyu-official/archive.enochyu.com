@@ -55,58 +55,6 @@ if (navToggle) {
   });
 }
 
-
-// Filter
-document.querySelectorAll('.filter-checkmark').forEach(checkbox => {
-  checkbox.addEventListener('change', () => {
-    const activeCats =
-      Array.from(document.querySelectorAll('input[name="category"]:checked'))
-        .map(cb => cb.value);
-    const activeYears =
-      Array.from(document.querySelectorAll('input[name="year"]:checked'))
-        .map(cb => cb.value);
-    
-    document.querySelectorAll('.list-card').forEach(item => {
-      const itemCats = item.getAttribute('data-categories').trim().split(/\s+/);
-      const itemYear = item.getAttribute('data-year');
-
-      const matchesCat = activeCats.length === 0 || activeCats.some(cat => itemCats.includes(cat));
-
-      const matchesYear = activeYears.length === 0 || activeYears.includes(itemYear);
-      
-      item.style.display = (matchesCat && matchesYear) ? 'block' : 'none';
-    });
-  });
-});
-
-
-const toggleBtn = document.getElementById('filter-toggle');
-const filtersSidebar = document.getElementById('filters-sidebar');
-
-if (toggleBtn) {
-  toggleBtn.addEventListener('click', () => {
-    filtersSidebar.classList.toggle('active');
-    toggleBtn.classList.toggle('active');
-  });
-  
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      filtersSidebar.classList.remove('active');
-      toggleBtn.classList.remove('active');
-    });
-  });
-  
-  document.addEventListener('click', (e) => {
-    if (!toggleBtn.contains(e.target) && !filtersSidebar.contains(e.target)) {
-      filtersSidebar.classList.remove('active');
-      toggleBtn.classList.remove('active');
-    }
-  });
-}
-
-
-
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -119,5 +67,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-
 

@@ -6,10 +6,10 @@
 <script>hljs.highlightAll();</script>
 </header>
 <section class="page">
-  <aside class="toc-sidebar">
+  <aside class="page-sidebar">
     <div class="toc-left">
       <div class="toc-title">
-        <a href="/mathematics/">&larr; Documents</a>
+        <a href="/programming/">&larr; Documents</a>
       </div>
       <h1 class="toc-document-title">Access</h1>
       <div class="toc-document-access">
@@ -85,18 +85,5 @@
   {{ end }}
   {{ .Content }}
   </div>
-
-  {{ if .TableOfContents }}
-  <aside class="toc-sidebar">
-    <div class="toc-right">
-      <div class="toc-title">Table of Contents</div>
-      <nav>
-        {{ .TableOfContents }}
-      </nav>
-    </div>
-  </aside>
-  {{ end }}
-</section>
 {{ end }}
-
 

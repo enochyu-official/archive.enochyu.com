@@ -1,0 +1,13 @@
+{{ range . }}
+  <div class="list-item">
+    <div>
+      {{- range .links -}}
+        <a href="{{ .url | relURL }}"
+           target="_blank" rel="noopener noreferrer">{{ .label }}
+        </a>
+      {{- end -}}
+    </div>
+    <span>{{ .date }}</span>
+  </div>
+{{ end }}
+

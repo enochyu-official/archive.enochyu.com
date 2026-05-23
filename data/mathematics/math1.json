@@ -1,0 +1,632 @@
+[
+  {
+    "date": "29 April 2025",
+    "links": [
+      {
+        "label": "Problem Set 2 ",
+        "url": "/mathematics/2025/ps/ps02/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps02.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps02.tex"
+      }
+    ]
+  },
+  {
+    "date": "1 May 2025",
+    "links": [
+      {
+        "label": "Problem Set 3 ",
+        "url": "/mathematics/2025/ps/ps03/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps03.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps03.tex"
+      }
+    ]
+  },
+  {
+    "date": "4 May 2025 ",
+    "links": [
+      {
+        "label": "Problem Set 4 ",
+        "url": "/mathematics/2025/ps/ps04/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps04.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps04.tex"
+      }
+    ]
+  },
+  {
+    "date": "8 May 2025",
+    "links": [
+      {
+        "label": "Problem Set 5 ",
+        "url": "/mathematics/2025/ps/ps05/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps05.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps05.tex"
+      }
+    ]
+  },
+  {
+    "date": "11 May 2025",
+    "links": [
+      {
+        "label": "Problem Set 6 ",
+        "url": "/mathematics/2025/ps/ps06/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps06.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps06.tex"
+      }
+    ]
+  },
+  {
+    "date": "13 May 2025",
+    "links": [
+      {
+        "label": "Problem Set 7 ",
+        "url": "/mathematics/2025/ps/ps07/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps07.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps07.tex"
+      }
+    ]
+  },
+  {
+    "date": "15 May 2025",
+    "links": [
+      {
+        "label": "Problem Set 8 ",
+        "url": "/mathematics/2025/ps/ps08/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps08.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps08.tex"
+      }
+    ]
+  },
+  {
+    "date": "18 May 2025",
+    "links": [
+      {
+        "label": "Problem Set 9 ",
+        "url": "/mathematics/2025/ps/ps09/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps09.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps09.tex"
+      }
+    ]
+  },
+  {
+    "date": "20 May 2025",
+    "links": [
+      {
+        "label": "Problem Set 10 ",
+        "url": "/mathematics/2025/ps/ps10/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps10.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps10.tex"
+      }
+    ]
+  },
+  {
+    "date": "22 May 2025",
+    "links": [
+      {
+        "label": "Problem Set 11 ",
+        "url": "/mathematics/2025/ps/ps11/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps11.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps11.tex"
+      }
+    ]
+  },
+  {
+    "date": "25 May 2025",
+    "links": [
+      {
+        "label": "Problem Set 12 ",
+        "url": "/mathematics/2025/ps/ps12/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps12.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps12.tex"
+      }
+    ]
+  },
+  {
+    "date": "27 May 2025",
+    "links": [
+      {
+        "label": "Problem Set 13 ",
+        "url": "/mathematics/2025/ps/ps13/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps13.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps13.tex"
+      }
+    ]
+  },
+  {
+    "date": "29 May 2025",
+    "links": [
+      {
+        "label": "Problem Set 14 ",
+        "url": "/mathematics/2025/ps/ps14/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps14.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps14.tex"
+      }
+    ]
+  },
+  {
+    "date": "1 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 15 ",
+        "url": "/mathematics/2025/ps/ps15/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps15.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps15.tex"
+      }
+    ]
+  },
+  {
+    "date": "3 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 16 ",
+        "url": "/mathematics/2025/ps/ps16/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps16.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps16.tex"
+      }
+    ]
+  },
+  {
+    "date": "5 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 17 ",
+        "url": "/mathematics/2025/ps/ps17/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps17.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps17.tex"
+      }
+    ]
+  },
+  {
+    "date": "8 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 18 ",
+        "url": "/mathematics/2025/ps/ps18/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps18.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps18.tex"
+      }
+    ]
+  },
+  {
+    "date": "10 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 19 ",
+        "url": "/mathematics/2025/ps/ps19/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps19.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps19.tex"
+      }
+    ]
+  },
+  {
+    "date": "12 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 20 ",
+        "url": "/mathematics/2025/ps/ps20/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps20.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps20.tex"
+      }
+    ]
+  },
+  {
+    "date": "15 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 21 ",
+        "url": "/mathematics/2025/ps/ps21/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps21.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps21.tex"
+      }
+    ]
+  },
+  {
+    "date": "17 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 22 ",
+        "url": "/mathematics/2025/ps/ps22/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps22.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps22.tex"
+      }
+    ]
+  },
+  {
+    "date": "19 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 23 ",
+        "url": "/mathematics/2025/ps/ps23/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps23.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps23.tex"
+      }
+    ]
+  },
+  {
+    "date": "22 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 24 ",
+        "url": "/mathematics/2025/ps/ps24/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps24.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps24.tex"
+      }
+    ]
+  },
+  {
+    "date": "24 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 25 ",
+        "url": "/mathematics/2025/ps/ps25/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps25.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps25.tex"
+      }
+    ]
+  },
+  {
+    "date": "26 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 26 ",
+        "url": "/mathematics/2025/ps/ps26/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps26.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps26.tex"
+      }
+    ]
+  },
+  {
+    "date": "29 June 2025",
+    "links": [
+      {
+        "label": "Problem Set 27 ",
+        "url": "/mathematics/2025/ps/ps27/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps27.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps27.tex"
+      }
+    ]
+  },
+  {
+    "date": "1 July 2025",
+    "links": [
+      {
+        "label": "Problem Set 28 ",
+        "url": "/mathematics/2025/ps/ps28/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps28.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps28.tex"
+      }
+    ]
+  },
+  {
+    "date": "3 July 2025",
+    "links": [
+      {
+        "label": "Problem Set 29 ",
+        "url": "/mathematics/2025/ps/ps29/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps29.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps29.tex"
+      }
+    ]
+  },
+  {
+    "date": "6 July 2025",
+    "links": [
+      {
+        "label": "Problem Set 30 ",
+        "url": "/mathematics/2025/ps/ps30/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps30.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps30.tex"
+      }
+    ]
+  },
+  {
+    "date": "8 July 2025",
+    "links": [
+      {
+        "label": "Problem Set 31 ",
+        "url": "/mathematics/2025/ps/ps31/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps31.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps31.tex"
+      }
+    ]
+  },
+  {
+    "date": "13 July 2025",
+    "links": [
+      {
+        "label": "Problem Set 32 ",
+        "url": "/mathematics/2025/ps/ps32/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps32.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps32.tex"
+      }
+    ]
+  },
+  {
+    "date": "15 July 2025",
+    "links": [
+      {
+        "label": "Problem Set 33 ",
+        "url": "/mathematics/2025/ps/ps33/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps33.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps33.tex"
+      }
+    ]
+  },
+  {
+    "date": "17 July 2025",
+    "links": [
+      {
+        "label": "Problem Set 34 ",
+        "url": "/mathematics/2025/ps/ps34/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps34.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps34.tex"
+      }
+    ]
+  },
+  {
+    "date": "20 July 2025",
+    "links": [
+      {
+        "label": "Problem Set 35 ",
+        "url": "/mathematics/2025/ps/ps35/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps35.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps35.tex"
+      }
+    ]
+  },
+  {
+    "date": "22 July 2025",
+    "links": [
+      {
+        "label": "Problem Set 36 ",
+        "url": "/mathematics/2025/ps/ps36/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps36.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps36.tex"
+      }
+    ]
+  },
+  {
+    "date": "27 July 2025",
+    "links": [
+      {
+        "label": "Problem Set 37 ",
+        "url": "/mathematics/2025/ps/ps37/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps37.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps37.tex"
+      }
+    ]
+  },
+  {
+    "date": "29 July 2025",
+    "links": [
+      {
+        "label": "Problem Set 38 ",
+        "url": "/mathematics/2025/ps/ps38/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/ps/ps38.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/ps/ps38.tex"
+      }
+    ]
+  }
+]
+

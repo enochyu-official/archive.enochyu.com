@@ -3,7 +3,7 @@
   <h1>{{ .Title }}</h1>
 </header>
 <section class="page">
-  <aside class="toc-sidebar">
+  <aside class="page-sidebar">
     <div class="toc-left">
       <div class="toc-title">
         <a href="/mathematics/">&larr; Documents</a>
@@ -15,9 +15,7 @@
              target="_blank" rel="noopener noreferrer">({{ .label }})</a>
         {{ end }}
       </div>
-
       <br>
-
       <h1 class="toc-document-title">License</h1>
       <p class="license-notice">
         This work is distributed under a 
@@ -25,10 +23,8 @@
            target="_blank" rel="noopener noreferrer">
           Creative Commons Attribution 4.0 International License</a>.
       </p>
-
       <br>
       <br>
-
       <h1 class="toc-document-title">Notice</h1>
       <p class="license-notice">
         This page uses
@@ -40,7 +36,6 @@
            target="_blank" rel="noopener noreferrer">
           MathJax</a> to render the contents.
       </p>
-
       {{ if in .Params.categories "Primitive" }}
       <br>
       <br>
@@ -63,38 +58,26 @@
   </aside>
 
   <div class="page-content">
-  {{ if in .Params.categories "NoHTML" }}
-  <div class="error-page">
-    <h1>Oops!</h1>
-    <p>
-    The HTML version of this page is currently
-    not available. You can still access the
-    document in PDF!!
-    </p>
-  </div>
-  <br>
-  <br>
-  <div class="NoHTML-Preview">
-  {{ range first 1 (where .Params.links "label" "PDF") }}
-    <iframe src="{{ .url | absURL }}"></iframe>
-  {{ end }}
-  </div>
-
-  {{ end }}
-  {{ .Content }}
-  </div>
-  
-
-  {{ if .TableOfContents }}
-  <aside class="toc-sidebar">
-    <div class="toc-right">
-      <div class="toc-title">Table of Contents</div>
-      <nav>
-        {{ .TableOfContents }}
-      </nav>
+    {{ if in .Params.categories "NoHTML" }}
+    <div class="error-page">
+      <h1>Oops!</h1>
+      <p>
+      The HTML version of this page is currently
+      not available. You can still access the
+      document in PDF!
+      </p>
     </div>
-  </aside>
-  {{ end }}
+    <br>
+    <br>
+    <div class="NoHTML-Preview">
+    {{ range first 1 (where .Params.links "label" "PDF") }}
+      <iframe src="{{ .url | absURL }}"></iframe>
+    {{ end }}
+    </div>
+
+    {{ end }}
+    {{ .Content }}
+  </div>
 </section>
 {{ end }}
 

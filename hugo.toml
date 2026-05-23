@@ -1,6 +1,6 @@
 baseURL = 'https://archive.enochyu.com/'
-languageCode = 'en-us'
-title = 'Enoch Yu - Documents'
+title = 'Enoch Yu - Archive'
+defaultContentLanguage = 'en'
 
 enableRobotsTXT = true
 
@@ -28,4 +28,14 @@ enableRobotsTXT = true
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 4
+
+[languages]
+  [languages.en]
+    label = 'English'
+    locale = 'en-US'
+    timeZone = 'America/New_York'
+    title = 'Enoch Yu'
+    weight = 1
+    [languages.en.pagination]
+      path = 'page'
 

@@ -1,0 +1,84 @@
+[
+  {
+    "date": "30 April 2025",
+    "links": [
+      {
+        "label": "Trigonometric Identities ",
+        "url": "/mathematics/2025/trigonometric-identities/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/trigonometric-identities.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/trigonometric-identities.tex"
+      }
+    ]
+  },
+  {
+    "date": "5 October 2025 ",
+    "links": [
+      {
+        "label": "2017 PUMaC Geometry A Problem 6 ",
+        "url": "/mathematics/2025/2017-pumac-geometry-a-problem6/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/2017-pumac-geometry-a-problem6.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/2017-pumac-geometry-a-problem6.tex"
+      }
+    ]
+  },
+  {
+    "date": "10 October 2025",
+    "links": [
+      {
+        "label": "Desargues' Theorem ",
+        "url": "/mathematics/2025/desargues-theorem/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/desargues-theorem.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/desargues-theorem.tex"
+      }
+    ]
+  },
+  {
+    "date": "11 March 2026",
+    "links": [
+      {
+        "label": "Coordinate Calculator for TikZ ",
+        "url": "/programming/2026/coordinate-calculator/"
+      },
+      {
+        "label": "(TXT) ",
+        "url": "/txt/programming/2026/coordinate-calculator.txt"
+      }
+    ]
+  },
+  {
+    "date": "24 April 2026",
+    "links": [
+      {
+        "label": "Math Team Meeting: Shape Maze ",
+        "url": "/teaching/2026/math-team-shape-maze/"
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2026/math-team-shape-maze.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2026/math-team-shape-maze.tex"
+      }
+    ]
+  }
+]
+
