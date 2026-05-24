@@ -1,0 +1,166 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+\usepackage[margin=1in, headsep=15pt]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhead[R]{Enoch Yu}
+\fancyfoot[C]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\pagestyle{fancy}
+\usepackage{parskip}
+
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={7.8.2025 AMC 10, 12 Free Class Preview Homework Solution},
+    pdfpagemode=FullScreen,
+}
+\usepackage{tabularx}
+\usepackage{arydshln}
+\usepackage{float}
+\usepackage{pdfpages}
+
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, shapes.geometric}
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usepackage[font=small,labelfont=bf]{caption}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{example}{Example}[section]
+\newtheorem*{example*}{Example}
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+
+
+\title{7.8.2025 AMC 10, 12 Free Class Preview Homework Solution}
+\author{Enoch Yu}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Problem 1.}
+Solve $\sqrt{2x + 1} + 2\sqrt{x - 1} = 4$.
+
+\begin{solution}
+Let $a = \sqrt{2x + 1}$ and $b = \sqrt{x - 1}$ where
+$b \le 2$. Therefore, $a^2 - 2b^2 = 3$ and $a + 2b = 4$.
+Substitution could be utilized.
+\begin{align*}
+    a &= 4 - 2b \\
+    (4 - 2b)^2 - 2b^2 &= 3 \\
+    2b^2 - 16b + 13 &= 0 \\
+    \therefore b &= \frac{8 - \sqrt{38}}{2}
+\end{align*}
+In other words, $\sqrt{x - 1} = \frac{8 - \sqrt{38}}{2}$.
+Meaning, $x = \frac{102 - 16\sqrt{38}}{4} + 1$,
+or $\frac{53 - 8\sqrt{38}}{2}$.
+\begin{lemma*}
+There exists at most one real root to the equation.
+\end{lemma*}
+\begin{proof}
+Let $f(x) = \sqrt{2x + 1} + 2\sqrt{x - 1} - 4$.
+\begin{align*}
+    f'(x)
+    &= \frac{2}{2\sqrt{2x + 1}} + \frac{2}{2\sqrt{x - 1}} \\
+    &= \frac{1}{\sqrt{2x + 1}} + \frac{1}{\sqrt{x - 1}}
+\end{align*}
+Since $f'(x)$ is always positive wherever it is defined,
+function $f(x)$ is always increasing. In other words,
+there could be at most one real root to the equation.
+\end{proof}
+\noindent
+Therefore, $x = \frac{53 - 8\sqrt{38}}{2}$ is the only real roots.
+\end{solution}
+
+\subsection*{Problem 2.}
+Solve $\sqrt{x - \frac{5}{x}} - \sqrt{5 - \frac{5}{x}} = x$.
+\begin{solution}
+
+\textbf{Key Word} Average Method
+
+Notice that every number could be written as a sum of
+two numbers that have same distance from the half the
+value of the number. Therefore, let $\sqrt{x - \frac{5}{x}}
+= \frac{x}{2} + k$ and $-\sqrt{5 - \frac{5}{x}} = \frac{x}{2} - k$.
+\begin{align*}
+    \sqrt{x - \frac{5}{x}} &= \frac{x}{2} + k \\
+    -\sqrt{5 - \frac{5}{x}} &= \frac{x}{2} - k \\
+    x - \frac{5}{x} &= \frac{x^2}{4} + kx + k^2 \\
+    5 - \frac{5}{x} &= \frac{x^2}{4} - kx + k^2 \\
+    x - 5 &= 2kx \\
+    \therefore k &= \frac{x - 5}{2x}
+\end{align*}
+Substitution could be used.
+\begin{align*}
+    \sqrt{x - \frac{5}{x}} &= \frac{x}{2} + \frac{x - 5}{2x} \\
+    2\sqrt{x - \frac{5}{x}} &= x + \frac{x - 5}{x} \\
+    2\sqrt{x - \frac{5}{x}} &= 1 + \left( x - \frac{5}{x} \right) \\
+    1 + - 2\sqrt{x - \frac{5}{x}}
+        + \left( x - \frac{5}{x} \right) &= 0 \\
+    (1 - \sqrt{x - \frac{5}{x}})^2 &= 0 \\
+    x - \frac{5}{x} &= 1 \\
+    \therefore x &= \boxed{\frac{1 - \sqrt{21}}{2}}
+\end{align*}
+Through graphing, it is evident that the $x$ value is
+the only possible $x$.
+\end{solution}
+
+\subsection*{Problem 3.}
+Find $x^6 - 2\sqrt{2}x^5 - 3x^4 - x^3 + 2 \sqrt{5}x^2
+- 4x + \sqrt{5}$ if $x = \sqrt{5} + \sqrt{2}$.
+\begin{solution}
+\begin{align*}
+    &\quad\ \, x^6 - 2\sqrt{2}x^5 - 3x^4 - x^3
+        + 2\sqrt{5}x^2 - 4x + \sqrt{5}\\
+    &=x^5 \left( x - 2\sqrt{2} \right) - 3x^4
+        + x^2 \left( -x + 2\sqrt{5} \right) - 4x + \sqrt{5} \\
+    &= \left( \sqrt{5} - \sqrt{2} \right)(x^5 + x^2)
+        - 3x^4 - 4x + \sqrt{5} \\
+    &= x\left( \sqrt{5} - \sqrt{2} \right)(x^4 + x)
+        - 3(x^4 + x) - x + \sqrt{5} \\
+    &= \left( \sqrt{5} + \sqrt{2} \right)
+            \left( \sqrt{5} - \sqrt{2} \right)
+            - 3(x^4 + x) - \sqrt{2} \\
+    &= \boxed{\sqrt{2}}
+\end{align*}
+\end{solution}
+
+\subsection*{Problem 4.}
+Show that $\sqrt[3]{ax^2 + by^2 + cz^2} =
+\sqrt[3]{a} + \sqrt[3]{b} + \sqrt[3]{c}$ if
+$ax^3 = by^3 = cz^3$ and $\frac{1}{x} + \frac{1}{y}
++ \frac{1}{z} = 1$.
+\begin{proof}
+\begin{align*}
+    \sqrt[3]{ax^2 + by^2 + cz^2}
+    &= \sqrt[3]{\frac{ax^3}{x} + \frac{by^3}{y} + \frac{cz^3}{z}} \\
+    &= \sqrt[3]{ax^3} \\
+    &= \sqrt[3]{ax^3}
+        \left( \frac{1}{x} + \frac{1}{y} + \frac{1}{z} \right) \\
+    &= \sqrt[3]{a} + \sqrt[3]{b} + \sqrt[3]{c}
+\end{align*}
+\end{proof}
+\end{document}
+

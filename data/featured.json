@@ -1,10 +1,25 @@
 [
   {
+    "date": "25 April 2025",
+    "links": [
+      {
+        "label": "Lucas's Theorem "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/math3/lucas-theorem.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/math3/lucas-theorem.tex"
+      }
+    ]
+  },
+  {
     "date": "30 April 2025",
     "links": [
       {
-        "label": "Trigonometric Identities ",
-        "url": "/mathematics/2025/trigonometric-identities/"
+        "label": "Trigonometric Identities "
       },
       {
         "label": "(PDF, ",
@@ -20,8 +35,7 @@
     "date": "5 October 2025 ",
     "links": [
       {
-        "label": "2017 PUMaC Geometry A Problem 6 ",
-        "url": "/mathematics/2025/2017-pumac-geometry-a-problem6/"
+        "label": "2017 PUMaC Geometry A Problem 6 "
       },
       {
         "label": "(PDF, ",
@@ -37,8 +51,7 @@
     "date": "10 October 2025",
     "links": [
       {
-        "label": "Desargues' Theorem ",
-        "url": "/mathematics/2025/desargues-theorem/"
+        "label": "Desargues' Theorem "
       },
       {
         "label": "(PDF, ",

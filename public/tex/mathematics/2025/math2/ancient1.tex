@@ -1,0 +1,94 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Problem by Enoch},
+    pdfpagemode=FullScreen,
+    }
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Enoch Yu}
+
+\title{Problem by Enoch}
+\author{Enoch Yu}
+\date{March 2025}
+
+\begin{document}
+\textbf{Problem} There are four magnificent cities named \textit{Happy}, \textit{Content}, \textit{Merry}, and \textit{Jolly}. One day, countable virus named \textit{MathVirus} has entered each city.
+\\\\
+The number of viruses that entered the \textit{Merry} city is the product of the number of virus that entered \textit{Happy} city and \textit{Content} city. Moreover, the sum of the number of virus that entered \textit{Happy} city and \textit{Content} city equals the number of virus that entered \textit{Jolly} city. In addition, the number of virus that entered \textit{Merry} city squared is equal to the product of 2025 and the number of virus that entered \textit{Jolly} city squared.
+\\\\
+A biologist in \textit{Happy} city is required to count the number of the \textit{MathVirus} that spread to \textit{Happy} city. Please help the biologist to find all possible number of virus that dispersed to \textit{Happy} city for further investigation! (The number of \textit{MathVirus} for each city does not change.)
+
+\newpage
+
+\noindent
+\textbf{Solution}
+\newline
+Let\\
+the number of virus in \textit{Happy} city $H$, \\
+the number of virus in \textit{Content} city $C$, \\
+the number of virus in \textit{Merry} city $M$, \\
+the number of virus in \textit{Jolly} city $J$.
+\\\\
+$M$=$H$$C$
+\newline
+$J$=$H$+$C$
+\newline
+$M^2$=2025$J^2$
+\newline
+\newline
+Because the number of the virus in each city is countable, the quantity of \textit{MathVirus} in each city is natural number. \\
+$\therefore M=45J$
+\newline
+\newline
+Because virus has entered each city, $J$ cannot be zero. \\
+$\frac{M}{J}=45$
+\newline
+\newline
+By substitution, \\
+$\frac{HC}{H+C}=45$
+\newline
+$HC=45H+45C$
+\newline
+$HC-45H-45C=0$
+\newline
+$HC-45H-45C+2025=2025$
+\newline
+$(H-45)(C-45)=2025$
+\newline
+\newline
+The possible values for $H-45$ are the factors of 2025.
+\begin{align*}
+    &H-45=1 \\
+    &H-45=3 \\
+    &H-45=5 \\
+    &H-45=9 \\
+    &H-45=15 \\
+    &H-45=25 \\
+    &H-45=27 \\
+    &H-45=45 \\
+    &H-45=75 \\
+    &H-45=81 \\
+    &H-45=135 \\
+    &H-45=225 \\
+    &H-45=405 \\
+    &H-45=675 \\
+    &H-45=2025
+\end{align*}
+\noindent
+Therefore, the possible values of $H$ are 46, 48, 50, 54, 60, 70, 72, 90, 120, 126, 180, 270, 450, 720, 2070.
+\\\\
+\\\\
+Conclusion: \textbf{The possible numbers of virus that entered to \textit{Happy} city are 46, 48, 50, 54, 60, 70, 72, 90, 120, 126, 180, 270, 450, 720, 2070}.
+\end{document}
+

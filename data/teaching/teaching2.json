@@ -1,18 +1,193 @@
 [
   {
-    "date": "24 April 2026",
+    "date": "1 July 2025",
     "links": [
       {
-        "label": "Math Team Meeting: Shape Maze ",
-        "url": "/teaching/2026/math-team-shape-maze/"
+        "label": "07.01.2025 AMC 10, 12 Free Class Preview Homework Solution "
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/teaching/2026/math-team-shape-maze.pdf"
+        "url": "/pdf/teaching/2025/teaching2/07-01-2025-HW-Solution.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/teaching/2026/math-team-shape-maze.tex"
+        "url": "/tex/teaching/2025/teaching2/07-01-2025-HW-Solution.tex"
+      }
+    ]
+  },
+  {
+    "date": "8 July 2025",
+    "links": [
+      {
+        "label": "07.08.2025 AMC 10 Free Class Preview Homework Solution "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2025/teaching2/07-08-2025-amc10-Homework-Solution.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2025/teaching2/07-08-2025-amc10-Homework-Solution.tex"
+      }
+    ]
+  },
+  {
+    "date": "8 July 2025",
+    "links": [
+      {
+        "label": "07.08.2025 AMC 10, 12 Free Class Preview Homework Solution "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2025/teaching2/07-08-2025-Homework-Solution.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2025/teaching2/07-08-2025-Homework-Solution.tex"
+      }
+    ]
+  },
+  {
+    "date": "11 July 2025",
+    "links": [
+      {
+        "label": "07.11.2025 AMC 10, 12 Free Class "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2025/teaching2/07-11-2025-Class.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2025/teaching2/07-11-2025-Class.tex"
+      }
+    ]
+  },
+  {
+    "date": "14 July 2025",
+    "links": [
+      {
+        "label": "07.14.2025 AMC 10, 12 Free Class Slide "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2025/teaching2/07-14-2025-Class-Slide.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2025/teaching2/07-14-2025-Class-Slide.tex"
+      }
+    ]
+  },
+  {
+    "date": "15 July 2025",
+    "links": [
+      {
+        "label": "07.15.2025 AMC 10 Free Class Preview Homework Solution "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2025/teaching2/07-15-2025-amc10-Homework-Solution.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2025/teaching2/07-15-2025-amc10-Homework-Solution.tex"
+      }
+    ]
+  },
+  {
+    "date": "15 July 2025",
+    "links": [
+      {
+        "label": "07.15.2025 AMC 10, 12 Free Class Preview Homework Solution "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2025/teaching2/07-15-2025-Homework-Solution.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2025/teaching2/07-15-2025-Homework-Solution.tex"
+      }
+    ]
+  },
+  {
+    "date": "21 July 2025",
+    "links": [
+      {
+        "label": "07.21.2025 AMC 10, 12 Free Class Slide "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2025/teaching2/07-21-2025-Class-Slide.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2025/teaching2/07-21-2025-Class-Slide.tex"
+      }
+    ]
+  },
+  {
+    "date": "22 July 2025",
+    "links": [
+      {
+        "label": "07.22.2025 AMC 10, 12 Hard Problems "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2025/teaching2/07-22-2025-Hard-Problems.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2025/teaching2/07-22-2025-Hard-Problems.tex"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2025",
+    "links": [
+      {
+        "label": "07.28.2025 AMC 10, 12 Free Class Slide "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2025/teaching2/07-28-2025-Class-Slide.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2025/teaching2/07-28-2025-Class-Slide.tex"
+      }
+    ]
+  },
+  {
+    "date": "29 July 2025",
+    "links": [
+      {
+        "label": "07.29.2025 AMC 10 Free Class Preview Homework Solution "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2025/teaching2/07-29-2025-amc10-Homework-Solution.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2025/teaching2/07-29-2025-amc10-Homework-Solution.tex"
+      }
+    ]
+  },
+  {
+    "date": "29 July 2025",
+    "links": [
+      {
+        "label": "07.29.2025 AMC 10, 12 Free Class Preview Homework Solution "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/teaching/2025/teaching2/07-29-2025-Homework-Solution.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/teaching/2025/teaching2/07-29-2025-Homework-Solution.tex"
       }
     ]
   }

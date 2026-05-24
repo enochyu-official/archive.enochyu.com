@@ -1,0 +1,129 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+\usepackage[margin=1in, headsep=15pt]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhead[R]{Enoch Yu}
+\fancyfoot[C]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\pagestyle{fancy}
+\usepackage{parskip}
+
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={7.11.2025 AMC 10, 12 Free Class},
+    pdfpagemode=FullScreen,
+}
+\usepackage{tabularx}
+\usepackage{arydshln}
+\usepackage{float}
+\usepackage{pdfpages}
+
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, shapes.geometric}
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usepackage[font=small,labelfont=bf]{caption}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{example}{Example}[section]
+\newtheorem*{example*}{Example}
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+
+
+\title{7.11.2025 AMC 10, 12 Free Class}
+\author{Enoch Yu}
+\date{11 July 2025}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Problem 1}
+Find all pairs of integers $(x, y)$ such that
+$x^3 + y^3 = (x + y)^2$.
+
+\begin{solution}
+\[
+(x + y)(x^2 - xy + y^2) = (x + y)^2
+\]
+\[
+\begin{cases}
+    x + y = 0 \implies x = -y \\
+    x + y \neq 0 \implies x^2 - xy + y^2 = x + y
+\end{cases}
+\]
+Since the first case provided the solution,
+the second case could be observed.
+\begin{align*}
+    x^2 - xy + y^2 &= x + y \\
+    x^2 - x(y + 1) + y^2 - y &= 0 \\
+    x &= \frac{y + 1 \pm \sqrt{y^2 + 2y + 1 - 4y^2 + 4y}}{2} \\
+    D
+    &= -3y^2 + 6y + 1 \geq 0 \\
+    &\Rightarrow 3y^2 - 6y - 1 \leq 0 \\
+    -1 < \frac{3 - 2\sqrt{3}}{3} \leq
+    &y \leq \frac{3 + 2\sqrt{3}}{3} < 3 \\
+    \therefore
+    y = 0, 1, 2 &\Rightarrow (1, 0), (2, 1), (1, 2), (2, 2)
+\end{align*}
+Thus, $\boxed{(x, -x), (1, 0), (2, 1), (1, 2), (2, 2)}$
+are the roots.
+\end{solution}
+
+\subsection*{Problem 2}
+Solve the equation $x^3 - 3x = \sqrt{x + 2}$
+for all real values of $x$.
+
+\begin{solution}
+Notice that when $x = 2$, the equation satisfies.
+Therefore, intuitively, the cases for $x$ could be set.
+\[
+\begin{cases}
+    x \leq 2 \implies \sqrt{x + 2} \geq x \\
+    x > 2 \implies \sqrt{x + 2} < x
+\end{cases}
+\]
+Observe the second equation.
+\begin{align*}
+    x^3 - 3x - \sqrt{x + 2} &= 0 \\
+    x^3 - 3x - x &< 0 \\
+    x(x^2 - 4) &< 0 \\
+    \therefore x < -2 \text{ or } 0 &< x < 2
+\end{align*}
+Due to a contradiction, the fact that the roots of the
+equation are never greater than 2 could be deduced.
+Moreover, since $x$ is a real number, $-2 \leq x \leq 2$.
+Let $x = 2\cos\theta$. Therefore, the following equations
+could be deduced.
+\begin{align*}
+    8\cos^3\theta - 6\theta &= \sqrt{2\cos\theta + 2} \\
+    \cos3\theta &= \sqrt{\frac{\cos\theta + 1}{2}} \\
+    \cos3\theta &= \cos\frac{\theta}{2} \\
+    \therefore
+    x &= \boxed{2, 2\cos\frac{4\pi}{5}, 2\cos\frac{4\pi}{7}}
+\end{align*}
+\end{solution}
+\end{document}
+

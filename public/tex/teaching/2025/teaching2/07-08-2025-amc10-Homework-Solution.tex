@@ -1,0 +1,149 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+\usepackage[margin=1in, headsep=15pt]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhead[R]{Enoch Yu}
+\fancyfoot[C]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\pagestyle{fancy}
+\usepackage{parskip}
+
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={7.8.2025 AMC 10 Free Class Preview Homework Solution},
+    pdfpagemode=FullScreen,
+}
+\usepackage{tabularx}
+\usepackage{arydshln}
+\usepackage{float}
+\usepackage{pdfpages}
+
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, shapes.geometric}
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usepackage[font=small,labelfont=bf]{caption}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{example}{Example}[section]
+\newtheorem*{example*}{Example}
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+
+\title{7.8.2025 AMC 10 Free Class Preview Homework Solution}
+\author{Enoch Yu}
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Problem}
+Find the number of real solutions of the equation
+$x|x|- 3|x| + 2 = 0$.
+\begin{solution}
+First and foremost, the absolute values could be removed.
+\[
+\begin{cases}
+    x \ge 0 \implies x^2 - 3x + 2 = 0 \\
+    x < 0 \implies -x^2 + 3x + 2 = 0
+\end{cases}
+\]
+For the first case, the solutions to the equation are
+$1$ and $2$. The roots are valid since both $1$ and $2$
+are greater than zero. The solutions to the second equation
+are $\frac{3 \pm \sqrt{17}}{2}$. The only valid solution
+from the second equation is $\frac{3 - \sqrt{17}}{2}$
+because the root must be negative. Therefore, the number
+of real solutions to the equation is $\boxed{3}$.
+\end{solution}
+
+\subsection*{Problem}
+Find the number of pairs of non-negative integer solutions
+to the equation $|a - b| + ab = 1$.
+\begin{solution}
+The absolute value could be removed.
+\[
+\begin{cases}
+    a \ge b \implies ab + a - b = 1 \\
+    a < b \implies ab - a + b = 1
+\end{cases}
+\]
+The first equation could be factored using Simon's Favorite
+Factoring Trick. From $(a - 1)(b + 1) = 0$, the possible
+ordered pairs of $(a, b)$ are $(1, 0)$ and $(1, 1)$.
+
+The second equation will lead to $(a + 1)(b - 1) = 0$.
+The possible ordered pair is $(0, 1)$. Therefore, there
+exists $\boxed{3}$ ordered pairs of non-negative integer
+solutions to the equation $|a - b| + ab = 1$.
+\end{solution}
+
+\subsection*{Problem}
+What is the product of all the roots of the equation
+$\sqrt{5|x| + 8} = \sqrt{x^2 - 16}$?
+
+\begin{solution}
+Because square root functions are one to one correspondence,
+both sides could be squared.
+\[
+5|x| + 8 = x^2 - 16
+\]
+Therefore, the absolute value could be removed.
+\[
+\begin{cases}
+    x \ge 0 \implies x^2 - 5x - 24 = 0 \\
+    x < 0 \implies x^2 + 5x - 24 = 0
+\end{cases}
+\]
+The first equation gives $x = 8$. The second equation
+provides $x = -8$. Moreover, notice that if $x = \pm 8$,
+the left hand side and the right hand side will lead to a
+valid real equalities. Therefore, the product of all the
+roots of the equation is $\boxed{-64}$.
+\end{solution}
+
+\subsection*{Problem}
+What is the product of the real roots of the equation
+$x^2 + 18x + 30 = 2\sqrt{x^2 + 18x + 45}$?
+
+\begin{solution}
+Let $A = x^2 + 18x + 30$. In other words,
+$A = 2\sqrt{A + 15}$. Therefore, $A^2 - 4A - 60 = 0$.
+However, $A$ can only be $10$ since $A$ must be a
+positive number. $x^2 + 18x + 10 = 0$ will lead to real
+roots with the product of $\boxed{-10}$.
+\end{solution}
+
+\subsection*{Problem}
+Given that $x^2 + y^2 = 10$, $\sqrt[4]{xy} + \sqrt{xy}
++ 27 = 29$, $x > 0$ and $y > 0$. What is $x+y$?
+\begin{solution}
+Let $a = \sqrt[4]{xy}$. Therefore, $a^2 + a - 2 = 0$.
+In other words, $\sqrt[4]{xy} = -2, 1$. Because $x$ and
+$y$ are real numbers, $xy$ must be $1$. Thus
+$(x + y)^2 = 10 + 2$. In other words, $x + y = \boxed{2\sqrt{3}}$.
+\end{solution}
+\end{document}
+

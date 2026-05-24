@@ -1,18 +1,65 @@
 [
   {
-    "date": "30 April 2025",
+    "date": "March 2025",
     "links": [
       {
-        "label": "Trigonometric Identities ",
-        "url": "/mathematics/2025/trigonometric-identities/"
+        "label": "Ancient File 1 "
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/trigonometric-identities.pdf"
+        "url": "/pdf/mathematics/2025/math2/ancient1.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/trigonometric-identities.tex"
+        "url": "/tex/mathematics/2025/math2/ancient1.tex"
+      }
+    ]
+  },
+  {
+    "date": "March 2025",
+    "links": [
+      {
+        "label": "Ancient File 3 "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/math2/ancient3.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/math2/ancient3.tex"
+      }
+    ]
+  },
+  {
+    "date": "6 April 2025",
+    "links": [
+      {
+        "label": "Ancient File 2 "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/math2/ancient2.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/math2/ancient2.tex"
+      }
+    ]
+  },
+  {
+    "date": "30 April 2025",
+    "links": [
+      {
+        "label": "Trigonometric Identities "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/math2/trigonometric-identities.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/math2/trigonometric-identities.tex"
       }
     ]
   },
@@ -25,11 +72,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/ramanujan-summation.pdf"
+        "url": "/pdf/mathematics/2025/math2/ramanujan-summation.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/ramanujan-summation.tex"
+        "url": "/tex/mathematics/2025/math2/ramanujan-summation.tex"
       }
     ]
   },
@@ -37,33 +84,15 @@
     "date": "5 October 2025 ",
     "links": [
       {
-        "label": "2017 PUMaC Geometry A Problem 6 ",
-        "url": "/mathematics/2025/2017-pumac-geometry-a-problem6/"
+        "label": "2017 PUMaC Geometry A Problem 6 "
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/2017-pumac-geometry-a-problem6.pdf"
+        "url": "/pdf/mathematics/2025/math2/2017-pumac-geometry-a-problem6.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/2017-pumac-geometry-a-problem6.tex"
-      }
-    ]
-  },
-  {
-    "date": "10 October 2025",
-    "links": [
-      {
-        "label": "Desargues' Theorem ",
-        "url": "/mathematics/2025/desargues-theorem/"
-      },
-      {
-        "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/desargues-theorem.pdf"
-      },
-      {
-        "label": "TeX)",
-        "url": "/tex/mathematics/2025/desargues-theorem.tex"
+        "url": "/tex/mathematics/2025/math2/2017-pumac-geometry-a-problem6.tex"
       }
     ]
   },

@@ -1,0 +1,35 @@
+[
+  {
+    "date": "25 April 2025",
+    "links": [
+      {
+        "label": "Lucas's Theorem "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/math3/lucas-theorem.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/math3/lucas-theorem.tex"
+      }
+    ]
+  },
+  {
+    "date": "10 October 2025",
+    "links": [
+      {
+        "label": "Desargues' Theorem "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/pdf/mathematics/2025/math3/desargues-theorem.pdf"
+      },
+      {
+        "label": "TeX)",
+        "url": "/tex/mathematics/2025/math3/desargues-theorem.tex"
+      }
+    ]
+  }
+]
+

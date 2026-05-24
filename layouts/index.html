@@ -53,6 +53,9 @@
 <div class="featured-documents">
   <h2 class="list-h2">Featured Documents</h2>
   {{ partial "list.html" (collections.Reverse hugo.Data.featured) }}
+
+  <h2 class="list-h2">Disciplines</h2>
+  {{ partial "list.html" hugo.Data.disciplines }}
 </div>
 <br>
 {{ end }}

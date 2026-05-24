@@ -1,0 +1,246 @@
+% Written By Enoch Yu
+% Downloaded from archive.enochyu.com
+
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+\usepackage[margin=1in, headsep=15pt]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhead[R]{Enoch Yu}
+\fancyfoot[C]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\pagestyle{fancy}
+\usepackage{parskip}
+
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={7.22.2025 AMC 10,12 Hard Problems},
+    pdfpagemode=FullScreen,
+}
+\usepackage{tabularx}
+\usepackage{arydshln}
+\usepackage{float}
+\usepackage{pdfpages}
+
+\usepackage{tikz}
+\usetikzlibrary{calc, angles, shapes.geometric}
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usepackage[font=small,labelfont=bf]{caption}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{sublemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{example}{Example}[section]
+\newtheorem*{example*}{Example}
+\newenvironment{solution}{\begin{trivlist}\item[]{\bf Solution}}{\qed \end{trivlist}}
+
+
+\title{7.22.2025 AMC 10,12 Hard Problems}
+\author{Enoch Yu}
+\date{22 July 2025}
+
+\begin{document}
+\subsection*{Problem 1.}
+{\color {BrickRed}
+Let $P(x)$ be a nonzero polynomial such that
+$(x - 1)P(x + 1) = (x + 2)P(x)$ for every real $x$,
+and $P(2)^2 = P(3)$. Then $P \left( \frac{7}{2} \right)
+= \frac{m}{n}$, where $m$ and $n$ are relatively prime
+positive integers. Find $m + n$.
+}
+
+\begin{solution}
+Substitute $x = -1, 0, 1$. Substituting the values
+leads to the fact that $P(-1) = P(0) = P(1) = 0$.
+Therefore, let
+\[
+P(x) = f(x) (x + 1) (x) (x - 1).
+\]
+Substituting to the equation and assuming that
+$x \neq -1, 0, 1$ leads to the following equations.
+\begin{align*}
+    (x - 1) f(x + 1) (x + 2) (x + 1) (x)
+    &= (x + 2) f(x) (x + 1) (x) (x - 1) \\
+    f(x + 1) &= f(x)
+\end{align*}
+In other words, $f(x)$ is a constant for $x \neq -1, 0, 1$.
+\begin{align*}
+    \left( f(2) \cdot 3 \cdot 2 \cdot 1 \right)^2
+    &= f(3) \cdot 4 \cdot 3 \cdot 2 \\
+    f(2)^2 \cdot 36 &= f(2) \cdot 24 \\
+    f(2) &= \frac{2}{3} \quad (\because f(2) \neq 0) 
+\end{align*}
+Substituting $x = \frac{7}{2}$ to $P(x)$,
+$P \left( \frac{7}{2} \right)
+= f\left( \frac{7}{2} \right)
+    \left( \frac{7}{2} + 1 \right)
+    \left( \frac{7}{2} \right)
+    \left( \frac{7}{2} - 1 \right)
+= f(2) \cdot \frac{315}{8}$, which is $\frac{105}{4}$.
+Thus, $105 + 4 = \boxed{109}$.
+\end{solution}
+
+\subsection*{Problem 2.}
+{\color {BrickRed}
+For certain real number $a$, $b$, and $c$, the polynomial
+\[
+g(x) = x^3 + ax^2 + x + 10
+\]
+has three distinct roots, and each root of $g(x)$ is also
+a root of the polynomial
+\[
+f(x) = x^4 + x^3 + bx^2 + 100x + c
+\]
+What is $f(1)$?
+}
+
+\begin{solution}
+$f(x)$ could be rewritten as $(x - m)(g(x))$.
+The coefficients of $x^3$, $x^2$, $x$, and $x^0$
+could be compared.
+\begin{align*}
+    f(x)
+    &= (x - m)(x^3 + ax^2 + x + 10) \\
+    &= x^4 + (a - m)x^3 + (1 - am)x^2 + (10 - m)x - 10m
+\end{align*}
+Therefore, $m = -90$, $a = -89$, $b = -8009$, and
+$c = 900$. Thus, $f(1) = 1 + 1 + b + 100 + c = \boxed{-7007}$.
+\end{solution}
+
+\subsection*{Problem 3.}
+{\color {BrickRed}
+Let $S$ be the number of ordered pairs of integers
+$(a, b)$ with $1 \leq a \leq 100$ and $b \geq 0$ such
+that the polynomial $x^2 + ax + b$ can be factored
+into the product of two (not necessarily distinct)
+linear factors with integer coefficients. Find the
+remainder when $S$ is divided by $1000$.
+}
+
+\begin{solution}
+Let $-p$ and $-q$ be the roots of the polynomial
+$x^2 + ax + b$. In other words, $p + q = a$ and $pq = b$.
+Since the equations are symmetric, WLOG, let $p \geq q$.
+\[
+\begin{array}{ccc}
+    p & q & \text{Number of Cases} \\
+    0 & 1 \sim 100 & 100 \\
+    1 & 1 \sim 99 & 99 \\
+    2 & 2 \sim 98 & 97 \\
+    3 & 3 \sim 97 & 95 \\
+    \vdots & \vdots & \vdots \\
+    50 & 50 & 1
+\end{array}
+\]
+Because an equation with two roots $p$ and $q$ is unique,
+all cases are counted. Thus, the total number of cases
+are $1 + 3 + \cdots + 97 + 99 + 100
+= \frac{100 \cdot 50}{2} + 100 = 2600$. Therefore,
+the answer is $\boxed{600}$.
+
+\end{solution}
+
+\subsection*{Problem 4.}
+{\color {BrickRed}
+The polynomial $P(x)$ is cubic. What is the largest value
+of $k$ for which the polynomials
+\[
+Q_1(x) = x^2 + (k - 29)x - k \quad \text{and}
+    \quad Q_2(x) = 2x^2 + (2k - 43)x + k
+\]
+are both factors of $P(x)$?
+}
+
+\begin{solution}
+Notice that because $k$ is a constant, $P(x)$ could be rewritten.
+\begin{align*}
+    P(x)
+    &= Q_1(2ax + b) = (x^2 + (k - 29)x - k)(2ax + b) \\
+    &= Q_2(ax - b) = (2x^2 + (2k - 43)x + k)(ax - b)
+\end{align*}
+Therefore, the coefficients of $x^2$ and $x$ could be
+compared for the value of $k$.
+\begin{align*}
+    2ak - 58a + b &= 2ak - 43a - 2b \\
+    b &= 5a
+    \\\\
+    kb - 29b - 2ak &= -2bk + 43b + ak \\
+    3bk &= 3ak + 72b \\
+    15ak &= 3ak + 360a \\
+    \therefore k &= \boxed{30}
+\end{align*}
+\end{solution}
+
+\subsection*{Problem 5.}
+{\color {BrickRed}
+A real number $a$ is chosen randomly and uniformly
+from the interval $[-20, 18]$. Calculate the probability
+that the roots of the polynomial
+\[
+x^4 + 2a x^3 + (2a - 2)x^2 + (-4a + 3)x - 2
+\]
+are all real.
+}
+
+\begin{solution}
+Notice that when $x = 1$ and $x = -2$, the polynomial
+is zero. Thus, with synthetic division, the polynomial
+could be factored.
+\[
+(x - 1)(x + 2)(x^2 + (2a - 1)x + 1) = 0
+\]
+For all the roots of $x$ to be real, $(2a-1)^2 - 4$
+must be greater than or equal to zero.
+\begin{align*}
+    4a^2 - 4a - 3 &\geq 0 \\
+    (2a + 1)(2a - 3) &\geq 0 \\
+    -20 \leq a \leq -\frac{1}{2}, 18 \geq a \geq \frac{3}{2}
+\end{align*}
+Lengths could be used to compute the probability.
+\begin{align*}
+    \frac{\left( 18 - \frac{3}{2} \right)
+        + \left( 20 - \frac{1}{2} \right)}{18 + 20}
+    &= \frac{\frac{33}{2} + \frac{39}{2}}{38} \\
+    &= \frac{36}{38} \\
+    &= \boxed{\frac{18}{19}}
+\end{align*}
+\end{solution}
+
+\subsection*{Problem 6.}
+{\color {BrickRed}
+For what real values of $k$ do
+\[
+1988x^2 + kx + 8891 \quad \text{and} \quad 8891x^2 + kx + 1988
+\]
+have a common zero?
+}
+
+\begin{solution}
+Let $\alpha$ be the common root.
+\begin{align*}
+    1988\alpha^2 + k\alpha + 8891 &= 0 \\
+    8891\alpha^2 + k\alpha + 1988 &= 0
+\end{align*}
+Subtracting two equations, $6903\alpha^2 = 6903$ is obtained.
+In other words, the common root could be either $1$ or $-1$.
+Therefore, $k$ could be $\boxed{\pm 10879}$.
+\end{solution}
+\end{document}
+

@@ -86,13 +86,6 @@
       <description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;Enter n: 1234567890&#xA;&#xA;2&#xA;3^2&#xA;5&#xA;3607&#xA;3803&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;&#xA;long long n;&#xA;&#xA;void primeCalculator() {&#xA;    int expo = 0;&#xA;&#xA;    // Even Prime&#xA;    while (n % 2 == 0) {&#xA;        n /= 2;&#xA;        expo++;&#xA;    }&#xA;    if (expo &amp;gt; 1) {&#xA;        std::cout &amp;lt;&amp;lt; &#34;2^&#34; &amp;lt;&amp;lt; expo &amp;lt;&amp;lt; std::endl;&#xA;    } else if (expo == 1) {&#xA;        std::cout &amp;lt;&amp;lt; &#34;2\n&#34;;&#xA;    }&#xA;&#xA;    // Odd Prime &amp;lt; Square Root of &#34;n&#34;&#xA;    for (long long i = 3; i*i &amp;lt;= n; i += 2) {&#xA;        expo = 0;&#xA;&#xA;        while (n % i == 0) {&#xA;            n /= i;&#xA;            expo++;&#xA;        }&#xA;        if (expo &amp;gt; 1) {&#xA;            std::cout &amp;lt;&amp;lt; i &amp;lt;&amp;lt; &#34;^&#34; &amp;lt;&amp;lt; expo &amp;lt;&amp;lt; std::endl;&#xA;        } else if (expo == 1) {&#xA;            std::cout &amp;lt;&amp;lt; i &amp;lt;&amp;lt; std::endl;&#xA;        }&#xA;    }&#xA;&#xA;    // Last Prime&#xA;    if (n &amp;gt; 1) {&#xA;        std::cout &amp;lt;&amp;lt; n &amp;lt;&amp;lt; std::endl;&#xA;    }&#xA;}&#xA;&#xA;int main() {&#xA;    std::cout &amp;lt;&amp;lt; &#34;Enter n: &#34;;&#xA;    std::cin &amp;gt;&amp;gt; n;&#xA;    std::cout &amp;lt;&amp;lt; std::endl;&#xA;&#xA;    primeCalculator();&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;/section&gt;</description>
     </item>
     <item>
-      <title>2017 PUMaC Geometry A Problem 6</title>
-      <link>https://archive.enochyu.com/mathematics/2025/2017-pumac-geometry-a-problem6/</link>
-      <pubDate>Sun, 05 Oct 2025 00:00:00 -0400</pubDate>
-      <guid>https://archive.enochyu.com/mathematics/2025/2017-pumac-geometry-a-problem6/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Problem Set 38</title>
       <link>https://archive.enochyu.com/mathematics/2025/ps/ps38/</link>
       <pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
@@ -350,20 +343,6 @@
       <pubDate>Thu, 01 May 2025 00:00:00 -0400</pubDate>
       <guid>https://archive.enochyu.com/mathematics/2025/ramanujan-summation/</guid>
       <description>&lt;div class=&#34;theorem*&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Theorem 1&lt;/strong&gt;. &lt;em&gt;The sum of all natural numbers are&#xA;&lt;span class=&#34;math inline&#34;&gt;$-\frac{1}{12}$&lt;/span&gt;, or &lt;span&#xA;class=&#34;math display&#34;&gt;$$\sum_{n=1}^{\infty}n=-\frac{1}{12}.$$&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;proof&#34;&gt;&#xA;&lt;p&gt;&lt;em&gt;Proof.&lt;/em&gt; Let &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;, &lt;em&gt;S&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt; and&#xA;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/span&gt; be following sequences. &lt;span&#xA;class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;    S_1 &amp;amp;= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\&#xA;    S_2 &amp;amp;= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\&#xA;    S_3 &amp;amp;= 1 + 2 + 3 + 4 + 5 + 6 + \cdots&#xA;\end{align*}$$&lt;/span&gt; Despite the fact that &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/span&gt; is a divergent&#xA;sequence, the following property may apply. &lt;span&#xA;class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;    S_1 &amp;amp;= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\&#xA;    S_1 &amp;amp;= \,\,\,\,\,\text{ }\text{ }\text{ }&#xA;        1 - 1 + 1 - 1 + 1 - \cdots \\&#xA;    2S_1 &amp;amp;= 1 \\&#xA;    \therefore&#xA;    S_1 &amp;amp;= \frac{1}{2}&#xA;\end{align*}$$&lt;/span&gt; Similarly, &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; may be manipulated.&#xA;&lt;span class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;    S_2 &amp;amp;= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\&#xA;    S_2 &amp;amp;= \,\,\,\text{ }\text{ }\text{ }\text{ }&#xA;        1 - 2 + 3 - 4 + 5 - \cdots \\&#xA;    2S_2 &amp;amp;= 1 - 1 + 1 - 1 + 1 - 1 + \cdots \\&#xA;    2S_1 &amp;amp;= S_1 \\&#xA;    2S_1 &amp;amp;= \frac{1}{2} \\&#xA;    \therefore&#xA;    S_2 &amp;amp;= \frac{1}{4}&#xA;\end{align*}$$&lt;/span&gt; Lastly, the relationship between &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt; and &lt;span&#xA;class=&#34;math inline&#34;&gt;&lt;em&gt;S&lt;/em&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/span&gt; may be investigated.&#xA;&lt;span class=&#34;math display&#34;&gt;$$\begin{align*}&#xA;    S_3 &amp;amp;= 1 + 2 + 3 + 4 + 5 + 6 + \cdots \\&#xA;    S_2 &amp;amp;= 1 - 2 + 3 - 4 + 5 - 6 + \cdots \\&#xA;    S_3 - S_2 &amp;amp;= 4 + 8 + 1 2 + 16 + \cdots \\&#xA;    &amp;amp;= 4(1 + 2 + 3 + 4 + \cdots) \\&#xA;    &amp;amp;= 4S_3 \\&#xA;    3S_3 &amp;amp;= -S_2 \\&#xA;    3S_3 &amp;amp;= -\frac{1}{4} \\&#xA;    \therefore&#xA;    S_3&amp;amp; = -\frac{1}{12}&#xA;\end{align*}$$&lt;/span&gt; ◻&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lucas&#39;s Theorem</title>
-      <link>https://archive.enochyu.com/mathematics/2025/lucas-theorem/</link>
-      <pubDate>Wed, 30 Apr 2025 00:00:00 -0400</pubDate>
-      <guid>https://archive.enochyu.com/mathematics/2025/lucas-theorem/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Trigonometric Identities</title>
-      <link>https://archive.enochyu.com/mathematics/2025/trigonometric-identities/</link>
-      <pubDate>Wed, 30 Apr 2025 00:00:00 -0400</pubDate>
-      <guid>https://archive.enochyu.com/mathematics/2025/trigonometric-identities/</guid>
-      <description></description>
     </item>
     <item>
       <title>Problem Set 2</title>
