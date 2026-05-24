@@ -23,11 +23,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/trigonometric-identities.pdf"
+        "url": "/pdf/mathematics/2025/math2/trigonometric-identities.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/trigonometric-identities.tex"
+        "url": "/tex/mathematics/2025/math2/trigonometric-identities.tex"
       }
     ]
   },
@@ -39,11 +39,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/2017-pumac-geometry-a-problem6.pdf"
+        "url": "/pdf/mathematics/2025/math2/2017-pumac-geometry-a-problem6.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/2017-pumac-geometry-a-problem6.tex"
+        "url": "/tex/mathematics/2025/math2/2017-pumac-geometry-a-problem6.tex"
       }
     ]
   },
@@ -55,11 +55,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/desargues-theorem.pdf"
+        "url": "/pdf/mathematics/2025/math3/desargues-theorem.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/desargues-theorem.tex"
+        "url": "/tex/mathematics/2025/math3/desargues-theorem.tex"
       }
     ]
   },
@@ -80,8 +80,7 @@
     "date": "24 April 2026",
     "links": [
       {
-        "label": "Math Team Meeting: Shape Maze ",
-        "url": "/teaching/2026/math-team-shape-maze/"
+        "label": "Math Team Meeting: Shape Maze "
       },
       {
         "label": "(PDF, ",
