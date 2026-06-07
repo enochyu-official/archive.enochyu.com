@@ -1,47 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Categories on Enoch Yu</title>
-    <link>https://archive.enochyu.com/categories/</link>
-    <description>Recent content in Categories on Enoch Yu</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 -0400</lastBuildDate>
-    <atom:link href="https://archive.enochyu.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>HackerRank</title>
-      <link>https://archive.enochyu.com/categories/hackerrank/</link>
-      <pubDate>Wed, 11 Mar 2026 00:00:00 -0400</pubDate>
-      <guid>https://archive.enochyu.com/categories/hackerrank/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Primitive</title>
-      <link>https://archive.enochyu.com/categories/primitive/</link>
-      <pubDate>Wed, 11 Mar 2026 00:00:00 -0400</pubDate>
-      <guid>https://archive.enochyu.com/categories/primitive/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>High School - Grade09</title>
-      <link>https://archive.enochyu.com/categories/high-school---grade09/</link>
-      <pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
-      <guid>https://archive.enochyu.com/categories/high-school---grade09/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NoHTML</title>
-      <link>https://archive.enochyu.com/categories/nohtml/</link>
-      <pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
-      <guid>https://archive.enochyu.com/categories/nohtml/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Problem Sets</title>
-      <link>https://archive.enochyu.com/categories/problem-sets/</link>
-      <pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
-      <guid>https://archive.enochyu.com/categories/problem-sets/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Categories on Enoch Yu</title>
+		<link>https://archive.enochyu.com/categories/</link>
+		<description>Recent content in Categories on Enoch Yu</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 07 Jun 2026 00:00:00 -0400</lastBuildDate>
+		
+			<atom:link href="https://archive.enochyu.com/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>LeetCode</title>
+				<link>https://archive.enochyu.com/categories/leetcode/</link>
+				<pubDate>Sun, 07 Jun 2026 00:00:00 -0400</pubDate>
+				<guid>https://archive.enochyu.com/categories/leetcode/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Primitive</title>
+				<link>https://archive.enochyu.com/categories/primitive/</link>
+				<pubDate>Sun, 07 Jun 2026 00:00:00 -0400</pubDate>
+				<guid>https://archive.enochyu.com/categories/primitive/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>HackerRank</title>
+				<link>https://archive.enochyu.com/categories/hackerrank/</link>
+				<pubDate>Wed, 11 Mar 2026 00:00:00 -0400</pubDate>
+				<guid>https://archive.enochyu.com/categories/hackerrank/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>High School - Grade09</title>
+				<link>https://archive.enochyu.com/categories/high-school---grade09/</link>
+				<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+				<guid>https://archive.enochyu.com/categories/high-school---grade09/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>NoHTML</title>
+				<link>https://archive.enochyu.com/categories/nohtml/</link>
+				<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+				<guid>https://archive.enochyu.com/categories/nohtml/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Problem Sets</title>
+				<link>https://archive.enochyu.com/categories/problem-sets/</link>
+				<pubDate>Tue, 29 Jul 2025 00:00:00 -0400</pubDate>
+				<guid>https://archive.enochyu.com/categories/problem-sets/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>LeetCode on Enoch Yu</title>
+		<link>https://archive.enochyu.com/categories/leetcode/</link>
+		<description>Recent content in LeetCode on Enoch Yu</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 07 Jun 2026 00:00:00 -0400</lastBuildDate>
+		
+			<atom:link href="https://archive.enochyu.com/categories/leetcode/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>0001. Two Sum</title>
+				<link>https://archive.enochyu.com/programming/2026/leetcode/problem01/</link>
+				<pubDate>Sun, 07 Jun 2026 00:00:00 -0400</pubDate>
+				<guid>https://archive.enochyu.com/programming/2026/leetcode/problem01/</guid>
+				<description>&lt;section class=&#34;section-toc&#34;&gt;&#xA;&lt;div class=&#34;page-content&#34;&gt;&#xA;&lt;h2 id=&#34;problem&#34;&gt;Problem: Say &#34;Hello, World!&#34; With C++&lt;/h2&gt;&#xA;&lt;p&gt;Link to the Challenge:&lt;/p&gt;&#xA;&lt;a href=&#34;https://www.hackerrank.com/challenges/cpp-hello-world/problem&#34;&gt;&#xA;Problem Statement&lt;/a&gt;&#xA;&#xA;&lt;h2 id=&#34;source-code&#34;&gt;Source Code&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;iostream&amp;gt;&#xA;using namespace std;&#xA;&#xA;int main() {&#xA;    cout &amp;lt;&amp;lt; &#34;Hello, World!\n&#34;;&#xA;&#xA;    return 0;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;h2 id=&#34;demonstration&#34;&gt;Demonstration&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;Hello, World!&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/section&gt;</description>
+			</item>
+	</channel>
+</rss>

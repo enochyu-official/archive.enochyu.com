@@ -12,10 +12,10 @@
   
   {{ partial "footer.html" . }}
   
-  {{ $js := resources.Get "js/script.js" }}
-  {{ if $js }}
-  <script src="{{ $js.RelPermalink }}"></script>
-  {{ end }}
+  {{ $script := resources.Get "js/script.js" }}
+  <script src="{{ $script.RelPermalink }}"></script>
+  {{ $counter := resources.Get "js/counter.js" }}
+  <script src="{{ $counter.RelPermalink }}"></script>
 </body>
 </html>
 
