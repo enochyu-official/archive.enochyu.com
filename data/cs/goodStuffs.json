@@ -1,0 +1,29 @@
+[
+  {
+    "date": "11 March 2026",
+    "links": [
+      {
+        "label": "Prime Factor Calculator ",
+        "url": "/cs/2026/prime-calculator/"
+      },
+      {
+        "label": "(TXT) ",
+        "url": "/txt/cs/2026/prime-calculator.txt"
+      }
+    ]
+  },
+  {
+    "date": "11 March 2026",
+    "links": [
+      {
+        "label": "Coordinate Calculator for TikZ ",
+        "url": "/cs/2026/coordinate-calculator/"
+      },
+      {
+        "label": "(TXT) ",
+        "url": "/txt/cs/2026/coordinate-calculator.txt"
+      }
+    ]
+  }
+]
+
