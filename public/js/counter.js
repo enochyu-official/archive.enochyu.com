@@ -1,14 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".view-count").forEach(async (span) => {
-    const itemName = span.getAttribute("unique-id");
-    try {
-      const response = await fetch(`https://archive-view-count-db.enochyu.workers.dev/?name=${itemName}`);
-      const text = await response.text();
-      
-      span.textContent = text.match(/\d+$/)?.[0];
-    } catch {
-      span.textContent = "—";
-    }
-  });
-});
+const workerUrl = 'https://archive-view-counter-db.enochyu.workers.dev';
+const pageUrl = window.location.href;
+const viewCountEl = document.getElementById('view-count');
+
+if (viewCountEl) {
+  fetch(`${workerUrl}/?url=${encodeURIComponent(pageUrl)}`)
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      return response.json();
+    })
+    .then(data => {
+      if (data.error) throw new Error(data.error);
+      viewCountEl.textContent = `Total Visits: ${data.count}`;
+    })
+    .catch(error => {
+      console.error('Error fetching view count:', error);
+      viewCountEl.classList.add('error');
+      viewCountEl.textContent = `Total Visits: Error (${error.message})`;
+    });
+}
 

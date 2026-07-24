@@ -2,5 +2,7 @@
 
 .hugo_build.lock
 
-archive-view-count-db/
+.wrangler
+node_modules/
+
 
