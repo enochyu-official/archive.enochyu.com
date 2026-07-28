@@ -4,11 +4,11 @@
     "links": [
       {
         "label": "Prime Factor Calculator ",
-        "url": "/cs/2026/prime-calculator/"
+        "url": "/cs/26011/"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/prime-calculator.txt"
+        "url": "/cs/txt/26011.txt"
       }
     ]
   },
@@ -17,11 +17,11 @@
     "links": [
       {
         "label": "Coordinate Calculator for TikZ ",
-        "url": "/cs/2026/coordinate-calculator/"
+        "url": "/cs/26010/"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/coordinate-calculator.txt"
+        "url": "/cs/txt/26010.txt"
       }
     ]
   }

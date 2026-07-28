@@ -7,11 +7,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/math2/ancient1.pdf"
+        "url": "/mathematics/pdf/25001.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/math2/ancient1.tex"
+        "url": "/mathematics/tex/25001.tex"
       }
     ]
   },
@@ -23,11 +23,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/math2/ancient3.pdf"
+        "url": "/mathematics/pdf/25003.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/math2/ancient3.tex"
+        "url": "/mathematics/tex/25003.tex"
       }
     ]
   },
@@ -39,11 +39,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/math2/ancient2.pdf"
+        "url": "/mathematics/pdf/25002.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/math2/ancient2.tex"
+        "url": "/mathematics/tex/25002.tex"
       }
     ]
   },
@@ -55,11 +55,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/math2/trigonometric-identities.pdf"
+        "url": "/mathematics/pdf/25007.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/math2/trigonometric-identities.tex"
+        "url": "/mathematics/tex/25007.tex"
       }
     ]
   },
@@ -68,15 +68,15 @@
     "links": [
       {
         "label": "Ramanujan Summation ",
-        "url": "/mathematics/2025/ramanujan-summation/"
+        "url": "/mathematics/25008/"
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/math2/ramanujan-summation.pdf"
+        "url": "/mathematics/pdf/25008.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/math2/ramanujan-summation.tex"
+        "url": "/mathematics/tex/25008.tex"
       }
     ]
   },
@@ -88,11 +88,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/math2/2017-pumac-geometry-a-problem6.pdf"
+        "url": "/mathematics/pdf/25061.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/math2/2017-pumac-geometry-a-problem6.tex"
+        "url": "/mathematics/tex/25061.tex"
       }
     ]
   },
@@ -104,11 +104,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2026/math-team-shape-maze-solution.pdf"
+        "url": "/mathematics/pdf/26016.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2026/math-team-shape-maze-solution.tex"
+        "url": "/mathematics/tex/26016.tex"
       }
     ]
   }

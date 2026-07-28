@@ -4,11 +4,11 @@
     "links": [
       {
         "label": "HackerRank Problem 1 ",
-        "url": "/cs/2026/hacker-rank/problem01"
+        "url": "/cs/26001"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/hacker-rank/problem01.txt"
+        "url": "/cs/txt/26001.txt"
       }
     ]
   },
@@ -17,11 +17,11 @@
     "links": [
       {
         "label": "HackerRank Problem 2 ",
-        "url": "/cs/2026/hacker-rank/problem02"
+        "url": "/cs/26002"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/hacker-rank/problem02.txt"
+        "url": "/cs/txt/26002.txt"
       }
     ]
   },
@@ -30,11 +30,11 @@
     "links": [
       {
         "label": "HackerRank Problem 3 ",
-        "url": "/cs/2026/hacker-rank/problem03"
+        "url": "/cs/26003"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/hacker-rank/problem03.txt"
+        "url": "/cs/txt/26003.txt"
       }
     ]
   },
@@ -43,11 +43,11 @@
     "links": [
       {
         "label": "HackerRank Problem 4 ",
-        "url": "/cs/2026/hacker-rank/problem04"
+        "url": "/cs/26004"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/hacker-rank/problem04.txt"
+        "url": "/cs/txt/26004.txt"
       }
     ]
   },
@@ -56,11 +56,11 @@
     "links": [
       {
         "label": "HackerRank Problem 5 ",
-        "url": "/cs/2026/hacker-rank/problem05"
+        "url": "/cs/26005"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/hacker-rank/problem05.txt"
+        "url": "/cs/txt/26005.txt"
       }
     ]
   },
@@ -69,11 +69,11 @@
     "links": [
       {
         "label": "HackerRank Problem 6 ",
-        "url": "/cs/2026/hacker-rank/problem06"
+        "url": "/cs/26006"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/hacker-rank/problem06.txt"
+        "url": "/cs/txt/26006.txt"
       }
     ]
   },
@@ -82,11 +82,11 @@
     "links": [
       {
         "label": "HackerRank Problem 7 ",
-        "url": "/cs/2026/hacker-rank/problem07"
+        "url": "/cs/26007"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/hacker-rank/problem07.txt"
+        "url": "/cs/txt/26007.txt"
       }
     ]
   },
@@ -95,11 +95,11 @@
     "links": [
       {
         "label": "HackerRank Problem 8 ",
-        "url": "/cs/2026/hacker-rank/problem08"
+        "url": "/cs/26008"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/hacker-rank/problem08.txt"
+        "url": "/cs/txt/26008.txt"
       }
     ]
   },
@@ -108,11 +108,11 @@
     "links": [
       {
         "label": "HackerRank Problem 9 ",
-        "url": "/cs/2026/hacker-rank/problem09"
+        "url": "/cs/26009"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/hacker-rank/problem09.txt"
+        "url": "/cs/txt/26009.txt"
       }
     ]
   }

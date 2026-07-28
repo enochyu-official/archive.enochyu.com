@@ -1,0 +1,82 @@
+25001 | MATHEMATICS | Ancient File 1
+25002 | MATHEMATICS | Ancient File 2
+25003 | MATHEMATICS | Ancient File 3
+25004 | MATHEMATICS | Lucas's Theorem
+25005 | MATHEMATICS | Problem Set 1
+25006 | MATHEMATICS | Problem Set 2
+25007 | MATHEMATICS | Trigonometric Identities
+25008 | MATHEMATICS | Ramanujan Summation
+25009 | MATHEMATICS | Problem Set 3
+25010 | MATHEMATICS | Problem Set 4
+25011 | MATHEMATICS | Problem Set 5
+25012 | MATHEMATICS | Problem Set 6
+25013 | MATHEMATICS | Problem Set 7
+25014 | MATHEMATICS | Problem Set 8
+25015 | MATHEMATICS | Problem Set 9
+25016 | MATHEMATICS | Problem Set 10
+25017 | MATHEMATICS | Problem Set 11
+25018 | MATHEMATICS | Problem Set 12
+25019 | MATHEMATICS | Problem Set 13
+25020 | MATHEMATICS | Problem Set 14
+25021 | MATHEMATICS | Problem Set 15
+25022 | MATHEMATICS | Problem Set 16
+25023 | MATHEMATICS | Problem Set 17
+25024 | MATHEMATICS | Problem Set 18
+25025 | MATHEMATICS | Problem Set 19
+25026 | MATHEMATICS | Problem Set 20
+25027 | MATHEMATICS | Problem Set 21
+25028 | MATHEMATICS | Problem Set 22
+25029 | MATHEMATICS | Problem Set 23
+25030 | MATHEMATICS | Problem Set 24
+25031 | MATHEMATICS | Problem Set 25
+25032 | MATHEMATICS | Problem Set 26
+25033 | MATHEMATICS | Problem Set 27
+25034 | MATHEMATICS | Problem Set 28
+25035 | TEACHING    | 07.01.2025 AMC 10, 12 Free Class Preview Homework Solution
+25036 | MATHEMATICS | Problem Set 29
+25037 | MATHEMATICS | Problem Set 30
+25038 | MATHEMATICS | Problem Set 31
+25039 | TEACHING    | 07.08.2025 AMC 10 Free Class Preview Homework Solution
+25040 | TEACHING    | 07.08.2025 AMC 10, 12 Free Class Preview Homework Solution
+25041 | TEACHING    | 07.11.2025 AMC 10, 12 Free Class
+25042 | MATHEMATICS | Problem Set 32
+25043 | TEACHING    | 07.14.2025 AMC 10, 12 Free Class Slide
+25044 | MATHEMATICS | Problem Set 33
+25045 | TEACHING    | 07.15.2025 AMC 10 Free Class Preview Homework Solution
+25046 | TEACHING    | 07.15.2025 AMC 10, 12 Free Class Preview Homework Solution
+25047 | MATHEMATICS | Problem Set 34
+25048 | MATHEMATICS | Problem Set 35
+25049 | TEACHING    | 07.21.2025 AMC 10, 12 Free Class Slide
+25050 | MATHEMATICS | Problem Set 36
+25051 | TEACHING    | 07.22.2025 AMC 10, 12 Hard Problems
+25052 | TEACHING    | 07.28.2025 AMC 10, 12 Free Class Slide
+25053 | MATHEMATICS | Problem Set 37
+25054 | MATHEMATICS | Problem Set 38
+25055 | TEACHING    | 07.29.2025 AMC 10 Free Class Preview Homework Solution
+25056 | TEACHING    | 07.29.2025 AMC 10, 12 Free Class Preview Homework Solution
+25057 | TEACHING    | 2025 Free AMC 8 Class Problem Set 1
+25058 | TEACHING    | 2025 Free AMC 8 Class Problem Set 2
+25059 | TEACHING    | 2025 Free AMC 8 Class Problem Set 3
+25060 | TEACHING    | 2025 Free AMC 8 Class Problem Set 4
+25061 | MATHEMATICS | 2017 PUMaC Geometry A Problem 6
+25062 | MATHEMATICS | Desargues' Theorem
+
+26001 | CS          | HackerRank Problem 1
+26002 | CS          | HackerRank Problem 2
+26003 | CS          | HackerRank Problem 3
+26004 | CS          | HackerRank Problem 4
+26005 | CS          | HackerRank Problem 5
+26006 | CS          | HackerRank Problem 6
+26007 | CS          | HackerRank Problem 7
+26008 | CS          | HackerRank Problem 8
+26009 | CS          | HackerRank Problem 9
+26010 | CS          | Coordinate Calculator for TikZ
+26011 | CS          | Prime Factor Calculator
+26012 | CS          | 0001. Two Sum
+26013 | CS          | 0009. Palindrome Number
+26014 | CS          | 0069. Sqrt(x)
+26015 | TEACHING    | Math Team Meeting: Shape Maze
+26016 | MATHEMATICS | Math Team Meeting: Shape Maze Solution
+
+
+

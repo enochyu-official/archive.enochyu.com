@@ -7,11 +7,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/math3/lucas-theorem.pdf"
+        "url": "/mathematics/pdf/25004.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/math3/lucas-theorem.tex"
+        "url": "/mathematics/tex/25004.tex"
       }
     ]
   },
@@ -23,11 +23,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/math2/trigonometric-identities.pdf"
+        "url": "/mathematics/pdf/25007.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/math2/trigonometric-identities.tex"
+        "url": "/mathematics/tex/25007.tex"
       }
     ]
   },
@@ -39,11 +39,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/math2/2017-pumac-geometry-a-problem6.pdf"
+        "url": "/mathematics/pdf/25061.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/math2/2017-pumac-geometry-a-problem6.tex"
+        "url": "/mathematics/tex/25061.tex"
       }
     ]
   },
@@ -55,11 +55,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/mathematics/2025/math3/desargues-theorem.pdf"
+        "url": "/mathematics/pdf/25062.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/mathematics/2025/math3/desargues-theorem.tex"
+        "url": "/mathematics/tex/25062.tex"
       }
     ]
   },
@@ -68,11 +68,11 @@
     "links": [
       {
         "label": "Coordinate Calculator for TikZ ",
-        "url": "/cs/2026/coordinate-calculator/"
+        "url": "/cs/26010/"
       },
       {
         "label": "(TXT) ",
-        "url": "/txt/cs/2026/coordinate-calculator.txt"
+        "url": "/cs/txt/26010.txt"
       }
     ]
   },
@@ -84,11 +84,11 @@
       },
       {
         "label": "(PDF, ",
-        "url": "/pdf/teaching/2026/math-team-shape-maze.pdf"
+        "url": "/teaching/pdf/26015.pdf"
       },
       {
         "label": "TeX)",
-        "url": "/tex/teaching/2026/math-team-shape-maze.tex"
+        "url": "/teaching/tex/26015.tex"
       }
     ]
   }
