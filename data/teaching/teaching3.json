@@ -1,19 +1,1282 @@
 [
   {
-    "date": "24 April 2026",
+    "date": "28 July 2026",
     "links": [
       {
-        "label": "Math Team Meeting: Shape Maze "
+        "label": "Day 1"
       },
       {
-        "label": "(PDF, ",
-        "url": "/teaching/pdf/26015.pdf"
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26017.pdf"
       },
       {
-        "label": "TeX)",
-        "url": "/teaching/tex/26015.tex"
+        "label": "Recording)",
+        "url": "https://youtu.be/xaend1YM4vg"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 2"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26018.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/hpzTPDZWf8g"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 3"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26019.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/q_unknZjq2I"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 4"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26020.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/P5p0EKNoZLw"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 5"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26021.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/DlZjn090hr8"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 6"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26022.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/Cb7kiEjvHbA"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 7"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26023.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/Um_ve-YbX1E"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 8"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26024.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/RbB1V2PFy-4"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 9"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26025.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/gqT0i628NOc"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 10"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26026.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/xxtObyadmTc"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 11"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26027.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/TMhT37C76XI"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 12"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26028.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/JFrxw-2ZY2A"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 13"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26029.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/X-HS76Uc16M"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 14"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26030.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/Ecn62xINXQE"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 15"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26031.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/eVlmS-mVPTU"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 16"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26032.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/S3h8IwlmEAk"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 17"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26033.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/koGABczlK-w"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 18"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26034.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/3vfl9jfB9GI"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 19"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26035.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/bQxmMGtqXi8"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 20"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26036.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/adwiSgEAIG0"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 21"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26037.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/VmjnhjcQwfI"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 22"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26038.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/aMu6DTzxyF8"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 23"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26039.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/kXD2SRp6om8"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 24"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26040.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/zAKLqHCxCIw"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 25"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26041.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/cFyTkkmR_l8"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 26"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26042.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/PjdgTmtoT5M"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 27"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26043.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/X4T-R26Ao7U"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 28"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26044.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/NIT-1QfNSPM"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 29"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26045.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/btn6AWVW7Fc"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 30"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26046.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/szqXZTVC_Wg"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 31"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26047.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/sXFpbfnhYEs"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 32"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26048.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/HA555iaCvkY"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 33"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26049.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/-iVmhIdhrCc"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 34"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26050.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/Olct6UuUFBE"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 35"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26051.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/ZGJTJ99plgo"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 36"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26052.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/Vz9BC5q7zdc"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 37"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26053.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/xuwUynrAgcI"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 38"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26054.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/xKgIW4rp9T0"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 39"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26055.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/qvo055woq5Y"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 40"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26056.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/wkzElgSmacs"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 41"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26057.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/lpcBC6D14Ew"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 42"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26058.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/wQ8KFeas_5k"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 43"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26059.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/37fydgAZ0mw"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 44"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26060.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/kc5wtuQ2y7Y"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 45"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26061.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/X5HAvL0EYXo"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 46"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26062.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/5st_600uAHs"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 47"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26063.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/CUjl8xcSWNQ"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 48"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26064.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/oAPP62sl4D4"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 49"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26065.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/fGX-00BoBec"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 50"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26066.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/0UnYCu-wAX0"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 51"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26067.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/4Q21_AA0Efw"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 52"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26068.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/J8Dj3SY7lQk"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 53"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26069.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/mjUccETe65w"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 54"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26070.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/xWTdDt8q5bk"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 55"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26071.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/SBiRN9wMeoI"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 56"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26072.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/mFIRcq6Ytgw"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 57"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26073.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/Bm6L1ljduII"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 58"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26074.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/YCW3UWNtq6A"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 59"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26075.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/ompkS4Li6xo"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 60"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26076.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/OUPqHbw5CvM"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 61"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26077.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/5BWz616-o2I"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 62"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26078.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/STy74sON1Ho"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 63"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26079.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/9QBB5MgxUGQ"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 64"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26080.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/KRlk61Aui74"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 65"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26081.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/EBZXcFkF07s"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 66"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26082.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/1zpI6SrrxsM"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 67"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26083.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/c2WXvNU-Q-w"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 68"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26084.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/iEN5KCg8ma4"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 69"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26085.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/t-nKeuBF5Mo"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 70"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26086.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/DazO8nRqhtA"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 71"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26087.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/V2HGvh77pRA"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 72"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26088.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/my6ErYElsc0"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 73"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26089.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/GHWMvkZ8N_0"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 74"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26090.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/_n7QAwh7uts"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 75"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26091.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/q7HTXNe6qWY"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 76"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26092.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/SgQzjFnDAPA"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 77"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26093.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/lD2_0HnDjNo"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 78"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26094.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/oSV6Hl2t_4o"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 79"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26095.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/EJ7SS4P32jY"
+      }
+    ]
+  },
+  {
+    "date": "28 July 2026",
+    "links": [
+      {
+        "label": "Day 80"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26096.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/AgJrtaFXE_o"
       }
     ]
   }
 ]
-
