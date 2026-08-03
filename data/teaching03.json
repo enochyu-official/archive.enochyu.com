@@ -1283,7 +1283,7 @@
     "date": "30 July 2026",
     "links": [
       {
-        "label": "Day 80"
+        "label": "Day 81"
       },
       {
         "label": "(Handwritten PDF, ",
@@ -1292,6 +1292,22 @@
       {
         "label": "Recording)",
         "url": "https://youtu.be/9KJ179Kbt70"
+      }
+    ]
+  },
+  {
+    "date": "3 August 2026",
+    "links": [
+      {
+        "label": "Day 82"
+      },
+      {
+        "label": "(Handwritten PDF, ",
+        "url": "/teaching/pdf/26098.pdf"
+      },
+      {
+        "label": "Recording)",
+        "url": "https://youtu.be/1prjmPe3cZk"
       }
     ]
   }
