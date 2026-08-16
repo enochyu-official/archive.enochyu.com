@@ -1,164 +1,166 @@
-25001 | MATHEMATICS | Ancient File 1
-25002 | MATHEMATICS | Ancient File 2
-25003 | MATHEMATICS | Ancient File 3
-25004 | MATHEMATICS | Lucas's Theorem
-25005 | MATHEMATICS | Problem Set 1
-25006 | MATHEMATICS | Problem Set 2
-25007 | MATHEMATICS | Trigonometric Identities
-25008 | MATHEMATICS | Ramanujan Summation
-25009 | MATHEMATICS | Problem Set 3
-25010 | MATHEMATICS | Problem Set 4
-25011 | MATHEMATICS | Problem Set 5
-25012 | MATHEMATICS | Problem Set 6
-25013 | MATHEMATICS | Problem Set 7
-25014 | MATHEMATICS | Problem Set 8
-25015 | MATHEMATICS | Problem Set 9
-25016 | MATHEMATICS | Problem Set 10
-25017 | MATHEMATICS | Problem Set 11
-25018 | MATHEMATICS | Problem Set 12
-25019 | MATHEMATICS | Problem Set 13
-25020 | MATHEMATICS | Problem Set 14
-25021 | MATHEMATICS | Problem Set 15
-25022 | MATHEMATICS | Problem Set 16
-25023 | MATHEMATICS | Problem Set 17
-25024 | MATHEMATICS | Problem Set 18
-25025 | MATHEMATICS | Problem Set 19
-25026 | MATHEMATICS | Problem Set 20
-25027 | MATHEMATICS | Problem Set 21
-25028 | MATHEMATICS | Problem Set 22
-25029 | MATHEMATICS | Problem Set 23
-25030 | MATHEMATICS | Problem Set 24
-25031 | MATHEMATICS | Problem Set 25
-25032 | MATHEMATICS | Problem Set 26
-25033 | MATHEMATICS | Problem Set 27
-25034 | MATHEMATICS | Problem Set 28
-25035 | TEACHING    | 07.01.2025 AMC 10, 12 Free Class Preview Homework Solution
-25036 | MATHEMATICS | Problem Set 29
-25037 | MATHEMATICS | Problem Set 30
-25038 | MATHEMATICS | Problem Set 31
-25039 | TEACHING    | 07.08.2025 AMC 10 Free Class Preview Homework Solution
-25040 | TEACHING    | 07.08.2025 AMC 10, 12 Free Class Preview Homework Solution
-25041 | TEACHING    | 07.11.2025 AMC 10, 12 Free Class
-25042 | MATHEMATICS | Problem Set 32
-25043 | TEACHING    | 07.14.2025 AMC 10, 12 Free Class Slide
-25044 | MATHEMATICS | Problem Set 33
-25045 | TEACHING    | 07.15.2025 AMC 10 Free Class Preview Homework Solution
-25046 | TEACHING    | 07.15.2025 AMC 10, 12 Free Class Preview Homework Solution
-25047 | MATHEMATICS | Problem Set 34
-25048 | MATHEMATICS | Problem Set 35
-25049 | TEACHING    | 07.21.2025 AMC 10, 12 Free Class Slide
-25050 | MATHEMATICS | Problem Set 36
-25051 | TEACHING    | 07.22.2025 AMC 10, 12 Hard Problems
-25052 | TEACHING    | 07.28.2025 AMC 10, 12 Free Class Slide
-25053 | MATHEMATICS | Problem Set 37
-25054 | MATHEMATICS | Problem Set 38
-25055 | TEACHING    | 07.29.2025 AMC 10 Free Class Preview Homework Solution
-25056 | TEACHING    | 07.29.2025 AMC 10, 12 Free Class Preview Homework Solution
-25057 | TEACHING    | 2025 Free AMC 8 Class Problem Set 1
-25058 | TEACHING    | 2025 Free AMC 8 Class Problem Set 2
-25059 | TEACHING    | 2025 Free AMC 8 Class Problem Set 3
-25060 | TEACHING    | 2025 Free AMC 8 Class Problem Set 4
-25061 | MATHEMATICS | 2017 PUMaC Geometry A Problem 6
-25062 | MATHEMATICS | Desargues' Theorem
+25001 | MATH     | Ancient File 1
+25002 | MATH     | Ancient File 2
+25003 | MATH     | Ancient File 3
+25004 | MATH     | Lucas's Theorem
+25005 | MATH     | Problem Set 1
+25006 | MATH     | Problem Set 2
+25007 | MATH     | Trigonometric Identities
+25008 | MATH     | Ramanujan Summation
+25009 | MATH     | Problem Set 3
+25010 | MATH     | Problem Set 4
+25011 | MATH     | Problem Set 5
+25012 | MATH     | Problem Set 6
+25013 | MATH     | Problem Set 7
+25014 | MATH     | Problem Set 8
+25015 | MATH     | Problem Set 9
+25016 | MATH     | Problem Set 10
+25017 | MATH     | Problem Set 11
+25018 | MATH     | Problem Set 12
+25019 | MATH     | Problem Set 13
+25020 | MATH     | Problem Set 14
+25021 | MATH     | Problem Set 15
+25022 | MATH     | Problem Set 16
+25023 | MATH     | Problem Set 17
+25024 | MATH     | Problem Set 18
+25025 | MATH     | Problem Set 19
+25026 | MATH     | Problem Set 20
+25027 | MATH     | Problem Set 21
+25028 | MATH     | Problem Set 22
+25029 | MATH     | Problem Set 23
+25030 | MATH     | Problem Set 24
+25031 | MATH     | Problem Set 25
+25032 | MATH     | Problem Set 26
+25033 | MATH     | Problem Set 27
+25034 | MATH     | Problem Set 28
+25035 | TEACHING | 07.01.2025 AMC 10, 12 Free Class Preview Homework Solution
+25036 | MATH     | Problem Set 29
+25037 | MATH     | Problem Set 30
+25038 | MATH     | Problem Set 31
+25039 | TEACHING | 07.08.2025 AMC 10 Free Class Preview Homework Solution
+25040 | TEACHING | 07.08.2025 AMC 10, 12 Free Class Preview Homework Solution
+25041 | TEACHING | 07.11.2025 AMC 10, 12 Free Class
+25042 | MATH     | Problem Set 32
+25043 | TEACHING | 07.14.2025 AMC 10, 12 Free Class Slide
+25044 | MATH     | Problem Set 33
+25045 | TEACHING | 07.15.2025 AMC 10 Free Class Preview Homework Solution
+25046 | TEACHING | 07.15.2025 AMC 10, 12 Free Class Preview Homework Solution
+25047 | MATH     | Problem Set 34
+25048 | MATH     | Problem Set 35
+25049 | TEACHING | 07.21.2025 AMC 10, 12 Free Class Slide
+25050 | MATH     | Problem Set 36
+25051 | TEACHING | 07.22.2025 AMC 10, 12 Hard Problems
+25052 | TEACHING | 07.28.2025 AMC 10, 12 Free Class Slide
+25053 | MATH     | Problem Set 37
+25054 | MATH     | Problem Set 38
+25055 | TEACHING | 07.29.2025 AMC 10 Free Class Preview Homework Solution
+25056 | TEACHING | 07.29.2025 AMC 10, 12 Free Class Preview Homework Solution
+25057 | TEACHING | 2025 Free AMC 8 Class Problem Set 1
+25058 | TEACHING | 2025 Free AMC 8 Class Problem Set 2
+25059 | TEACHING | 2025 Free AMC 8 Class Problem Set 3
+25060 | TEACHING | 2025 Free AMC 8 Class Problem Set 4
+25061 | MATH     | 2017 PUMaC Geometry A Problem 6
+25062 | MATH     | Desargues' Theorem
 
-26001 | CS          | HackerRank Problem 1
-26002 | CS          | HackerRank Problem 2
-26003 | CS          | HackerRank Problem 3
-26004 | CS          | HackerRank Problem 4
-26005 | CS          | HackerRank Problem 5
-26006 | CS          | HackerRank Problem 6
-26007 | CS          | HackerRank Problem 7
-26008 | CS          | HackerRank Problem 8
-26009 | CS          | HackerRank Problem 9
-26010 | CS          | Coordinate Calculator for TikZ
-26011 | CS          | Prime Factor Calculator
-26012 | CS          | 0001. Two Sum
-26013 | CS          | 0009. Palindrome Number
-26014 | CS          | 0069. Sqrt(x)
-26015 | TEACHING    | Math Team Meeting: Shape Maze
-26016 | MATHEMATICS | Math Team Meeting: Shape Maze Solution
-26017 | TEACHING    | (Handwritten) Day 1
-26018 | TEACHING    | (Handwritten) Day 2
-26019 | TEACHING    | (Handwritten) Day 3
-26020 | TEACHING    | (Handwritten) Day 4
-26021 | TEACHING    | (Handwritten) Day 5
-26022 | TEACHING    | (Handwritten) Day 6
-26023 | TEACHING    | (Handwritten) Day 7
-26024 | TEACHING    | (Handwritten) Day 8
-26025 | TEACHING    | (Handwritten) Day 9
-26026 | TEACHING    | (Handwritten) Day 10
-26027 | TEACHING    | (Handwritten) Day 11
-26028 | TEACHING    | (Handwritten) Day 12
-26029 | TEACHING    | (Handwritten) Day 13
-26030 | TEACHING    | (Handwritten) Day 14
-26031 | TEACHING    | (Handwritten) Day 15
-26032 | TEACHING    | (Handwritten) Day 16
-26033 | TEACHING    | (Handwritten) Day 17
-26034 | TEACHING    | (Handwritten) Day 18
-26035 | TEACHING    | (Handwritten) Day 19
-26036 | TEACHING    | (Handwritten) Day 20
-26037 | TEACHING    | (Handwritten) Day 21
-26038 | TEACHING    | (Handwritten) Day 22
-26039 | TEACHING    | (Handwritten) Day 23
-26040 | TEACHING    | (Handwritten) Day 24
-26041 | TEACHING    | (Handwritten) Day 25
-26042 | TEACHING    | (Handwritten) Day 26
-26043 | TEACHING    | (Handwritten) Day 27
-26044 | TEACHING    | (Handwritten) Day 28
-26045 | TEACHING    | (Handwritten) Day 29
-26046 | TEACHING    | (Handwritten) Day 30
-26047 | TEACHING    | (Handwritten) Day 31
-26048 | TEACHING    | (Handwritten) Day 32
-26049 | TEACHING    | (Handwritten) Day 33
-26050 | TEACHING    | (Handwritten) Day 34
-26051 | TEACHING    | (Handwritten) Day 35
-26052 | TEACHING    | (Handwritten) Day 36
-26053 | TEACHING    | (Handwritten) Day 37
-26054 | TEACHING    | (Handwritten) Day 38
-26055 | TEACHING    | (Handwritten) Day 39
-26056 | TEACHING    | (Handwritten) Day 40
-26057 | TEACHING    | (Handwritten) Day 41
-26058 | TEACHING    | (Handwritten) Day 42
-26059 | TEACHING    | (Handwritten) Day 43
-26060 | TEACHING    | (Handwritten) Day 44
-26061 | TEACHING    | (Handwritten) Day 45
-26062 | TEACHING    | (Handwritten) Day 46
-26063 | TEACHING    | (Handwritten) Day 47
-26064 | TEACHING    | (Handwritten) Day 48
-26065 | TEACHING    | (Handwritten) Day 49
-26066 | TEACHING    | (Handwritten) Day 50
-26067 | TEACHING    | (Handwritten) Day 51
-26068 | TEACHING    | (Handwritten) Day 52
-26069 | TEACHING    | (Handwritten) Day 53
-26070 | TEACHING    | (Handwritten) Day 54
-26071 | TEACHING    | (Handwritten) Day 55
-26072 | TEACHING    | (Handwritten) Day 56
-26073 | TEACHING    | (Handwritten) Day 57
-26074 | TEACHING    | (Handwritten) Day 58
-26075 | TEACHING    | (Handwritten) Day 59
-26076 | TEACHING    | (Handwritten) Day 60
-26077 | TEACHING    | (Handwritten) Day 61
-26078 | TEACHING    | (Handwritten) Day 62
-26079 | TEACHING    | (Handwritten) Day 63
-26080 | TEACHING    | (Handwritten) Day 64
-26081 | TEACHING    | (Handwritten) Day 65
-26082 | TEACHING    | (Handwritten) Day 66
-26083 | TEACHING    | (Handwritten) Day 67
-26084 | TEACHING    | (Handwritten) Day 68
-26085 | TEACHING    | (Handwritten) Day 69
-26086 | TEACHING    | (Handwritten) Day 70
-26087 | TEACHING    | (Handwritten) Day 71
-26088 | TEACHING    | (Handwritten) Day 72
-26089 | TEACHING    | (Handwritten) Day 73
-26090 | TEACHING    | (Handwritten) Day 74
-26091 | TEACHING    | (Handwritten) Day 75
-26092 | TEACHING    | (Handwritten) Day 76
-26093 | TEACHING    | (Handwritten) Day 77
-26094 | TEACHING    | (Handwritten) Day 78
-26095 | TEACHING    | (Handwritten) Day 79
-26096 | TEACHING    | (Handwritten) Day 80
-26097 | TEACHING    | (Handwritten) Day 81
-26098 | TEACHING    | (Handwritten) Day 82
+26001 | CS       | HackerRank Problem 1
+26002 | CS       | HackerRank Problem 2
+26003 | CS       | HackerRank Problem 3
+26004 | CS       | HackerRank Problem 4
+26005 | CS       | HackerRank Problem 5
+26006 | CS       | HackerRank Problem 6
+26007 | CS       | HackerRank Problem 7
+26008 | CS       | HackerRank Problem 8
+26009 | CS       | HackerRank Problem 9
+26010 | CS       | Coordinate Calculator for TikZ
+26011 | CS       | Prime Factor Calculator
+26012 | CS       | 0001. Two Sum
+26013 | CS       | 0009. Palindrome Number
+26014 | CS       | 0069. Sqrt(x)
+26015 | TEACHING | Math Team Meeting: Shape Maze
+26016 | MATH     | Math Team Meeting: Shape Maze Solution
+26017 | TEACHING | (Handwritten) Day 1
+26018 | TEACHING | (Handwritten) Day 2
+26019 | TEACHING | (Handwritten) Day 3
+26020 | TEACHING | (Handwritten) Day 4
+26021 | TEACHING | (Handwritten) Day 5
+26022 | TEACHING | (Handwritten) Day 6
+26023 | TEACHING | (Handwritten) Day 7
+26024 | TEACHING | (Handwritten) Day 8
+26025 | TEACHING | (Handwritten) Day 9
+26026 | TEACHING | (Handwritten) Day 10
+26027 | TEACHING | (Handwritten) Day 11
+26028 | TEACHING | (Handwritten) Day 12
+26029 | TEACHING | (Handwritten) Day 13
+26030 | TEACHING | (Handwritten) Day 14
+26031 | TEACHING | (Handwritten) Day 15
+26032 | TEACHING | (Handwritten) Day 16
+26033 | TEACHING | (Handwritten) Day 17
+26034 | TEACHING | (Handwritten) Day 18
+26035 | TEACHING | (Handwritten) Day 19
+26036 | TEACHING | (Handwritten) Day 20
+26037 | TEACHING | (Handwritten) Day 21
+26038 | TEACHING | (Handwritten) Day 22
+26039 | TEACHING | (Handwritten) Day 23
+26040 | TEACHING | (Handwritten) Day 24
+26041 | TEACHING | (Handwritten) Day 25
+26042 | TEACHING | (Handwritten) Day 26
+26043 | TEACHING | (Handwritten) Day 27
+26044 | TEACHING | (Handwritten) Day 28
+26045 | TEACHING | (Handwritten) Day 29
+26046 | TEACHING | (Handwritten) Day 30
+26047 | TEACHING | (Handwritten) Day 31
+26048 | TEACHING | (Handwritten) Day 32
+26049 | TEACHING | (Handwritten) Day 33
+26050 | TEACHING | (Handwritten) Day 34
+26051 | TEACHING | (Handwritten) Day 35
+26052 | TEACHING | (Handwritten) Day 36
+26053 | TEACHING | (Handwritten) Day 37
+26054 | TEACHING | (Handwritten) Day 38
+26055 | TEACHING | (Handwritten) Day 39
+26056 | TEACHING | (Handwritten) Day 40
+26057 | TEACHING | (Handwritten) Day 41
+26058 | TEACHING | (Handwritten) Day 42
+26059 | TEACHING | (Handwritten) Day 43
+26060 | TEACHING | (Handwritten) Day 44
+26061 | TEACHING | (Handwritten) Day 45
+26062 | TEACHING | (Handwritten) Day 46
+26063 | TEACHING | (Handwritten) Day 47
+26064 | TEACHING | (Handwritten) Day 48
+26065 | TEACHING | (Handwritten) Day 49
+26066 | TEACHING | (Handwritten) Day 50
+26067 | TEACHING | (Handwritten) Day 51
+26068 | TEACHING | (Handwritten) Day 52
+26069 | TEACHING | (Handwritten) Day 53
+26070 | TEACHING | (Handwritten) Day 54
+26071 | TEACHING | (Handwritten) Day 55
+26072 | TEACHING | (Handwritten) Day 56
+26073 | TEACHING | (Handwritten) Day 57
+26074 | TEACHING | (Handwritten) Day 58
+26075 | TEACHING | (Handwritten) Day 59
+26076 | TEACHING | (Handwritten) Day 60
+26077 | TEACHING | (Handwritten) Day 61
+26078 | TEACHING | (Handwritten) Day 62
+26079 | TEACHING | (Handwritten) Day 63
+26080 | TEACHING | (Handwritten) Day 64
+26081 | TEACHING | (Handwritten) Day 65
+26082 | TEACHING | (Handwritten) Day 66
+26083 | TEACHING | (Handwritten) Day 67
+26084 | TEACHING | (Handwritten) Day 68
+26085 | TEACHING | (Handwritten) Day 69
+26086 | TEACHING | (Handwritten) Day 70
+26087 | TEACHING | (Handwritten) Day 71
+26088 | TEACHING | (Handwritten) Day 72
+26089 | TEACHING | (Handwritten) Day 73
+26090 | TEACHING | (Handwritten) Day 74
+26091 | TEACHING | (Handwritten) Day 75
+26092 | TEACHING | (Handwritten) Day 76
+26093 | TEACHING | (Handwritten) Day 77
+26094 | TEACHING | (Handwritten) Day 78
+26095 | TEACHING | (Handwritten) Day 79
+26096 | TEACHING | (Handwritten) Day 80
+26097 | TEACHING | (Handwritten) Day 81
+26098 | TEACHING | (Handwritten) Day 82
+26099 | TEACHING | (Handwritten) Day 83
+26100 | MATH     | LibreNotebook
 
 
 

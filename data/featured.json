@@ -91,6 +91,22 @@
         "url": "/teaching/tex/26015.tex"
       }
     ]
+  },
+  {
+    "date": "16 August 2026",
+    "links": [
+      {
+        "label": "LibreNotebook "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/mathematics/pdf/26100.pdf"
+      },
+      {
+        "label": "Git)",
+        "url": "https://github.com/enochyu-official/LibreNotebook"
+      }
+    ]
   }
 ]
 

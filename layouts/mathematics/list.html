@@ -3,21 +3,33 @@
   <h1>Mathematics</h1>
 </header>
 <section class="list-page">
-  <!-- TOC -->
   <aside class="toc-sidebar">
     <div class="toc">
       <div class="toc-title">Table of Contents</div>
       <nav>
         <ul>
-          <li><a href="#math3">Olympiad Concepts</a></li>
-          <li><a href="#math2">Miscellaneous</a></li>
-          <li><a href="#math1">Old Problem Sets</a></li>
+          <li><a href="#math4">Book
+              ({{ len hugo.Data.math04 }})</a></li>
+          <li><a href="#math3">Olympiad Concepts
+              ({{ len hugo.Data.math03 }})</a></li>
+          <li><a href="#math2">Miscellaneous
+              ({{ len hugo.Data.math02 }})</a></li>
+          <li><a href="#math1">Old Problem Sets
+              ({{ len hugo.Data.math01 }})</a></li>
         </ul>
       </nav>
     </div>
   </aside>
 
   <div class="list-content">
+    <h2 class="list-h2" id="math4">
+      Book
+      <small><small><small>
+      ({{ len hugo.Data.math04 }} Document)
+      </small></small></small>
+    </h2>
+    {{ partial "list.html" (collections.Reverse hugo.Data.math04) }}
+
     <h2 class="list-h2" id="math3">
       Olympiad Concepts 
       <small><small><small>
