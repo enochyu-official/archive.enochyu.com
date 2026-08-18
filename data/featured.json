@@ -93,7 +93,23 @@
     ]
   },
   {
-    "date": "16 August 2026",
+    "date": "17 August 2026",
+    "links": [
+      {
+        "label": "Enoch's Notebook: An Introduction to Linear Algebra "
+      },
+      {
+        "label": "(PDF, ",
+        "url": "/mathematics/pdf/26101.pdf"
+      },
+      {
+        "label": "Git)",
+        "url": "https://github.com/enochyu-official/notebook-linear-algebra"
+      }
+    ]
+  },
+  {
+    "date": "18 August 2026",
     "links": [
       {
         "label": "LibreNotebook "
