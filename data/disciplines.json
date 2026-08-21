@@ -1,15 +1,29 @@
 [
   {
-    "date": "24 May 2026 - Last Updated",
-    "links": [{ "label": "Mathematics ", "url": "/mathematics/" }]
+    "date": "21 August 2026 - Last Updated",
+    "links": [
+      {
+        "label": "Mathematics ",
+        "url": "/mathematics/"
+      }
+    ]
   },
   {
     "date": "7 June 2026 - Last Updated",
-    "links": [{ "label": "Computer Science ", "url": "/cs/" }]
+    "links": [
+      {
+        "label": "Computer Science ",
+        "url": "/cs/"
+      }
+    ]
   },
   {
     "date": "10 August 2026 - Last Updated",
-    "links": [{ "label": "Teaching ", "url": "/teaching/" }]
+    "links": [
+      {
+        "label": "Teaching ",
+        "url": "/teaching/"
+      }
+    ]
   }
 ]
-
