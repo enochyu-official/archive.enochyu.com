@@ -162,6 +162,7 @@
 26099 | TEACHING | (Handwritten) Day 83
 26100 | MATH     | LibreNotebook
 26101 | MATH     | Enoch's Notebook: An Introduction to Linear Algebra
+26102 | TEACHING | (Handwritten) Day 84
 
 
 
